@@ -27,9 +27,10 @@ type CaritasInsightsProps = {
 type InsightTab = "news" | "articles" | "videos";
 
 function PostList({ items }: { items: InsightPost[] }) {
+  const latestItems = items.slice(0, 3);
   return (
     <>
-      {items.map((post) => (
+      {latestItems.map((post) => (
         <div key={post.id} className="col-lg-12">
           <div className="post">
             <div className="row align-items-center mx-4 animation-element bounce-up">
@@ -127,7 +128,7 @@ export function CaritasInsights({ news, articles, videos }: CaritasInsightsProps
                     href="/articles"
                     style={{ color: "#C71782 !important" }}
                   >
-                    Read Articles <i className="bi bi-chevron-right ms-2" />
+                    Read All Articles <i className="bi bi-chevron-right ms-2" />
                   </Link>
                 </p>
               </FadeIn>

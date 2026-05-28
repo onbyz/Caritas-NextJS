@@ -27,7 +27,7 @@ export function PatientVoices({ videos }: PatientVoicesProps) {
           ))}
         </div>
         <p className="box box1 text-center">
-          <Link style={{ color: "#C71782 !important" }} href="/testimonials">
+          <Link style={{ color: "#C71782" }} href="/testimonials">
             View All <i className="bi bi-chevron-right ms-2" />
           </Link>
         </p>

@@ -1,4 +1,5 @@
 import { cancerDepartment } from "@/constants/departments/cancer";
+import { heartDepartment } from "@/constants/departments/heart";
 
 import { DEPARTMENT_FULL_CONTENT } from "@/constants/departments/full-content";
 
@@ -29,6 +30,7 @@ const RICH_FALLBACK: Record<string, DepartmentPageProps> = {
   "caritas-neuro": neuroDepartment,
 
   "caritas-cancer-institute": cancerDepartment,
+  "caritas-heart-institute": heartDepartment,
 
 };
 

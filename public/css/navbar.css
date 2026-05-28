@@ -8,7 +8,7 @@
   height: 100vh;
   background-color: white;
   box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
-  transition: right 0.4s ease-in-out;
+  transition: right 0.32s cubic-bezier(0.22, 1, 0.36, 1);
   /* Slide animation */
   z-index: 10000;
   overflow-y: auto;
@@ -48,9 +48,18 @@
   right: 0;
 }
 
+.slide-navbar.active .slide-navbar-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Inner content */
 .slide-navbar-content {
   padding: 2rem;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 0.24s ease, transform 0.24s ease;
+  will-change: opacity, transform;
 }
 
 /* Menu items */
@@ -145,6 +154,11 @@ body.menu-open::before {
 /* hide all inner content by default */
 .hover-content>div {
   display: none;
+}
+
+/* React mobile nav panel wrapper */
+.hover-content > .menu-panel {
+  display: block;
 }
 
 .dept-section {
@@ -595,7 +609,8 @@ body.menu-open::before {
   .submenu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    transition: max-height 0.28s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.22s ease;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -603,6 +618,7 @@ body.menu-open::before {
 
   .submenu.active {
     max-height: 3000px;
+    opacity: 1;
   }
 
   .submenu-link {
@@ -633,7 +649,8 @@ body.menu-open::before {
   .subsubmenu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    transition: max-height 0.28s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.22s ease;
     background: #fff;
     list-style: none;
     padding: 0;
@@ -642,6 +659,7 @@ body.menu-open::before {
 
   .subsubmenu.active {
     max-height: 1000px;
+    opacity: 1;
   }
 
   .subsubmenu-item:last-child {
@@ -704,7 +722,24 @@ body.menu-open::before {
   }
 
   .nav-items {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-title {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hover-content {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: visible !important;
   }
 
   .image-slider img {

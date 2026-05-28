@@ -142,7 +142,6 @@ export function HeroSlider({ slides }: HeroSliderProps) {
                   decoding="async"
                 />
               </picture>
-              <div className="overlay" aria-hidden />
               <div className="new-slide-content">
                 <div className="container hero-slide-container">
                   <div className="row hero-slide-row">

@@ -66,6 +66,7 @@ export function RatingsSection() {
                   alt={item.alt}
                   width={item.width}
                   height={item.height}
+                  className="mx-auto d-block"
                   style={{ width: item.width, height: "auto" }}
                 />
                 <p className="mt-3" dangerouslySetInnerHTML={{ __html: item.text.replace(" ", "<br />") }} />

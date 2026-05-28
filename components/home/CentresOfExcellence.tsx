@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { CENTRES_OF_EXCELLENCE } from "@/constants/navigation";
@@ -55,23 +56,35 @@ export function CentresOfExcellence() {
 
         <div className="row justify-content-center">
           <div className="col-md-6 col-lg-4">
-            <div className="image-slider">
-              {DOCTOR_CAROUSEL_IMAGES.map((image, index) => (
-                <Image
-                  key={image}
-                  src={`/img/${image}`}
-                  width={400}
-                  height={600}
-                  alt="Caritas doctor"
-                  className={index === activeImage ? "active" : ""}
-                  decoding="async"
-                  style={{
-                    display: index === activeImage ? "block" : "none",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                />
-              ))}
+            <div
+              className="image-slider"
+              style={{
+                position: "relative",
+                width: "100%",
+                maxWidth: 400,
+                margin: "0 auto",
+                minHeight: 420,
+              }}
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={DOCTOR_CAROUSEL_IMAGES[activeImage]}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.7, ease: "easeInOut" }}
+                  style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}
+                >
+                  <Image
+                    src={`/img/${DOCTOR_CAROUSEL_IMAGES[activeImage]}`}
+                    width={400}
+                    height={600}
+                    alt="Caritas doctor"
+                    decoding="async"
+                    style={{ width: "100%", height: "auto", objectFit: "contain", display: "block" }}
+                  />
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
 

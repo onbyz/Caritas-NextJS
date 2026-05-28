@@ -157,19 +157,17 @@ function DoctorListCard({
             </h6>
           )}
           <p className="hide_mobile">&nbsp;</p>
-          {card.appointmentEnabled !== false && (
-            <p>
-              <a
-                href={BRAND.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#c71782" }}
-              >
-                Book An Appointment
-                <i className="bi bi-chevron-right ms-2" />
-              </a>
-            </p>
-          )}
+          <p>
+            <a
+              href={BRAND.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#c71782" }}
+            >
+              Book An Appointment
+              <i className="bi bi-chevron-right ms-2" />
+            </a>
+          </p>
         </div>
         <div className="col-lg-2 col-md-2 col-sm-12 ms-auto align-self-start drurl">
           <Link href={`/doctors/${card.slug}`} aria-label={`View ${card.name}`}>

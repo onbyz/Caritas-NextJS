@@ -90,12 +90,21 @@ export const DEPARTMENT_DOCTOR_GROUPS: Record<
     { heading: "Neuro Medicine", specializations: ["Neuro Medicine"] },
     { heading: "Neuro Surgery", specializations: ["Neuro Surgery"] },
   ],
+  "caritas-heart-institute": [
+    {
+      heading: "Cardiology & Interventional Cardiology",
+      specializations: ["Cardiology & Interventional Cardiology"],
+    },
+    {
+      heading: "Cardio Thoracic & Vascular Surgery",
+      specializations: ["Cardio Thoracic & Vascular  Surgery"],
+    },
+  ],
   "caritas-cancer-institute": [
     { heading: "Radiation Oncology", specializations: ["Radiation Oncology"] },
     { heading: "Medical Oncology", specializations: ["Medical Oncology"] },
     { heading: "Surgical Oncology", specializations: ["Surgical Oncology"] },
     { heading: "Clinical Haematology", specializations: ["Clinical Haematology"] },
-    { heading: "Gynaecologic Oncology", specializations: ["Gynaecologic Oncology"] },
     { heading: "Paediatric Oncology", specializations: ["Paediatric Oncology"] },
     { heading: "Palliative Oncology", specializations: ["Palliative Oncology"] },
   ],

@@ -341,11 +341,7 @@ body {
 }
 
 .page-home .new-slide .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  pointer-events: none;
+  display: none !important;
 }
 
 .page-home .new-slides {

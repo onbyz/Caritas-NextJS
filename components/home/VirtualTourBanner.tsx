@@ -10,6 +10,8 @@ export function VirtualTourBanner() {
         position: "relative",
         overflow: "hidden",
         color: "white",
+        background:
+          "linear-gradient(135deg, rgba(0,114,188,0.95) 0%, rgba(26,44,82,0.95) 50%, rgba(199,23,130,0.9) 100%)",
         paddingBottom: 100,
         minHeight: "80vh",
         margin: "30px 0 60px 0",
