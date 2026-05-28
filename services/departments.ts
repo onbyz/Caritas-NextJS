@@ -1,4 +1,5 @@
 import { cancerDepartment } from "@/constants/departments/cancer";
+import { criticalCareDepartment } from "@/constants/departments/criticalcare";
 import { heartDepartment } from "@/constants/departments/heart";
 
 import { DEPARTMENT_FULL_CONTENT } from "@/constants/departments/full-content";
@@ -31,6 +32,7 @@ const RICH_FALLBACK: Record<string, DepartmentPageProps> = {
 
   "caritas-cancer-institute": cancerDepartment,
   "caritas-heart-institute": heartDepartment,
+  criticalcare: criticalCareDepartment,
 
 };
 
@@ -164,7 +166,7 @@ export async function getDepartmentPage(
 
 
 
-    return applyDepartmentArticles({
+    const page = applyDepartmentArticles({
 
       ...base,
 
@@ -223,6 +225,27 @@ export async function getDepartmentPage(
       navItems: doc.navItems ?? base.navItems,
 
     });
+
+    if (slug === "caritas-paediatrics") {
+      const blocked =
+        "Visit Caritas Matha Hospital for Comprehensive Pediatric Care and Surgical Interventions for Children";
+      page.overview.paragraphs = (page.overview.paragraphs ?? []).filter(
+        (p) => !p.includes(blocked),
+      );
+    }
+
+    if (slug === "pulmonology") {
+      const blockedStarts = [
+        "Comprehensive Respiratory Care for All Ages",
+        "The pulmonology department in Caritas Hospital",
+        "The primary purpose of the pulmonology department",
+      ];
+      page.overview.paragraphs = (page.overview.paragraphs ?? []).filter(
+        (p) => !blockedStarts.some((s) => p.trim().startsWith(s)),
+      );
+    }
+
+    return page;
 
   } catch {
 

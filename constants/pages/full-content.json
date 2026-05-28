@@ -4,8 +4,8 @@
     "title": "About Caritas",
     "subtitle": "Our Story of Care...",
     "bannerImage": "/img/about-1.png",
-    "showEnquiry": false,
-    "hasHeroBanner": false,
+    "showEnquiry": true,
+    "hasHeroBanner": true,
     "contentPath": "/content/pages/about-caritas.html"
   },
   "director-message": {
@@ -276,5 +276,84 @@
     "showEnquiry": true,
     "hasHeroBanner": true,
     "contentPath": "/content/pages/radiology.html"
+  },
+  "dnb": {
+    "slug": "dnb",
+    "title": "Caritas DNB Program",
+    "subtitle": "Nurturing Hearts, Empowering Minds",
+    "bannerImage": "/img/dnb.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/dnb.html"
+  },
+  "college-of-nursing": {
+    "slug": "college-of-nursing",
+    "title": "Caritas College of Nursing",
+    "subtitle": "Nurturing Tomorrow's Caregivers",
+    "bannerImage": "/img/nursing.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/college-of-nursing.html"
+  },
+  "college-of-pharmacy": {
+    "slug": "college-of-pharmacy",
+    "title": "Caritas College of Pharmacy",
+    "subtitle": "Educating Pharmacists, Enriching Communities",
+    "bannerImage": "/img/pharmacy.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/college-of-pharmacy.html"
+  },
+  "caritas-allied-health-science": {
+    "slug": "caritas-allied-health-science",
+    "title": "Caritas Allied Health Science",
+    "subtitle": "Your Gateway to Paramedical Excellence",
+    "bannerImage": "/img/paramedical.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-allied-health-science.html"
+  },
+  "caritas-fellowship-programme": {
+    "slug": "caritas-fellowship-programme",
+    "title": "Caritas Certificate Programme",
+    "bannerImage": "/img/fellowship-program.jpg",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-fellowship-programme.html"
+  },
+  "caritas-internship": {
+    "slug": "caritas-internship",
+    "title": "Caritas Internship / Observership Program",
+    "bannerImage": "/img/internship-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-internship.html"
+  },
+  "caritas-neuroscience-drnb": {
+    "slug": "caritas-neuroscience-drnb",
+    "title": "Caritas Neurosciences DrNB Program",
+    "subtitle": "Reconnecting the lost network from head to toe",
+    "bannerImage": "/img/drnb.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-neuroscience-drnb.html"
+  },
+  "caritas-hdp-hospital": {
+    "slug": "caritas-hdp-hospital",
+    "title": "Caritas HDP Hospital",
+    "subtitle": "Committed to the Well-being of the Community",
+    "bannerImage": "/img/hdpbanner.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/caritas-hdp-hospital.html"
+  },
+  "caritaskkm": {
+    "slug": "caritaskkm",
+    "title": "Caritas KMM Hospital",
+    "subtitle": "Your Trusted Destination for Holistic Care",
+    "bannerImage": "/img/kkm 1.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/caritaskkm.html"
   }
 }

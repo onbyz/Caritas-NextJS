@@ -67,6 +67,8 @@ function sanityToMerged(doc: SanityDoctorDoc, base?: LegacyDoctor): MergedDoctor
     doc.legacyImagePath ??
     base?.image ??
     "/media/doctors/Default.png";
+  const normalizedImageUrl =
+    id === "25dd0e208ac749e4ae434e236483fa24" ? "/media/doctors/Default.png" : imageUrl;
 
   return {
     id,
@@ -75,8 +77,8 @@ function sanityToMerged(doc: SanityDoctorDoc, base?: LegacyDoctor): MergedDoctor
     specialization: doc.specialization ?? base?.specialization ?? "",
     departmentName: base?.departmentName ?? "",
     departmentUrl: base?.departmentUrl ?? "",
-    image: imageUrl,
-    imageUrl,
+    image: normalizedImageUrl,
+    imageUrl: normalizedImageUrl,
     appointmentEnabled: doc.appointmentEnabled ?? base?.appointmentEnabled ?? true,
     order: String(doc.order ?? base?.order ?? "999"),
     slug: doc.slug?.current ?? id,
@@ -136,10 +138,17 @@ export async function getDepartmentDoctorGroups(
   slug: string,
   sanityGroups?: SanityDoctorGroup[] | null,
 ): Promise<{ heading: string; doctors: DeptDoctor[] }[] | undefined> {
+  const forceConfigForSlug = new Set([
+    "caritas-general-medicine",
+    "caritas-paediatrics",
+    "caritas-rheumatology",
+    "pathology",
+  ]);
+
   const manual =
     sanityGroups?.filter((g) => g.heading && (g.doctors?.length ?? 0) > 0) ?? [];
 
-  if (manual.length > 0) {
+  if (manual.length > 0 && !forceConfigForSlug.has(slug)) {
     const allLegacy = new Map(
       (legacyDoctors as LegacyDoctor[]).map((d) => [d.id, d]),
     );
@@ -158,10 +167,21 @@ export async function getDepartmentDoctorGroups(
   if (!config) return undefined;
 
   const all = await getMergedDoctors();
-  return config.map(({ heading, specializations }) => ({
+  return config.map(({ heading, specializations, departmentNames, doctorIds }) => ({
     heading,
     doctors: all
-      .filter((d) => specializations.includes(d.specialization))
+      .filter((d) => {
+        if (doctorIds?.length) {
+          return doctorIds.includes(d.id);
+        }
+        if (departmentNames?.length) {
+          return departmentNames.includes(d.departmentName ?? "");
+        }
+        if (specializations?.length) {
+          return specializations.includes(d.specialization);
+        }
+        return false;
+      })
       .map(mergedToDeptDoctor),
   }));
 }

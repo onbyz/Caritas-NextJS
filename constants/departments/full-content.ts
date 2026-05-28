@@ -65,6 +65,10 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
         "label": "Treatments and Procedures"
       },
       {
+        "id": "infectious-disease",
+        "label": "Infectious Disease"
+      },
+      {
         "id": "dedicated-doctors",
         "label": "Doctors"
       },
@@ -156,7 +160,11 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
     "overview": {
       "heading": "Compassionate Care, Healing Hands: Your Health, Our Priority",
       "image": "/img/GM CENTER IMAGE.png",
-      "paragraphs": []
+      "paragraphs": [
+        "At the heart of our hospital's healthcare services, we proudly present the Department that forms the cornerstone of our commitment to exceptional patient care. This Department encompasses a comprehensive range of medical specialties, working seamlessly with other specialized units to ensure a well-coordinated and patient-centered healthcare approach.",
+        "One of the hallmarks of our Department is its steadfast focus on preventive healthcare. We firmly believe that the key to promoting health and well-being lies in proactively addressing potential health issues before they become more serious. To this end, we offer a range of educational programs, routine check-ups, and proactive healthcare initiatives aimed at empowering individuals to take charge of their health.",
+        "Our commitment is to provide accessible, high-quality medical care, ensuring that patients have timely access to the care they need, when they need it most."
+      ]
     },
     "doctorGroups": [],
     "articles": [],
@@ -172,7 +180,14 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
         "Diagnosis, treatment and prevention of infectious diseases",
         "Prophylactic vaccination for adults"
       ]
-    }
+    },
+    "extraSections": [
+      {
+        "id": "infectious-disease",
+        "heading": "Infectious Disease",
+        "html": "<p>Our Infectious Disease service focuses on prevention, diagnosis, and evidence-based treatment of bacterial, viral, fungal, and parasitic infections. We provide expert consultation for acute and chronic infections and support antimicrobial stewardship for safe, effective therapy.</p><p>Treatment and Procedures include:</p><ul><li>Comprehensive infectious disease evaluation and treatment planning</li><li>Management of fever of unknown origin and complex infections</li><li>Targeted antimicrobial therapy and follow-up care</li><li>Adult prophylactic vaccination and prevention counseling</li></ul>"
+      }
+    ]
   },
   "caritas-rheumatology": {
     "slug": "caritas-rheumatology",
@@ -202,11 +217,15 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
       "heading": "Empowering Movement, Relieving Pain, Restoring Life",
       "image": "/img/Rheumatology CENTER IMAGE.png",
       "paragraphs": [
-        "According to the National Library of Medicine findings, rheumatological disorders impact about 24% of the population of India. Rural areas have the highest concentration of patients since their daily lives involve heavy manual work."
+        "According to the National Library of Medicine findings, rheumatological disorders impact about 24% of the population of India. Rural areas have the highest concentration of patients since their daily lives involve heavy manual work.",
+        "Yet, treatment for rheumatic diseases is scarce in such regions. Caritas Hospital is committed to bringing highly specialized treatment for rheumatic problems to people in Kerala's rural communities and urban areas.",
+        "Consistent medical service quality and affordability have earned us the name of the best rheumatology hospital in Kerala.",
+        "The Rheumatology Department at Caritas Hospital offers a multidisciplinary approach to diagnosing and managing rheumatic disease. We provide in-house laboratory services for routine tests and several specialized investigations. Our dedicated imaging modalities include X-ray, musculoskeletal ultrasound and MRI. Our specialist team comprises rheumatology & clinical immunology consultants with dedicated nursing staff. We work closely with other departments within the hospital to provide you with the best possible care."
       ]
     },
     "doctorGroups": [],
     "articles": [],
+    "treatmentsIntro": "Caritas Hospital offers comprehensive rheumatology services. Patients with joint pain, chronic arthritis and other musculoskeletal problems are treated by a team of interdisciplinary specialists who work together to develop the most effective treatment plan for each patient. Our treatments and care protocols revolve around the patient's lifestyle, degree of condition and other factors to help achieve the best possible results. We also treat autoimmune disorders that affect joints, muscles and connective tissue, such as lupus, rheumatoid arthritis and scleroderma.",
     "treatmentLists": {
       "column1": [
         "Clinical problems in joints and soft tissues&nbsp;",
@@ -530,7 +549,7 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
     "doctorGroups": [],
     "articles": [],
     "treatmentsIntro": "Explore our extensive range of orthopaedic treatments and procedures at Caritas Hospital, where we are dedicated to ensuring your musculoskeletal health and well-being.",
-    "treatmentsCustomHtml": "<div class=\"row justify-content-center\" style=\"width:90%;margin:0 auto;\"><div class=\"col-lg-12\"><ul><li>Total Knee Arthroplasty</li><li>Total Hip Arthroplasty</li><li>Total Shoulder Arthroplasty (Normal & Reverse Shoulder)</li><li>Total Elbow Arthroplasty</li><li>Arthroscopy of Knee, Shoulder and Ankle:</li></ul><div class=\"row\"><div class=\"col-lg-4\"><ul><li>Single bundle ACL and PCL reconstruction</li><li>Microfracture</li><li>Arthroscopic Assisted Fracture Fixation</li><li>Bankart's repair</li><li>Subacromial decompression</li><li>Mini open rotator cuff repair</li></ul></div><div class=\"col-lg-4\"><ul><li>Arthroscopic rotator cuff repair</li><li>Ankle fusion</li><li>Management of nonunion and bone loss with Illizarov technique</li><li>Tumour surgeries limb salvage with custom made prosthesis</li><li>Correction of limb deformities</li></ul></div><div class=\"col-lg-4\"><ul><li>Osteotomies for deformity correction, nonunion and correction of misalignment (HTO)</li><li>Paediatric Orthopaedics (Fractures and Deformities)</li><li>All type of complications fracture fixations</li><li>Polytrauma Management</li></ul></div></div></div></div><div style=\"margin: 3rem 0;\"><h3 style=\"display:flex;justify-content:center;align-items:center;\">Robotic Surgery</h3><h4 style=\"font-weight:600;margin:2rem 0;display:flex;justify-content:center;align-items:center;\">First robotic centre in kerala for hip and knee replacement surgery</h4><div class=\"ortho-robotic-surgery\"><div class=\"ortho-robotic-surgery-content\"><h5 style=\"font-size:20px;font-weight:600;line-height:28px;\">Caritas Smart Robotic Surgery</h5><ul><li>FDA-approved CT-based robotic system</li><li>Data insights for personalized knee and hip surgeries</li></ul><h5 style=\"font-size:20px;font-weight:600;line-height:28px;\">Highlights</h5><ul><li>Higher Precision</li><li>Smaller Incision</li><li>Quick Recovery</li><li>Less Pain Minimal Ligament Release</li></ul></div><div class=\"ortho-robotic-surgery-img\"><img src=\"/img/robotics-surgery-img.png\" alt=\"Robotic surgery\" style=\"max-width:100%;height:auto;\" /></div></div></div>"
+    "treatmentsCustomHtml": "<div class=\"row justify-content-center\" style=\"width:90%;margin:0 auto;\"><div class=\"col-lg-12\"><ul><li>Total Knee Arthroplasty</li><li>Total Hip Arthroplasty</li><li>Total Shoulder Arthroplasty (Normal & Reverse Shoulder)</li><li>Total Elbow Arthroplasty</li><li>Arthroscopy of Knee, Shoulder and Ankle:</li></ul><div class=\"row\"><div class=\"col-lg-4\"><ul><li>Single bundle ACL and PCL reconstruction</li><li>Microfracture</li><li>Arthroscopic Assisted Fracture Fixation</li><li>Bankart's repair</li><li>Subacromial decompression</li><li>Mini open rotator cuff repair</li></ul></div><div class=\"col-lg-4\"><ul><li>Arthroscopic rotator cuff repair</li><li>Ankle fusion</li><li>Management of nonunion and bone loss with Illizarov technique</li><li>Tumour surgeries limb salvage with custom made prosthesis</li><li>Correction of limb deformities</li></ul></div><div class=\"col-lg-4\"><ul><li>Osteotomies for deformity correction, nonunion and correction of misalignment (HTO)</li><li>Paediatric Orthopaedics (Fractures and Deformities)</li><li>All type of complications fracture fixations</li><li>Polytrauma Management</li></ul></div></div></div></div><div style=\"margin: 3rem 0;\"><h3 style=\"display:flex;justify-content:center;align-items:center;\">Robotic Surgery</h3><h4 style=\"font-weight:600;margin:2rem 0;display:flex;justify-content:center;align-items:center;\">First robotic centre in kerala for hip and knee replacement surgery</h4><div class=\"ortho-robotic-surgery\"><div class=\"ortho-robotic-surgery-content\"><h5 style=\"font-size:20px;font-weight:600;line-height:28px;\">Caritas Smart Robotic Surgery</h5><ul><li>FDA-approved CT-based robotic system</li><li>Data insights for personalized knee and hip surgeries</li></ul><h5 style=\"font-size:20px;font-weight:600;line-height:28px;\">Highlights</h5><ul><li>Higher Precision</li><li>Smaller Incision</li><li>Quick Recovery</li><li>Less Pain Minimal Ligament Release</li></ul></div><div class=\"ortho-robotic-surgery-img\"><img src=\"/img/robotics-surgery-img.png\" alt=\"Robotic surgery\" style=\"max-width:100%;height:auto;\" /></div></div><h4 style=\"font-weight: 600; line-height: 28px; margin: 3rem 0; display: flex; justify-content: center; align-items: center;\">Watch Our Specialists Explain the Benefits</h4><div class=\"row\"><div class=\"col-lg-6 mb-3\"><iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/Ftgro41A2No\" title=\"Orthopaedics robotic surgery video 1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><div class=\"col-lg-6 mb-3\"><iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/-1w4dYpUW2w\" title=\"Orthopaedics robotic surgery video 2\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div></div>"
   },
   "general-surgery": {
     "slug": "general-surgery",
@@ -752,6 +771,7 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
     },
     "doctorGroups": [],
     "articles": [],
+    "treatmentsCustomHtml": "<p>Our Neonatology Department offers a wide array of specialized treatments and procedures to ensure the well-being of our youngest patients.</p><div class=\"row m-3 justify-content-center\"><ul><li>Intubation & ventilation</li><li>Surfactant administration</li><li>Blood gas monitoring</li><li>Total parenteral nutrition</li><li>Phototherapy</li><li>Exchange transfusion</li><li>Neonatal surgery</li><li>Neonatal hearing check</li><li>Retinopathy of prematurity screening etc.</li></ul></div><h6>Facilities Offered</h6><p>The Neonatology Department at Caritas Hospital is equipped with state-of-the-art facilities to ensure the well-being of our newborn patients.</p><div class=\"row m-3 justify-content-center\"><ul><li>Neonatal ventilators</li><li>Radiant warmers</li><li>LED phototherapy units</li><li>Neonatal monitors</li><li>Arterial blood gas analysers</li><li>Neonatal echocardiogram</li><li>Neonatal ultrasonogram</li></ul></div>",
     "treatmentLists": {
       "intro": "Our Neonatology Department offers a wide array of specialized treatments and procedures to ensure the well-being of our youngest patients",
       "column1": [
@@ -764,22 +784,6 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
         "Neonatal surgery",
         "Neonatal hearing check",
         "Retinopathy of prematurity screening etc."
-      ]
-    },
-    "facilities": {
-      "heading": "Facilities Offered",
-      "intro": "The Neonatology Department at Caritas Hospital is equipped with state-of-the-art facilities to ensure the well-being of our newborn patients.",
-      "columns": [
-        [
-          "Neonatal ventilators",
-          "Radiant warmers",
-          "LED phototherapy units",
-          "Neonatal monitors",
-          "Arterial blood gas analysers",
-          "Neonatal echocardiogram",
-          "Neonatal ultrasonogram"
-        ],
-        []
       ]
     }
   },
@@ -1080,10 +1084,6 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
         "label": "Articles"
       },
       {
-        "id": "articles",
-        "label": "Articles"
-      },
-      {
         "id": "psychological-services",
         "label": "Psychological Services"
       }
@@ -1095,7 +1095,10 @@ export const DEPARTMENT_FULL_CONTENT: Record<string, DepartmentPageProps> = {
       "paragraphs": [
         "According to a Deloitte survey, mental health issues in India constitute about 15% of the global mental health disorder burden. Such a considerable percentage is mainly attributed to inadequate medical care. This lag in medical care is not because of a lacuna in psychiatric care quality but because of the general stigma associated with mental health issues.",
         "To break this stigma, Caritas Hospital has designed a unique package that offers an inclusive approach towards patients with behavioral or mental health issues. Such an approach invites a massive footfall of care-seekers at our premises, which has eventually helped us become one of the best psychiatry hospitals in Kerala",
-        "The psychiatry department at Caritas Hospital is a specialized healthcare institution that provides evidence-based preventive and therapeutic treatment of mental disorders. Our target is to offer quality services in psychiatric care including geriatric and paediatric care with a calm atmosphere, privacy and respect."
+        "The psychiatry department at Caritas Hospital is a specialized healthcare institution that provides evidence-based preventive and therapeutic treatment of mental disorders. Our target is to offer quality services in psychiatric care including geriatric and paediatric care with a calm atmosphere, privacy and respect.",
+        "Fostering Mental Health and Wellness",
+        "Our team of psychiatrists, psychologists and social workers are experts in their fields who treat various conditions such as depression, anxiety disorders, post-traumatic stress disorder (PTSD), bipolar disorder (manic depression), schizophrenia, dementia, childhood mental disorders and substance use disorder.",
+        "As regarded as one of the best psychiatry hospitals in Kerala, the main objective of Caritas Hospital is to raise awareness of mental health issues, which are often underestimated in our society. Our approach is to help individuals break out of their shells and talk about their mental health issues voluntarily rather than do it out of obligation. We believe what we preach and conduct frequent employee mental health awareness programs. This helps our experts and staff to be in the best state to facilitate all-round mental health for our visitors."
       ]
     },
     "doctorGroups": [],

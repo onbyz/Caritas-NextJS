@@ -46,6 +46,15 @@ const SLUG_TO_TEMPLATE = {
   "clinical-nutrition": "clinical",
   physiotherapy: "physiotherapy",
   radiology: "radiology",
+  dnb: "dnb",
+  "college-of-nursing": "caritasnursing",
+  "college-of-pharmacy": "pharmacy",
+  "caritas-allied-health-science": "paramedical",
+  "caritas-fellowship-programme": "fellowship_programme",
+  "caritas-internship": "caritas_internship",
+  "caritas-neuroscience-drnb": "neuro_dnb",
+  "caritas-hdp-hospital": "caritashdp",
+  caritaskkm: "caritaskkm",
 };
 
 const URL_REPLACEMENTS = [

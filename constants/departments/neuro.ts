@@ -10,6 +10,7 @@ export const neuroDepartment: DepartmentPageProps = {
     { id: "treatments-procedures", label: "Treatments and Procedures" },
     { id: "doctors", label: "Doctors" },
     { id: "facilities", label: "Facilities" },
+    { id: "stroke-package", label: "Stroke Package" },
     { id: "articles", label: "Articles" },
   ],
   overview: {
@@ -48,6 +49,22 @@ export const neuroDepartment: DepartmentPageProps = {
 <p>The stroke helpline is equipped with the following facilities:</p>
 <ul><li>CT Scanner</li><li>1.5 Tesla MRI</li><li>Hybrid Cath Lab</li><li>Dedicated Neuro ICUs</li><li>Integrated Neurosurgery Units</li></ul>`,
     },
+    {
+      title: "Movement disorder and Parkinson's clinic",
+      content: `<p>Our comprehensive Movement Disorder, Parkinson's, and Deep Brain Stimulation Clinic offers specialized care and advanced treatment options for Parkinson's disease and a wide range of movement disorders, including dystonia, chorea, ataxia, tremor, and myoclonus.</p>
+<h6>Services Include</h6>
+<ul><li>Deep Brain Stimulation (DBS) surgery for conditions such as Parkinson's disease, dystonia, and tremor.</li><li>Botulinum toxin therapy for neurological disorders, including migraine and movement disorders.</li><li>EMG-guided botulinum toxin injections for precise treatment of dystonia and spasticity.</li></ul>
+<p>We are dedicated to delivering personalized care to improve the quality of life for our patients.</p>`,
+    },
+    {
+      title: "DBS treatment",
+      content: `<p>Caritas offers Deep Brain Stimulation (DBS) as an advanced treatment option for selected patients with Parkinson's disease, tremor, dystonia, and related movement disorders after expert evaluation.</p>
+<p><a style="color: #c71782;" href="https://caritashospital.org/caritas-deep-brain-stimulation" target="_blank" rel="noopener noreferrer">Learn more about DBS treatment</a></p>`,
+    },
+    {
+      title: "Paediatric Neurology Clinic",
+      content: `<p>The Paediatric Neurology Clinic provides expert diagnosis and treatment for neurological conditions in infants, children, and adolescents, with a focus on early intervention and long-term developmental support.</p>`,
+    },
   ],
   facilities: {
     intro:
@@ -67,6 +84,50 @@ export const neuroDepartment: DepartmentPageProps = {
       ],
     ],
   },
+  extraSections: [
+    {
+      id: "stroke-package",
+      heading: "Stroke Package",
+      html: `<div class="accordion-wrapper" style="width:90%;margin:0 auto;">
+<button class="accordion">Stroke Risk Screening Package<br>
+<strike style="color:rgba(199, 23, 130, 1);"><span style="color:#CCCCCC;">₹ 8,765</span></strike>
+<span style="color:rgba(199, 23, 130, 1);">₹ 7,250</span>
+</button>
+<div class="panel">
+<div class="row">
+<div class="col-lg-3 pt-5 px-4" style="background-color:#FAF9F9; margin-bottom: 2rem;">
+<p>At Caritas Hospital, we understand the importance of preventive healthcare, and our Stroke Risk Screening Package offers a convenient and comprehensive way to monitor your well-being of your heart and health.</p>
+</div>
+<div class="col-lg-9">
+<p>Recommended for individuals with high BP or on BP medication, diabetes/prediabetes, high cholesterol, heart disease, overweight, family history of stroke, smoking, sleep apnea (OSA), or age 55+.</p>
+<ul>
+<li>Carotid Arteries <span style="color:#C71782;">(Carotid Doppler)</span></li>
+<li>Kidney Function <span style="color:#C71782;">(Renal Function Test (Fasting))</span></li>
+<li>Prediabetes and Diabetes
+<ul>
+<li>HbA1c</li>
+<li>Fasting Blood Sugar</li>
+<li>Post Prandial Blood Sugar</li>
+</ul>
+</li>
+<li>Lipid Profile</li>
+<li>CBC Test</li>
+<li>Biomarkers Risk Stratification Biomarkers (Lipoprotein A, Apolipoprotein AI, homocysteine, Apolipoprotein (B), HsCRP)</li>
+<li>Cardiac Testing for Stroke Risk <span style="color:#C71782;">(ECG & 2D Echo (Echocardiography))</span></li>
+<li>Nutrition <span style="color:#C71782;">(Nutritionist Counseling)</span></li>
+<li>Vision <span style="color:#C71782;">(Advanced Digital Fundoscopy)</span></li>
+<li>Neurology Consultation</li>
+<li>Cardiology Consultation</li>
+</ul>
+<h6>Enquiry / Booking: <a style="color:#C71782;" href="tel:+919645254777">+91 96452 54777</a></h6>
+</div>
+</div>
+</div>
+<hr style="width: 100%;margin:0;">
+</div>`,
+      bgGray: false,
+    },
+  ],
   doctorGroups: [
     { heading: "Neuro Medicine", doctors: [] },
     { heading: "Neuro Surgery", doctors: [] },

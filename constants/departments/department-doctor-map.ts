@@ -1,7 +1,12 @@
 /** Maps Next.js department slugs to Django template doctor group headings + specialization filters */
 export const DEPARTMENT_DOCTOR_GROUPS: Record<
   string,
-  { heading: string; specializations: string[] }[]
+  {
+    heading: string;
+    specializations?: string[];
+    departmentNames?: string[];
+    doctorIds?: string[];
+  }[]
 > = {
   dermatology: [
     { heading: "Dermatology & Cosmetology", specializations: ["Dermatology & Cosmetology"] },
@@ -12,16 +17,21 @@ export const DEPARTMENT_DOCTOR_GROUPS: Record<
   ],
   "caritas-general-medicine": [
     { heading: "General Medicine", specializations: ["General Medicine"] },
-    { heading: "Infectious Disease", specializations: ["Infectious Disease"] },
+    { heading: "Infectious Disease", doctorIds: ["17daac0bb0cd425c97bd8959f7f18888"] },
   ],
   "caritas-rheumatology": [
-    { heading: "Rheumatology", specializations: ["Rheumatology"] },
+    {
+      heading: "Rheumatology",
+      doctorIds: [
+        "689976a3829f478d9491556ae36bd015",
+        "de85e22b50974f48801a39363a3714f4",
+      ],
+    },
   ],
   "caritas-urology": [{ heading: "Urology", specializations: ["Urology"] }],
   "caritas-nephrology": [{ heading: "Nephrology", specializations: ["Nephrology"] }],
   "caritas-paediatrics": [
     { heading: "Paediatrics", specializations: ["Paediatrics"] },
-    { heading: "Paediatric Surgery", specializations: ["Paediatric Surgery"] },
   ],
   "physical-medicine": [
     {
@@ -66,9 +76,10 @@ export const DEPARTMENT_DOCTOR_GROUPS: Record<
     { heading: "Interventional Radiology", specializations: ["Interventional Radiology"] },
   ],
   pathology: [
-    { heading: "Microbiology", specializations: ["Microbiology"] },
-    { heading: "Biochemistry", specializations: ["Biochemistry"] },
-    { heading: "Transfusion Medicine", specializations: ["Transfusion Medicine"] },
+    {
+      heading: "Pathology",
+      departmentNames: ["Pathology, Microbiology & Laboratory Medicine"],
+    },
   ],
   psychiatry: [
     { heading: "Psychiatry & Psychology", specializations: ["Psychiatry & Psychology"] },
@@ -90,6 +101,7 @@ export const DEPARTMENT_DOCTOR_GROUPS: Record<
     { heading: "Neuro Medicine", specializations: ["Neuro Medicine"] },
     { heading: "Neuro Surgery", specializations: ["Neuro Surgery"] },
   ],
+  criticalcare: [{ heading: "Critical Care", specializations: ["Critical Care"] }],
   "caritas-heart-institute": [
     {
       heading: "Cardiology & Interventional Cardiology",
