@@ -12,6 +12,7 @@ export type CmsPost = {
   title: string;
   slug: string;
   excerpt?: string;
+  body?: string;
   image?: string;
   created?: string;
   categoryTitle?: string;

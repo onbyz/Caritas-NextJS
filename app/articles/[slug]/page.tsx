@@ -45,7 +45,7 @@ export default async function ArticleDetailPage({ params }: Props) {
           )}
           <div
             className="legacy-static-content"
-            dangerouslySetInnerHTML={{ __html: post.body }}
+            dangerouslySetInnerHTML={{ __html: post.body ?? post.excerpt ?? "" }}
           />
         </div>
       </section>

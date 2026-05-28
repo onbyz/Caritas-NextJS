@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export function HealthPackagesHtml({ html }: { html: string }) {
   useEffect(() => {
     const acc = document.querySelectorAll(".health-package-international-patients .accordion, .accordion-wrapper .accordion");
-    const handlers: Array<{ el: Element; fn: () => void }> = [];
+    const handlers: Array<{ el: Element; fn: (event: Event) => void }> = [];
 
     acc.forEach((button) => {
       const fn = (event: Event) => {
