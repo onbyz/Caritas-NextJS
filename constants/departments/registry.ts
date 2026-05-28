@@ -1,0 +1,261 @@
+import type { DepartmentPageProps } from "@/features/departments/DepartmentPage";
+
+type DeptSeed = Omit<DepartmentPageProps, "slug"> & { slug: string };
+
+const defaultNav = [
+  { id: "overview", label: "Overview" },
+  { id: "treatments-procedures", label: "Treatments and Procedures" },
+  { id: "doctors", label: "Doctors" },
+  { id: "facilities", label: "Facilities" },
+];
+
+function dept(
+  slug: string,
+  title: string,
+  subtitle: string,
+  bannerImage: string,
+  overviewText: string,
+): DeptSeed {
+  return {
+    slug,
+    title,
+    subtitle,
+    bannerImage,
+    navItems: defaultNav,
+    overview: {
+      paragraphs: [overviewText],
+    },
+    doctorGroups: [],
+    articles: [],
+  };
+}
+
+/** Fallback content when Sanity is empty — matches Django department pages structure */
+export const DEPARTMENT_REGISTRY: Record<string, DeptSeed> = {
+  "caritas-cancer-institute": dept(
+    "caritas-cancer-institute",
+    "Caritas Cancer Institute",
+    "Top Cancer Hospital in Kerala",
+    "/img/Cancer Institute 859X386.png",
+    "Caritas Cancer Institute provides comprehensive oncology services in Kottayam.",
+  ),
+  "caritas-heart-institute": dept(
+    "caritas-heart-institute",
+    "Caritas Heart Institute",
+    "Best Cardiology Hospital In Kerala",
+    "/img/heart-institute-banner.png",
+    "Caritas Heart Institute delivers advanced cardiac care with experienced cardiologists and state-of-the-art facilities.",
+  ),
+  "caritas-neuro": dept(
+    "caritas-neuro",
+    "Caritas Neuro Sciences",
+    "Best Neurology Hospital in Kerala",
+    "/img/Neuro Sciences.png",
+    "Advanced neurology, neurosurgery and 24/7 stroke care at Caritas Hospital.",
+  ),
+  "criticalcare": dept(
+    "criticalcare",
+    "Critical Care Medicine",
+    "Advanced Intensive Care",
+    "/img/critical-care-banner.png",
+    "Dedicated critical care units providing round-the-clock intensive treatment.",
+  ),
+  "dermatology": dept(
+    "dermatology",
+    "Dermatology & Cosmetology",
+    "Skin Care Excellence",
+    "/img/dermatology-banner.png",
+    "Comprehensive dermatology and cosmetology services.",
+  ),
+  "caritas-gastro": dept(
+    "caritas-gastro",
+    "Gastro Sciences",
+    "Digestive Health Specialists",
+    "/img/gastro-banner.png",
+    "Expert gastroenterology and hepatology care.",
+  ),
+  "caritas-general-medicine": dept(
+    "caritas-general-medicine",
+    "General Medicine",
+    "Primary & Specialty Medical Care",
+    "/img/general-medicine-banner.png",
+    "General medicine department offering comprehensive adult healthcare.",
+  ),
+  "caritas-rheumatology": dept(
+    "caritas-rheumatology",
+    "Rheumatology",
+    "Arthritis & Autoimmune Care",
+    "/img/rheumatology-banner.png",
+    "Specialized care for rheumatic and autoimmune conditions.",
+  ),
+  "caritas-urology": dept(
+    "caritas-urology",
+    "Urology",
+    "Urological Excellence",
+    "/img/urology-banner.png",
+    "Advanced urological diagnosis and treatment.",
+  ),
+  "caritas-nephrology": dept(
+    "caritas-nephrology",
+    "Nephrology & Renal Transplant",
+    "Kidney Care Specialists",
+    "/img/nephrology-banner.png",
+    "Nephrology and renal transplant services.",
+  ),
+  "caritas-paediatrics": dept(
+    "caritas-paediatrics",
+    "Paediatrics & Paediatrics Surgery",
+    "Child Health Experts",
+    "/img/paediatrics-banner.png",
+    "Comprehensive paediatric medical and surgical care.",
+  ),
+  "physical-medicine": dept(
+    "physical-medicine",
+    "Physical Medicine and Rehabilitation",
+    "Restore Movement & Function",
+    "/img/physical-medicine-banner.png",
+    "Rehabilitation and physical medicine services.",
+  ),
+  "emergency-medicine": dept(
+    "emergency-medicine",
+    "Emergency Medicine & Trauma Care",
+    "24/7 Emergency Services",
+    "/img/emergency-banner.png",
+    "Round-the-clock emergency and trauma care.",
+  ),
+  "gynaecology": dept(
+    "gynaecology",
+    "Obstetrics, Gynaecology and Fetal Medicine",
+    "Women's Health Specialists",
+    "/img/gynaecology-banner.png",
+    "Obstetrics, gynaecology and fetal medicine services.",
+  ),
+  "caritas-orthopaedics": dept(
+    "caritas-orthopaedics",
+    "Orthopaedics, Joint Replacement and Arthroscopy",
+    "Bone & Joint Experts",
+    "/img/orthopaedics-banner.png",
+    "Orthopaedic surgery, joint replacement and arthroscopy.",
+  ),
+  "general-surgery": dept(
+    "general-surgery",
+    "General, Minimal Access and Bariatric Surgery",
+    "Surgical Excellence",
+    "/img/general-surgery-banner.webp",
+    "General and minimal access surgical services.",
+  ),
+  "anaesthesiology": dept(
+    "anaesthesiology",
+    "Anaesthesiology",
+    "Safe Anaesthesia Care",
+    "/img/anaesthesiology-banner.png",
+    "Anaesthesia and perioperative care.",
+  ),
+  "community-medicine": dept(
+    "community-medicine",
+    "Community Medicine",
+    "Public Health & Prevention",
+    "/img/community-medicine-banner.png",
+    "Community health and preventive medicine programs.",
+  ),
+  "ophthalmology": dept(
+    "ophthalmology",
+    "Ophthalmology",
+    "Eye Care Specialists",
+    "/img/ophthalmology-banner.png",
+    "Comprehensive eye care and vision services.",
+  ),
+  "neonatology": dept(
+    "neonatology",
+    "Neonatology",
+    "Newborn Intensive Care",
+    "/img/neonatology-banner.png",
+    "Specialized care for newborns and premature infants.",
+  ),
+  "endocrinology": dept(
+    "endocrinology",
+    "Endocrinology",
+    "Hormone & Metabolic Disorders",
+    "/img/endocrinology-banner.png",
+    "Diagnosis and treatment of endocrine disorders.",
+  ),
+  "dental": dept(
+    "dental",
+    "Dental, Oral & Maxillofacial Surgery",
+    "Dental Excellence",
+    "/img/dental-banner.png",
+    "Dental, oral and maxillofacial surgical services.",
+  ),
+  "caritas-ent-audiology": dept(
+    "caritas-ent-audiology",
+    "Department of ENT & Audiology",
+    "ENT & Hearing Care",
+    "/img/ent-banner.png",
+    "ENT and audiology services.",
+  ),
+  "interventional-radiology": dept(
+    "interventional-radiology",
+    "Interventional Radiology, Radio Diagnosis and Imaging",
+    "Advanced Imaging & Intervention",
+    "/img/radiology-banner.png",
+    "Interventional radiology and diagnostic imaging.",
+  ),
+  "pathology": dept(
+    "pathology",
+    "Pathology, Microbiology & Laboratory Medicine",
+    "Diagnostic Laboratory",
+    "/img/pathology-banner.png",
+    "Pathology and laboratory medicine services.",
+  ),
+  "psychiatry": dept(
+    "psychiatry",
+    "Psychiatry, Counseling and Psychotherapy Services",
+    "Mental Health Care",
+    "/img/psychiatry-banner.png",
+    "Psychiatry, counseling and psychotherapy.",
+  ),
+  "pulmonology": dept(
+    "pulmonology",
+    "Pulmonology & Interventional Pulmonology",
+    "Respiratory Care",
+    "/img/pulmonology-banner.png",
+    "Pulmonology and respiratory medicine.",
+  ),
+  "plastic-microvascular": dept(
+    "plastic-microvascular",
+    "Plastic and Microvascular Surgery",
+    "Reconstructive Surgery",
+    "/img/plastic-surgery-banner.png",
+    "Plastic and microvascular surgical services.",
+  ),
+  "radiology": dept(
+    "radiology",
+    "Radiology & Laboratory",
+    "Diagnostic Services",
+    "/img/radiology-banner.png",
+    "Radiology and laboratory diagnostic services.",
+  ),
+  "blood-bank": dept(
+    "blood-bank",
+    "Blood Bank",
+    "Safe Blood Services",
+    "/img/blood-bank-banner.png",
+    "Blood bank and transfusion services.",
+  ),
+  "clinical-nutrition": dept(
+    "clinical-nutrition",
+    "Clinical Nutrition",
+    "Nutrition & Dietetics",
+    "/img/clinical-nutrition-banner.png",
+    "Clinical nutrition and dietary counseling.",
+  ),
+  "physiotherapy": dept(
+    "physiotherapy",
+    "Physiotherapy",
+    "Physical Therapy",
+    "/img/physiotherapy-banner.png",
+    "Physiotherapy and rehabilitation services.",
+  ),
+};
+
+export const DEPARTMENT_SLUGS = Object.keys(DEPARTMENT_REGISTRY);

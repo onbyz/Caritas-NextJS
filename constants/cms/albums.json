@@ -1,0 +1,495 @@
+[
+  {
+    "id": 2,
+    "title": "Care in Captures",
+    "coverImage": "/media/images/File_1.jpg",
+    "images": [
+      {
+        "id": 5,
+        "src": "/media/images/File_1.jpg",
+        "description": ""
+      },
+      {
+        "id": 6,
+        "src": "/media/images/File_2.jpg",
+        "description": ""
+      },
+      {
+        "id": 7,
+        "src": "/media/images/File_3.jpg",
+        "description": ""
+      },
+      {
+        "id": 8,
+        "src": "/media/images/File_4.jpg",
+        "description": ""
+      },
+      {
+        "id": 9,
+        "src": "/media/images/File_5.jpg",
+        "description": ""
+      },
+      {
+        "id": 10,
+        "src": "/media/images/File_6.jpg",
+        "description": ""
+      },
+      {
+        "id": 11,
+        "src": "/media/images/File_7.jpg",
+        "description": ""
+      },
+      {
+        "id": 12,
+        "src": "/media/images/File_8.jpg",
+        "description": ""
+      },
+      {
+        "id": 13,
+        "src": "/media/images/File_9.jpg",
+        "description": ""
+      },
+      {
+        "id": 14,
+        "src": "/media/images/File_10.jpg",
+        "description": ""
+      },
+      {
+        "id": 15,
+        "src": "/media/images/File_11.jpg",
+        "description": ""
+      },
+      {
+        "id": 16,
+        "src": "/media/images/File_12.jpg",
+        "description": ""
+      },
+      {
+        "id": 17,
+        "src": "/media/images/File_13.jpg",
+        "description": ""
+      },
+      {
+        "id": 18,
+        "src": "/media/images/File_14.jpg",
+        "description": ""
+      },
+      {
+        "id": 19,
+        "src": "/media/images/File_15.jpg",
+        "description": ""
+      },
+      {
+        "id": 20,
+        "src": "/media/images/File_16.jpg",
+        "description": ""
+      },
+      {
+        "id": 21,
+        "src": "/media/images/File_17.jpg",
+        "description": ""
+      },
+      {
+        "id": 22,
+        "src": "/media/images/File_18.jpg",
+        "description": ""
+      },
+      {
+        "id": 23,
+        "src": "/media/images/File_19.jpg",
+        "description": ""
+      },
+      {
+        "id": 24,
+        "src": "/media/images/File_20.jpg",
+        "description": ""
+      },
+      {
+        "id": 25,
+        "src": "/media/images/File_21.jpg",
+        "description": ""
+      },
+      {
+        "id": 26,
+        "src": "/media/images/File_22.jpg",
+        "description": ""
+      },
+      {
+        "id": 27,
+        "src": "/media/images/File_23.jpg",
+        "description": ""
+      },
+      {
+        "id": 28,
+        "src": "/media/images/File_24.jpg",
+        "description": ""
+      },
+      {
+        "id": 29,
+        "src": "/media/images/File_25.jpg",
+        "description": ""
+      },
+      {
+        "id": 30,
+        "src": "/media/images/File_26.jpg",
+        "description": ""
+      },
+      {
+        "id": 31,
+        "src": "/media/images/File_27.jpg",
+        "description": ""
+      },
+      {
+        "id": 32,
+        "src": "/media/images/File_28.jpg",
+        "description": ""
+      },
+      {
+        "id": 33,
+        "src": "/media/images/File_29.jpg",
+        "description": ""
+      },
+      {
+        "id": 34,
+        "src": "/media/images/File_30.jpg",
+        "description": ""
+      },
+      {
+        "id": 35,
+        "src": "/media/images/File_31.jpg",
+        "description": ""
+      },
+      {
+        "id": 36,
+        "src": "/media/images/File_32.jpg",
+        "description": ""
+      },
+      {
+        "id": 37,
+        "src": "/media/images/File_33.jpg",
+        "description": ""
+      },
+      {
+        "id": 38,
+        "src": "/media/images/File_34.jpg",
+        "description": ""
+      },
+      {
+        "id": 39,
+        "src": "/media/images/File_35.jpg",
+        "description": ""
+      },
+      {
+        "id": 40,
+        "src": "/media/images/File_36.jpg",
+        "description": ""
+      },
+      {
+        "id": 41,
+        "src": "/media/images/File_37.jpg",
+        "description": ""
+      },
+      {
+        "id": 42,
+        "src": "/media/images/File_38.jpg",
+        "description": ""
+      },
+      {
+        "id": 43,
+        "src": "/media/images/File_39.jpg",
+        "description": ""
+      },
+      {
+        "id": 44,
+        "src": "/media/images/File_40.jpg",
+        "description": ""
+      },
+      {
+        "id": 45,
+        "src": "/media/images/File_41.jpg",
+        "description": ""
+      },
+      {
+        "id": 46,
+        "src": "/media/images/File_42.jpg",
+        "description": ""
+      },
+      {
+        "id": 47,
+        "src": "/media/images/File_43.jpg",
+        "description": ""
+      },
+      {
+        "id": 48,
+        "src": "/media/images/File_44.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Facilities & Infrastructure",
+    "coverImage": "/media/images/File_1_az4WtPT.jpg",
+    "images": [
+      {
+        "id": 49,
+        "src": "/media/images/File_1_az4WtPT.jpg",
+        "description": ""
+      },
+      {
+        "id": 50,
+        "src": "/media/images/File_2_FzDSCDx.jpg",
+        "description": ""
+      },
+      {
+        "id": 51,
+        "src": "/media/images/File_3_g30PMKe.jpg",
+        "description": ""
+      },
+      {
+        "id": 52,
+        "src": "/media/images/File_4_JdVKA7P.jpg",
+        "description": ""
+      },
+      {
+        "id": 53,
+        "src": "/media/images/File_5_8wQxD3b.jpg",
+        "description": ""
+      },
+      {
+        "id": 54,
+        "src": "/media/images/File_6_yWQYlJ3.jpg",
+        "description": ""
+      },
+      {
+        "id": 55,
+        "src": "/media/images/File_7_BqMecGp.jpg",
+        "description": ""
+      },
+      {
+        "id": 56,
+        "src": "/media/images/File_9_fmKGcMG.jpg",
+        "description": ""
+      },
+      {
+        "id": 57,
+        "src": "/media/images/File_10_TB4LRvd.jpg",
+        "description": ""
+      },
+      {
+        "id": 58,
+        "src": "/media/images/File_11_MLeRsqB.jpg",
+        "description": ""
+      },
+      {
+        "id": 59,
+        "src": "/media/images/File_12_LFEVvbt.jpg",
+        "description": ""
+      },
+      {
+        "id": 60,
+        "src": "/media/images/File_13_WOxMAwH.jpg",
+        "description": ""
+      },
+      {
+        "id": 61,
+        "src": "/media/images/File_14_GtUEVTK.jpg",
+        "description": ""
+      },
+      {
+        "id": 62,
+        "src": "/media/images/File_15_yc72yI2.jpg",
+        "description": ""
+      },
+      {
+        "id": 63,
+        "src": "/media/images/File_16_oe9WzTG.jpg",
+        "description": ""
+      },
+      {
+        "id": 64,
+        "src": "/media/images/File_17_PCdxjAM.jpg",
+        "description": ""
+      },
+      {
+        "id": 65,
+        "src": "/media/images/File_18_y3Xtuhu.jpg",
+        "description": ""
+      },
+      {
+        "id": 66,
+        "src": "/media/images/File_19_CwOJTTd.jpg",
+        "description": ""
+      },
+      {
+        "id": 67,
+        "src": "/media/images/File_20_qorQiZC.jpg",
+        "description": ""
+      },
+      {
+        "id": 68,
+        "src": "/media/images/File_21_ml0XAHX.jpg",
+        "description": ""
+      },
+      {
+        "id": 69,
+        "src": "/media/images/File_22_GlMWco2.jpg",
+        "description": ""
+      },
+      {
+        "id": 70,
+        "src": "/media/images/File_23_mm7DFJ1.jpg",
+        "description": ""
+      },
+      {
+        "id": 71,
+        "src": "/media/images/File_24_ImPdLmM.jpg",
+        "description": ""
+      },
+      {
+        "id": 72,
+        "src": "/media/images/File_25_ZqXYF9T.jpg",
+        "description": ""
+      },
+      {
+        "id": 73,
+        "src": "/media/images/File_26_Icdg0Fn.jpg",
+        "description": ""
+      },
+      {
+        "id": 74,
+        "src": "/media/images/File_27_KJtKC04.jpg",
+        "description": ""
+      },
+      {
+        "id": 75,
+        "src": "/media/images/File_28_awWMQA2.jpg",
+        "description": ""
+      },
+      {
+        "id": 76,
+        "src": "/media/images/File_29_edDQIrj.jpg",
+        "description": ""
+      },
+      {
+        "id": 77,
+        "src": "/media/images/File_30_JS2y1vv.jpg",
+        "description": ""
+      },
+      {
+        "id": 78,
+        "src": "/media/images/File_31_CbgLS40.jpg",
+        "description": ""
+      },
+      {
+        "id": 79,
+        "src": "/media/images/File_32_6I6nTnL.jpg",
+        "description": ""
+      },
+      {
+        "id": 80,
+        "src": "/media/images/File_33_WK8ptB7.jpg",
+        "description": ""
+      },
+      {
+        "id": 81,
+        "src": "/media/images/File_34_puP07kc.jpg",
+        "description": ""
+      },
+      {
+        "id": 82,
+        "src": "/media/images/File_35_XgWmprf.jpg",
+        "description": ""
+      },
+      {
+        "id": 83,
+        "src": "/media/images/File_36_qOtJWCg.jpg",
+        "description": ""
+      },
+      {
+        "id": 84,
+        "src": "/media/images/File_37_IOjDDbL.jpg",
+        "description": ""
+      },
+      {
+        "id": 85,
+        "src": "/media/images/File_38_oCrUFDh.jpg",
+        "description": ""
+      },
+      {
+        "id": 86,
+        "src": "/media/images/File_39_eW1FXmi.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Caritas College of Nursing",
+    "coverImage": "/media/images/File_1_cDPB32A.jpg",
+    "images": [
+      {
+        "id": 87,
+        "src": "/media/images/File_1_cDPB32A.jpg",
+        "description": ""
+      },
+      {
+        "id": 88,
+        "src": "/media/images/File_2_Wdz848P.jpg",
+        "description": ""
+      },
+      {
+        "id": 89,
+        "src": "/media/images/File_3_8aQFhCx.jpg",
+        "description": ""
+      },
+      {
+        "id": 90,
+        "src": "/media/images/File_4_OroX0kw.jpg",
+        "description": ""
+      },
+      {
+        "id": 91,
+        "src": "/media/images/File_5_BEA8s12.jpg",
+        "description": ""
+      },
+      {
+        "id": 92,
+        "src": "/media/images/File_6_HrtjC42.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Caritas College of Pharmacy",
+    "coverImage": "/media/images/File_1_xvx9Cxb.jpg",
+    "images": [
+      {
+        "id": 93,
+        "src": "/media/images/File_1_xvx9Cxb.jpg",
+        "description": ""
+      },
+      {
+        "id": 94,
+        "src": "/media/images/File_2_FlxIJFE.jpg",
+        "description": ""
+      },
+      {
+        "id": 95,
+        "src": "/media/images/File_3_yImrg3u.jpg",
+        "description": ""
+      },
+      {
+        "id": 96,
+        "src": "/media/images/File_4_7Ufqcvq.jpg",
+        "description": ""
+      },
+      {
+        "id": 97,
+        "src": "/media/images/File_5_BBaNDAb.jpg",
+        "description": ""
+      }
+    ]
+  }
+]

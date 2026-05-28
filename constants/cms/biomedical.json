@@ -1,0 +1,372 @@
+[
+  {
+    "id": 39,
+    "total_bags": "13628",
+    "yellow_bags": "7822",
+    "red_bags": "5480",
+    "white_bags": "132",
+    "brownish_yellow_bags": "167",
+    "blue_bags": "27",
+    "month_year": "2026-04-01"
+  },
+  {
+    "id": 16,
+    "total_bags": "11775",
+    "yellow_bags": "6804",
+    "red_bags": "4653",
+    "white_bags": "106",
+    "brownish_yellow_bags": "184",
+    "blue_bags": "28",
+    "month_year": "2026-03-01"
+  },
+  {
+    "id": 38,
+    "total_bags": "12787",
+    "yellow_bags": "7465",
+    "red_bags": "4697",
+    "white_bags": "143",
+    "brownish_yellow_bags": "183",
+    "blue_bags": "29",
+    "month_year": "2026-02-01"
+  },
+  {
+    "id": 37,
+    "total_bags": "13718",
+    "yellow_bags": "8123",
+    "red_bags": "5234",
+    "white_bags": "154",
+    "brownish_yellow_bags": "178",
+    "blue_bags": "29",
+    "month_year": "2026-01-01"
+  },
+  {
+    "id": 36,
+    "total_bags": "13143",
+    "yellow_bags": "7539",
+    "red_bags": "5256",
+    "white_bags": "126",
+    "brownish_yellow_bags": "189",
+    "blue_bags": "33",
+    "month_year": "2025-12-01"
+  },
+  {
+    "id": 35,
+    "total_bags": "12659",
+    "yellow_bags": "7290",
+    "red_bags": "5047",
+    "white_bags": "136",
+    "brownish_yellow_bags": "156",
+    "blue_bags": "30",
+    "month_year": "2025-11-01"
+  },
+  {
+    "id": 34,
+    "total_bags": "13256",
+    "yellow_bags": "7647",
+    "red_bags": "5260",
+    "white_bags": "151",
+    "brownish_yellow_bags": "168",
+    "blue_bags": "30",
+    "month_year": "2025-10-01"
+  },
+  {
+    "id": 33,
+    "total_bags": "13531",
+    "yellow_bags": "8036",
+    "red_bags": "5151",
+    "white_bags": "147",
+    "brownish_yellow_bags": "166",
+    "blue_bags": "31",
+    "month_year": "2025-09-01"
+  },
+  {
+    "id": 32,
+    "total_bags": "12842",
+    "yellow_bags": "7447",
+    "red_bags": "5054",
+    "white_bags": "137",
+    "brownish_yellow_bags": "173",
+    "blue_bags": "31",
+    "month_year": "2025-08-01"
+  },
+  {
+    "id": 31,
+    "total_bags": "13688",
+    "yellow_bags": "7873",
+    "red_bags": "5411",
+    "white_bags": "186",
+    "brownish_yellow_bags": "162",
+    "blue_bags": "56",
+    "month_year": "2025-07-01"
+  },
+  {
+    "id": 30,
+    "total_bags": "12217",
+    "yellow_bags": "7058",
+    "red_bags": "4850",
+    "white_bags": "133",
+    "brownish_yellow_bags": "149",
+    "blue_bags": "27",
+    "month_year": "2025-06-01"
+  },
+  {
+    "id": 29,
+    "total_bags": "12398",
+    "yellow_bags": "7137",
+    "red_bags": "4974",
+    "white_bags": "120",
+    "brownish_yellow_bags": "137",
+    "blue_bags": "30",
+    "month_year": "2025-05-01"
+  },
+  {
+    "id": 28,
+    "total_bags": "11557",
+    "yellow_bags": "6631",
+    "red_bags": "4660",
+    "white_bags": "114",
+    "brownish_yellow_bags": "124",
+    "blue_bags": "28",
+    "month_year": "2025-04-01"
+  },
+  {
+    "id": 27,
+    "total_bags": "11650",
+    "yellow_bags": "6761",
+    "red_bags": "4724",
+    "white_bags": "98",
+    "brownish_yellow_bags": "67c",
+    "blue_bags": "0",
+    "month_year": "2025-02-01"
+  },
+  {
+    "id": 26,
+    "total_bags": "13627",
+    "yellow_bags": "8006",
+    "red_bags": "5406",
+    "white_bags": "145",
+    "brownish_yellow_bags": "69",
+    "blue_bags": "1",
+    "month_year": "2025-01-01"
+  },
+  {
+    "id": 25,
+    "total_bags": "11932",
+    "yellow_bags": "6809",
+    "red_bags": "4915",
+    "white_bags": "116",
+    "brownish_yellow_bags": "92",
+    "blue_bags": "0",
+    "month_year": "2024-12-01"
+  },
+  {
+    "id": 24,
+    "total_bags": "11765",
+    "yellow_bags": "6630",
+    "red_bags": "4910",
+    "white_bags": "120",
+    "brownish_yellow_bags": "105",
+    "blue_bags": "0",
+    "month_year": "2024-11-01"
+  },
+  {
+    "id": 23,
+    "total_bags": "12564",
+    "yellow_bags": "7134",
+    "red_bags": "4953",
+    "white_bags": "127",
+    "brownish_yellow_bags": "104",
+    "blue_bags": "246",
+    "month_year": "2024-09-01"
+  },
+  {
+    "id": 22,
+    "total_bags": "13585",
+    "yellow_bags": "7673",
+    "red_bags": "5424",
+    "white_bags": "134",
+    "brownish_yellow_bags": "117",
+    "blue_bags": "237",
+    "month_year": "2024-08-01"
+  },
+  {
+    "id": 21,
+    "total_bags": "13164",
+    "yellow_bags": "7753",
+    "red_bags": "4944",
+    "white_bags": "126",
+    "brownish_yellow_bags": "96",
+    "blue_bags": "245",
+    "month_year": "2024-07-01"
+  },
+  {
+    "id": 20,
+    "total_bags": "17229",
+    "yellow_bags": "10919",
+    "red_bags": "5854",
+    "white_bags": "108",
+    "brownish_yellow_bags": "118",
+    "blue_bags": "230",
+    "month_year": "2024-05-01"
+  },
+  {
+    "id": 19,
+    "total_bags": "15935",
+    "yellow_bags": "10206",
+    "red_bags": "5216",
+    "white_bags": "135",
+    "brownish_yellow_bags": "145",
+    "blue_bags": "233",
+    "month_year": "2024-04-01"
+  },
+  {
+    "id": 18,
+    "total_bags": "11464",
+    "yellow_bags": "6924",
+    "red_bags": "4160",
+    "white_bags": "106",
+    "brownish_yellow_bags": "111",
+    "blue_bags": "163",
+    "month_year": "2024-03-01"
+  },
+  {
+    "id": 17,
+    "total_bags": "12330",
+    "yellow_bags": "7249",
+    "red_bags": "4622",
+    "white_bags": "158",
+    "brownish_yellow_bags": "94",
+    "blue_bags": "207",
+    "month_year": "2024-02-01"
+  },
+  {
+    "id": 3,
+    "total_bags": "15378",
+    "yellow_bags": "8750",
+    "red_bags": "6030",
+    "white_bags": "133",
+    "brownish_yellow_bags": "229",
+    "blue_bags": "236",
+    "month_year": "2024-01-24"
+  },
+  {
+    "id": 4,
+    "total_bags": "13525",
+    "yellow_bags": "8118",
+    "red_bags": "5086",
+    "white_bags": "107",
+    "brownish_yellow_bags": "54",
+    "blue_bags": "160",
+    "month_year": "2023-12-04"
+  },
+  {
+    "id": 5,
+    "total_bags": "13227",
+    "yellow_bags": "8112",
+    "red_bags": "4822",
+    "white_bags": "113",
+    "brownish_yellow_bags": "24",
+    "blue_bags": "156",
+    "month_year": "2023-11-06"
+  },
+  {
+    "id": 6,
+    "total_bags": "12702",
+    "yellow_bags": "7535",
+    "red_bags": "4901",
+    "white_bags": "110",
+    "brownish_yellow_bags": "39",
+    "blue_bags": "117",
+    "month_year": "2023-10-09"
+  },
+  {
+    "id": 7,
+    "total_bags": "13384",
+    "yellow_bags": "7286",
+    "red_bags": "5862",
+    "white_bags": "111",
+    "brownish_yellow_bags": "55",
+    "blue_bags": "70",
+    "month_year": "2023-09-04"
+  },
+  {
+    "id": 8,
+    "total_bags": "10450",
+    "yellow_bags": "6618",
+    "red_bags": "3644",
+    "white_bags": "87",
+    "brownish_yellow_bags": "40",
+    "blue_bags": "61",
+    "month_year": "2023-08-07"
+  },
+  {
+    "id": 9,
+    "total_bags": "13017",
+    "yellow_bags": "7895",
+    "red_bags": "4959",
+    "white_bags": "76",
+    "brownish_yellow_bags": "39",
+    "blue_bags": "48",
+    "month_year": "2023-07-03"
+  },
+  {
+    "id": 10,
+    "total_bags": "11599",
+    "yellow_bags": "7061",
+    "red_bags": "4279",
+    "white_bags": "104",
+    "brownish_yellow_bags": "56",
+    "blue_bags": "99",
+    "month_year": "2023-06-05"
+  },
+  {
+    "id": 11,
+    "total_bags": "14482",
+    "yellow_bags": "8730",
+    "red_bags": "5420",
+    "white_bags": "112",
+    "brownish_yellow_bags": "66",
+    "blue_bags": "154",
+    "month_year": "2023-05-02"
+  },
+  {
+    "id": 12,
+    "total_bags": "11210",
+    "yellow_bags": "6738",
+    "red_bags": "4273",
+    "white_bags": "90",
+    "brownish_yellow_bags": "7",
+    "blue_bags": "102",
+    "month_year": "2023-04-03"
+  },
+  {
+    "id": 13,
+    "total_bags": "12814",
+    "yellow_bags": "7675",
+    "red_bags": "4876",
+    "white_bags": "118",
+    "brownish_yellow_bags": "12",
+    "blue_bags": "133",
+    "month_year": "2023-03-06"
+  },
+  {
+    "id": 14,
+    "total_bags": "11831",
+    "yellow_bags": "6918",
+    "red_bags": "4625",
+    "white_bags": "131",
+    "brownish_yellow_bags": "3",
+    "blue_bags": "154",
+    "month_year": "2023-02-06"
+  },
+  {
+    "id": 15,
+    "total_bags": "13397",
+    "yellow_bags": "7952",
+    "red_bags": "5207",
+    "white_bags": "110",
+    "brownish_yellow_bags": "4",
+    "blue_bags": "124",
+    "month_year": "2023-01-02"
+  }
+]

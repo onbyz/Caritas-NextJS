@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{LOCALE}">
+<head>
+    <title>360 Virtual Tour | Caritas Hospital, Kottayam | 3D Panoramic View</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" id="metaViewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover" data-tdv-general-scale="0.5"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <script src="lib/tdvplayer.js?v=1714976347741"></script>
+    <link rel="preload" href="locale/en.txt?v=1714976347741" as="fetch" crossorigin="anonymous"/>
+	<link rel="preload" href="script.js?v=1714976347741" as="script"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/r/3/0_0.jpg?v=1714976347741" as="image"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/l/3/0_0.jpg?v=1714976347741" as="image"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/u/3/0_0.jpg?v=1714976347741" as="image"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/d/3/0_0.jpg?v=1714976347741" as="image"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/f/3/0_0.jpg?v=1714976347741" as="image"/>
+	<link rel="preload" href="media/panorama_6D9EA9F4_660B_786A_41D7_08EFA4BEEED4_0/b/3/0_0.jpg?v=1714976347741" as="image"/>
+	<meta property="og:title" content="360 Virtual Tour | Caritas Hospital, Kottayam | 3D Panoramic View" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Make a virtual visit to one of the best hospitals and explore the facilities such as rooms, medical equipment, imaging & diagnostic services, etc from home" />
+	<meta property="og:url" content="https://www.caritashospital.org/virtual-tour/index.html" />
+	<meta property="og:image" content="https://www.caritashospital.org/virtual-tour/socialThumbnail.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="fb:app_id" content="817622095004141" />
+	<link rel="image_src" href="https://www.caritashospital.org/virtual-tour/socialThumbnail.jpg?v=1714976347741">
+	<meta property="og:locale" content="en"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:title" content="360 Virtual Tour | Caritas Hospital, Kottayam | 3D Panoramic View"/>
+	<meta name="twitter:description" content="Make a virtual visit to one of the best hospitals and explore the facilities such as rooms, medical equipment, imaging & diagnostic services, etc from home"/>
+	<meta name="twitter:url" content="https://www.caritashospital.org/virtual-tour/index.html"/>
+	<meta name="twitter:image" content="https://www.caritashospital.org/virtual-tour/socialThumbnail.jpg?v=1714976347741"/>
+	<script src="scorm.js" type="text/javascript"></script>
+	<meta name="description" content="Make a virtual visit to one of the best hospitals and explore the facilities such as rooms, medical equipment, imaging & diagnostic services, etc from home"/>
+	<meta name="theme-color" content="#FFFFFF"/>
+    <script src="script.js?v=1714976347741"></script>
+    <style type="text/css">
+        html, body { height:100%; width:100%; height:100vh; width:100vw; margin:0; padding:0; overflow:hidden; }
+        .fill-viewport { position:fixed; top:0; left:0; right:0; bottom:0; padding:0; margin:0; overflow: hidden; }
+        .fill-viewport.landscape-left { left: env(safe-area-inset-left); }
+		.fill-viewport.landscape-right { right: env(safe-area-inset-right); }
+        #viewer { z-index:1; }
+        #preloadContainer { z-index:2; opacity:0; background-color:rgba(255,255,255,1); transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
+    </style>
+    <link rel="stylesheet" href="fonts.css?v=1714976347741">
+</head>
+<body>
+    <div id="preloadContainer" class="fill-viewport"><div style="z-index: 4; position: absolute; overflow: hidden; background-size: contain; background-image: url('loading/HTMLImage_74B3C09A_6775_8772_41D9_00132BE4E582.png'); background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; top: 35.74%; width: 99.93%; height: 17.26%" ></div><div style="z-index: 5; position: absolute; overflow: hidden; background-size: contain; background-image: url('loading/HTMLImage_73ED047D_6775_8FB6_41D9_A1165D7D90B0.gif'); background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; bottom: 3.3%; width: 99.93%; height: 9.61%" ></div><div style="z-index: 6; position: absolute; overflow: hidden; left: 0%; top: 68.2%; width: 100.00%; height: 12.17%" ><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;font-size:4.823989569752282vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:4.82vmin;font-family:'Open Sans';">Loading virtual tour. Please wait...</SPAN></SPAN></DIV></div></div></div>
+    <div id="viewer" class="fill-viewport"></div>
+</body>
+</html>

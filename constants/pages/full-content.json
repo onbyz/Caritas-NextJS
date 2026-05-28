@@ -1,0 +1,280 @@
+{
+  "about-caritas": {
+    "slug": "about-caritas",
+    "title": "About Caritas",
+    "subtitle": "Our Story of Care...",
+    "bannerImage": "/img/about-1.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/about-caritas.html"
+  },
+  "director-message": {
+    "slug": "director-message",
+    "title": "Message From The Director",
+    "subtitle": "Wishing Good Health to All",
+    "bannerImage": "/img/director.png",
+    "showEnquiry": false,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/director-message.html"
+  },
+  "governing-body": {
+    "slug": "governing-body",
+    "title": "Governing Body",
+    "subtitle": "Meet Our Hospital Leadership Team",
+    "bannerImage": "/img/H G Mar.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/governing-body.html"
+  },
+  "milestones": {
+    "slug": "milestones",
+    "title": "Forever First in Care!",
+    "subtitle": "Milestones that Put Us First on the Care Map",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/milestones.html"
+  },
+  "achievements": {
+    "slug": "achievements",
+    "title": "Awards & Achievements",
+    "subtitle": "Thoughtful Appreciations for Meaningful Practices",
+    "bannerImage": "/img/achievements.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/achievements.html"
+  },
+  "career": {
+    "slug": "career",
+    "title": "Careers",
+    "subtitle": "Join Our Team, Transform Lives",
+    "bannerImage": "/img/career.png",
+    "showEnquiry": false,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/career.html"
+  },
+  "caritas-social-responsibility": {
+    "slug": "caritas-social-responsibility",
+    "title": "Caritas Social Responsibility",
+    "subtitle": "Spreading Hope, Changing Lives",
+    "bannerImage": "/img/csr-banner.jpg",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-social-responsibility.html"
+  },
+  "ethics-committee": {
+    "slug": "ethics-committee",
+    "title": "Ethics Committee",
+    "subtitle": "Upholding Integrity in Medical Advancements",
+    "bannerImage": "/img/ethics.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/ethics-committee.html"
+  },
+  "quality-control": {
+    "slug": "quality-control",
+    "title": "Quality Control",
+    "subtitle": "Precision and Quality in Practice at Caritas Hospital",
+    "bannerImage": "/img/quality1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/quality-control.html"
+  },
+  "biomedical": {
+    "slug": "biomedical",
+    "title": "Biomedical Waste Management",
+    "subtitle": "Committed to Cleanliness, Committed to Care",
+    "bannerImage": "/img/biomedical.png",
+    "showEnquiry": false,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/biomedical.html"
+  },
+  "directions": {
+    "slug": "directions",
+    "title": "Directions to Reach",
+    "subtitle": "Navigating to Caritas Hospital Kottayam",
+    "bannerImage": "/img/plane.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/directions.html"
+  },
+  "visitors-guide": {
+    "slug": "visitors-guide",
+    "title": "Visitor Guides",
+    "subtitle": "Navigate with Ease",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/visitors-guide.html"
+  },
+  "contact-us": {
+    "slug": "contact-us",
+    "title": "Contact Us",
+    "subtitle": "Your Path to World-Class Healthcare",
+    "bannerImage": "/img/NABH1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/contact-us.html"
+  },
+  "articles": {
+    "slug": "articles",
+    "title": "Articles To Read",
+    "subtitle": "Your Guide to Better Well-Being: Caritas Articles to Read",
+    "bannerImage": "/img/right-arrow.png",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/articles.html"
+  },
+  "news-and-events": {
+    "slug": "news-and-events",
+    "title": "News & Events",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/news-and-events.html"
+  },
+  "testimonials": {
+    "slug": "testimonials",
+    "title": "Patients Testimonials",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/testimonials.html"
+  },
+  "gallery": {
+    "slug": "gallery",
+    "title": "Gallery",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/gallery.html"
+  },
+  "video-gallery": {
+    "slug": "video-gallery",
+    "title": "Video Gallery",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/video-gallery.html"
+  },
+  "organ": {
+    "slug": "organ",
+    "title": "Caritas Organ Transplant Programme",
+    "subtitle": "Licensed Multi Organ Transplantation Centre in Kerala",
+    "bannerImage": "/img/organ_transplant.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/organ.html"
+  },
+  "insurance": {
+    "slug": "insurance",
+    "title": "Insurance Partners",
+    "subtitle": "Building a Healthy Future Together",
+    "bannerImage": "/img/insurance1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/insurance.html"
+  },
+  "secondopinion": {
+    "slug": "secondopinion",
+    "title": "Second Opinion",
+    "subtitle": "Timely Insights, Informed Decision",
+    "bannerImage": "/img/second.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/secondopinion.html"
+  },
+  "caritas-mortuary-services": {
+    "slug": "caritas-mortuary-services",
+    "title": "Caritas Mortuary Services",
+    "subtitle": "Compassion in Every Farewell",
+    "bannerImage": "/img/mortuary.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-mortuary-services.html"
+  },
+  "pastoralcare": {
+    "slug": "pastoralcare",
+    "title": "Pastoral Care",
+    "subtitle": "Caritas Hospital's Pastoral Care Services",
+    "bannerImage": "/img/pastoral-care-new-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/pastoralcare.html"
+  },
+  "caritas-home-care": {
+    "slug": "caritas-home-care",
+    "title": "Caritas Home Care",
+    "subtitle": "Your Health, Your Home, Our Care",
+    "bannerImage": "/img/home-care-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/caritas-home-care.html"
+  },
+  "health-checkup-packages": {
+    "slug": "health-checkup-packages",
+    "title": "Caritas Hospital Health Checkup Packages",
+    "subtitle": "Your Path to Better Health",
+    "bannerImage": "/img/health-package-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/health-checkup-packages.html"
+  },
+  "nri-health-checkup-packages": {
+    "slug": "nri-health-checkup-packages",
+    "title": "Caritas Hospital NRI Health Checkup Packages",
+    "subtitle": "Your Path to Better Health",
+    "bannerImage": "/img/NRI.jpg",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/nri-health-checkup-packages.html"
+  },
+  "blood": {
+    "slug": "blood",
+    "title": "Blood Bank",
+    "subtitle": "Saving Lives Drop By Drop",
+    "bannerImage": "/img/blood-bank-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/blood.html"
+  },
+  "blood-bank": {
+    "slug": "blood-bank",
+    "title": "Blood Bank",
+    "subtitle": "Saving Lives Drop By Drop",
+    "bannerImage": "/img/blood-bank-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/blood-bank.html"
+  },
+  "clinical": {
+    "slug": "clinical",
+    "title": "Department of Clinical Nutrition",
+    "subtitle": "Kottayam's Nutrition-Centric Hospital",
+    "bannerImage": "/img/clinical1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/clinical.html"
+  },
+  "clinical-nutrition": {
+    "slug": "clinical-nutrition",
+    "title": "Department of Clinical Nutrition",
+    "subtitle": "Kottayam's Nutrition-Centric Hospital",
+    "bannerImage": "/img/clinical1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/clinical-nutrition.html"
+  },
+  "physiotherapy": {
+    "slug": "physiotherapy",
+    "title": "Physiotherapy",
+    "subtitle": "Best Physiotherapy Hospital in Kerala",
+    "bannerImage": "/img/physio1.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/physiotherapy.html"
+  },
+  "radiology": {
+    "slug": "radiology",
+    "title": "Radiology & Laboratory",
+    "subtitle": "Diagnostic Care Hospital In Kerala",
+    "bannerImage": "/img/radiology-banner.png",
+    "showEnquiry": true,
+    "hasHeroBanner": true,
+    "contentPath": "/content/pages/radiology.html"
+  }
+}

@@ -1,0 +1,807 @@
+/* Base hidden state */
+.slide-navbar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* Hidden off-screen */
+  width: 100% !important;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
+  transition: right 0.4s ease-in-out;
+  /* Slide animation */
+  z-index: 10000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.slide-navbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.slide-navbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.slide-navbar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+}
+
+.slide-navbar::-webkit-scrollbar-thumb:hover {
+  background: #a01467;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 1.5rem;
+  margin-top: -1rem;
+  margin-left: 2rem;
+}
+
+/* Active state: visible */
+.slide-navbar.active {
+  right: 0;
+}
+
+/* Inner content */
+.slide-navbar-content {
+  padding: 2rem;
+}
+
+/* Menu items */
+.slide-navbar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0 !important;
+}
+
+.hover-items a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* Optional: overlay effect for darkened background */
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-icon:hover {
+  cursor: pointer;
+}
+
+.navbar-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 300px;
+  height: 60px;
+}
+
+.nav-title li a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-content-title {
+  margin-left: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 215px;
+  max-width: 250px;
+}
+
+.sidebar-title {
+  position: relative;
+  height: 50px;
+  cursor: pointer;
+}
+
+.sidebar-title a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.sidebar-title a:hover {
+  color: #c61681;
+}
+
+.sidebar-title a i:hover {
+  color: #c61681;
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 250px;
+  width: 80vw;
+  height: 125vh;
+  background: #fff;
+  z-index: 10000;
+  padding: 0 1rem 1rem 1rem;
+  overflow: visible !important;
+}
+
+/* hide all inner content by default */
+.hover-content>div {
+  display: none;
+}
+
+.dept-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hover-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 0 0 0 2.5rem;
+  font-size: 14px;
+}
+
+.hover-items a {
+  color: #0072BC !important;
+}
+
+.hover-items a:hover {
+  color: #c61681 !important;
+}
+
+.slide-navbar-content a {
+  color: #000;
+}
+
+.slide-navbar-content a:hover {
+  color: #c61681;
+}
+
+.sidebar-title.active a {
+  color: #c61681 !important;
+  /* or your red shade */
+}
+
+.sidebar-title.active .fa-chevron-rightt {
+  color: #c61681 !important;
+  filter: drop-shadow(0 0 0.5px #c61681) drop-shadow(0 0 0.5px #c61681);
+}
+
+.hospital-section {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 2.5rem;
+}
+
+.hospital-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hospital-data a {
+  color: #0072BC;
+}
+
+.hospital-data a:hover {
+  color: #c61681;
+}
+
+.hospital-data p {
+  font-weight: 500;
+}
+
+.second-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 5%;
+}
+
+.first-section a,
+.second-section a {
+  color: #0072BC;
+  font-size: 14px;
+}
+
+.first-section a:hover,
+.second-section a:hover {
+  color: #c61681;
+}
+
+.academics-data a .about-section a {
+  color: #0072BC;
+  font-size: 15px;
+}
+
+.bi-chevron-right {
+  margin-left: 5px;
+}
+
+.academics-data a:hover {
+  color: #c61681;
+}
+
+.academics-data p {
+  font-weight: 500;
+}
+
+.about-links {
+  display: flex;
+  gap: 15%;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2.5rem;
+  width: 100%;
+}
+
+.about-first-links,
+.about-second-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.resource-title {
+  margin-top: 3.8rem;
+  margin-bottom: 1rem;
+}
+
+.dept-border {
+  border-right: 1px solid #59565680;
+}
+
+.middle-border {
+  border-right: 1px solid #59565680;
+}
+
+@media (min-width: 1025px) {
+  .hover-content {
+    height: 100vh !important;
+  }
+
+  .middle-border {
+    margin: 0 10% 0 2rem;
+  }
+
+  .hover-content {
+    top: 150px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .dept-first-section {
+    width: 60%;
+  }
+
+  .dept-second-section {
+    width: 40%;
+  }
+
+  .academics-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1501px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+}
+
+.academics-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .tablet-hidden {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tablet-hidden {
+    display: none;
+  }
+
+  .nav-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 185px;
+    max-width: 200px;
+  }
+
+  .nav-logo {
+    width: 200px;
+    max-width: 250px;
+    height: 40px;
+  }
+
+  .slide-navbar-content a {
+    font-size: 14px;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hover-content-title {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .hover-items {
+    margin: 0;
+  }
+
+  .dept-section {
+    flex-direction: column;
+  }
+
+  .hover-items {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 85%;
+  }
+
+  .hover-items a {
+    font-size: 12px;
+  }
+
+  .hospital-section {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    max-width: 85%;
+  }
+
+  .academics-section, .about-section {
+    margin: 0;
+  }
+
+  .slide-navbar-content ul {
+    margin-top: 1.5rem !important;
+  }
+
+  .about-links {
+    gap: 5%;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+
+  .second-section {
+    width: 85%;
+  }
+
+  .middle-border {
+    border-right: none;
+    border-bottom: 1px solid #59565680;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 85%;
+  }
+
+  .dept-border {
+    border-right: none;
+    border-bottom: 1px solid #59565680;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 85%;
+  }
+
+  .about-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-contents{
+    max-width: 560px !important;
+  }
+
+  .article-title {
+    max-width: 560px;
+  }
+}
+
+/* Hide only on tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hide_tablet {
+    display: none !important;
+  }
+
+  .box-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .box-container {
+    width: 100% !important;
+  }
+}
+
+
+@media (min-width: 767px) and (max-width: 1473px) {
+  .tab-navbar nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+  .desktop-navbar {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .menu-container {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .academics-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.5rem 0;
+  }
+
+  .neuro-dnb {
+    margin-top: 1rem;
+  }
+}
+
+.menu-container {
+  display: none !important;
+}
+
+@media (min-width: 1473px) {
+  .desktop-navbar {
+    display: block !important;
+  }
+
+  .tab-navbar {
+    display: none !important;
+  }
+}
+
+.tab-desktop-menu {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  margin-right: 2% !important;
+}
+
+@media (max-width: 768px) {
+  #cbp-hrmenu {
+    display: none
+  }
+  
+  .navbar-contact {
+    margin-top: 2rem;
+  }
+
+  .mobile-view-menu {
+    display: block;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .close-btn img {
+    max-width: 42px;
+    max-height: 42px;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .menu-link:hover {
+    color: #c61681;
+  }
+
+  .menu-link.active {
+    color: #c61681;
+  }
+
+  .menu-link.has-submenu i {
+    transition: transform 0.3s ease;
+    color: #000;
+  }
+
+  .menu-link.has-submenu.active i {
+    transform: rotate(90deg);
+    color: #c61681;
+  }
+
+  /* Submenu Styles */
+  .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu.active {
+    max-height: 3000px;
+  }
+
+  .submenu-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 10px;
+    text-decoration: none;
+    color: #0072BC;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .submenu-link.has-subsubmenu.active i {
+    transform: rotate(90deg);
+  }
+
+  .submenu-link.has-subsubmenu {
+    cursor: pointer;
+    font-size: 18px !important;
+  }
+
+  .submenu-link:hover {
+    color: #c61681;
+    background: #fff;
+  }
+  .subsubmenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .subsubmenu.active {
+    max-height: 1000px;
+  }
+
+  .subsubmenu-item:last-child {
+    border-bottom: none;
+  }
+
+  .subsubmenu-link {
+    display: block;
+    padding: 10px 20px 10px 50px;
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    transition: all 0.3s ease;
+  }
+
+  .subsubmenu-link:hover {
+    color: #c61681;
+    background: #fff;
+    padding-left: 55px;
+  }
+
+  .subsubmenu-item a {
+    color: #0072BC !important;
+    font-size: 16px !important;
+  }
+
+  .hospital-name {
+    color: #0072BC !important;
+    font-size: 18px !important;
+  }
+
+  .menu-item ul {
+    margin: 0 !important;
+  }
+
+  .subtitle {
+    font-size: 18px;
+
+  }
+
+  .submenu-item {
+    background-color: #fff;
+  }
+
+  .mobile-hospital {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tab-navbar {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .image-slider img {
+    margin-top: 0px !important;
+    animation: fadeInRight 1s;
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-numbers {
+    display: flex;
+  } 
+}
+
+@media (min-width: 769px) {
+  .mobile-view-menu {
+    display: none !important;
+  }
+}
+
+.nav-logo-mobile {
+  width: 300px;
+  height: 60px;
+}
+
+@media (max-width: 375px) {
+  .nav-logo-mobile {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .hospital-section {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 2.5rem;
+  }
+}
+
+.image-slider img {
+  margin-top: -149px;
+  animation: fadeInRight 1s;
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.image-slider img.active {
+  display: block;
+}
+
+.swiper-slide img {
+  width: 100% !important;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.pagination .page-link {
+    color: #000;
+    margin: 0 4px;
+    border-radius: 2px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #c61681;
+    border-color: #c61681;
+}
+
+/* Mobile pagination */
+@media (max-width: 576px) {
+    .pagination .page-number,
+    .pagination .page-ellipsis {
+        display: none;
+    }
+
+    .pagination .page-info {
+        display: inline-block;
+        font-size: 14px;
+        padding: 6px 12px;
+        white-space: nowrap;
+    }
+
+    .pagination {
+        gap: 6px;
+    }
+}
+
+/* Desktop: hide page-info */
+@media (min-width: 577px) {
+    .pagination .page-info {
+        display: none;
+    }
+}

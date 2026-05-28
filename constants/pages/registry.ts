@@ -1,0 +1,223 @@
+export type StaticPageConfig = {
+  slug: string;
+  title: string;
+  subtitle: string;
+  bannerImage: string;
+  showEnquiry?: boolean;
+  intro?: string;
+};
+
+export const STATIC_PAGE_REGISTRY: Record<string, StaticPageConfig> = {
+  "about-caritas": {
+    slug: "about-caritas",
+    title: "About Caritas",
+    subtitle: "Our Story of Care...",
+    bannerImage: "/img/about-1.png",
+    showEnquiry: true,
+  },
+  "director-message": {
+    slug: "director-message",
+    title: "Message From The Director",
+    subtitle: "Wishing Good Health to All",
+    bannerImage: "/img/director.png",
+    showEnquiry: false,
+  },
+  "governing-body": {
+    slug: "governing-body",
+    title: "Governing Body",
+    subtitle: "Leadership & Governance",
+    bannerImage: "/img/governing-body-banner.png",
+    showEnquiry: true,
+  },
+  "milestones": {
+    slug: "milestones",
+    title: "Milestones",
+    subtitle: "Our Journey Through the Years",
+    bannerImage: "/img/milestones-banner.png",
+    showEnquiry: true,
+  },
+  achievements: {
+    slug: "achievements",
+    title: "Awards & Achievements",
+    subtitle: "Recognition of Excellence",
+    bannerImage: "/img/achievements-banner.png",
+    showEnquiry: true,
+  },
+  career: {
+    slug: "career",
+    title: "Careers at Caritas",
+    subtitle: "Join Our Team",
+    bannerImage: "/img/career-banner.png",
+    showEnquiry: true,
+  },
+  "caritas-social-responsibility": {
+    slug: "caritas-social-responsibility",
+    title: "Caritas Social Responsibility",
+    subtitle: "Serving the Community",
+    bannerImage: "/img/csr-banner.jpg",
+    showEnquiry: true,
+  },
+  "ethics-committee": {
+    slug: "ethics-committee",
+    title: "Ethics Committee",
+    subtitle: "Ethical Healthcare Practices",
+    bannerImage: "/img/ethics-banner.png",
+    showEnquiry: true,
+  },
+  "quality-control": {
+    slug: "quality-control",
+    title: "Quality Indicator",
+    subtitle: "Commitment to Quality",
+    bannerImage: "/img/quality-banner.png",
+    showEnquiry: true,
+  },
+  biomedical: {
+    slug: "biomedical",
+    title: "Biomedical Waste Management (BMW)",
+    subtitle: "Safe Waste Disposal",
+    bannerImage: "/img/biomedical-banner.png",
+    showEnquiry: true,
+  },
+  directions: {
+    slug: "directions",
+    title: "Directions to Reach",
+    subtitle: "Find Caritas Hospital",
+    bannerImage: "/img/directions-banner.png",
+    showEnquiry: true,
+  },
+  "visitors-guide": {
+    slug: "visitors-guide",
+    title: "Visitors Guide",
+    subtitle: "Information for Visitors",
+    bannerImage: "/img/visitors-guide-banner.png",
+    showEnquiry: true,
+  },
+  articles: {
+    slug: "articles",
+    title: "Articles to Read",
+    subtitle: "Health Insights",
+    bannerImage: "/img/articles-banner.png",
+    showEnquiry: true,
+  },
+  "news-and-events": {
+    slug: "news-and-events",
+    title: "News & Events",
+    subtitle: "Latest Updates",
+    bannerImage: "/img/news-banner.png",
+    showEnquiry: true,
+  },
+  testimonials: {
+    slug: "testimonials",
+    title: "Patient Testimonials",
+    subtitle: "Stories of Healing",
+    bannerImage: "/img/testimonials-banner.png",
+    showEnquiry: true,
+  },
+  gallery: {
+    slug: "gallery",
+    title: "Image Gallery",
+    subtitle: "Caritas Hospital",
+    bannerImage: "/img/gallery-banner.png",
+    showEnquiry: true,
+  },
+  "video-gallery": {
+    slug: "video-gallery",
+    title: "Video Gallery",
+    subtitle: "Watch & Learn",
+    bannerImage: "/img/video-gallery-banner.png",
+    showEnquiry: true,
+  },
+  organ: {
+    slug: "organ",
+    title: "Organ Transplant Programme",
+    subtitle: "Gift of Life",
+    bannerImage: "/img/organ-banner.png",
+    showEnquiry: true,
+  },
+  insurance: {
+    slug: "insurance",
+    title: "Insurance Partners",
+    subtitle: "Cashless & Partner Networks",
+    bannerImage: "/img/insurance-banner.png",
+    showEnquiry: true,
+  },
+  secondopinion: {
+    slug: "secondopinion",
+    title: "Second Opinion",
+    subtitle: "Expert Medical Review",
+    bannerImage: "/img/second-opinion-banner.png",
+    showEnquiry: true,
+  },
+  "caritas-mortuary-services": {
+    slug: "caritas-mortuary-services",
+    title: "Caritas Mortuary Services",
+    subtitle: "Dignified Care",
+    bannerImage: "/img/mortuary-banner.png",
+    showEnquiry: true,
+  },
+  pastoralcare: {
+    slug: "pastoralcare",
+    title: "Pastoral Care",
+    subtitle: "Spiritual Support",
+    bannerImage: "/img/pastoral-banner.png",
+    showEnquiry: true,
+  },
+  "caritas-home-care": {
+    slug: "caritas-home-care",
+    title: "Caritas Home Care",
+    subtitle: "Care at Home",
+    bannerImage: "/img/homecare-banner.png",
+    showEnquiry: true,
+  },
+  "health-checkup-packages": {
+    slug: "health-checkup-packages",
+    title: "Health Checkup Packages",
+    subtitle: "Preventive Health Screenings",
+    bannerImage: "/img/health-package-banner.png",
+    showEnquiry: true,
+  },
+  "nri-health-checkup-packages": {
+    slug: "nri-health-checkup-packages",
+    title: "NRI Health Checkup Packages",
+    subtitle: "Health Packages for NRIs",
+    bannerImage: "/img/nri-health-banner.png",
+    showEnquiry: true,
+  },
+  "contact-us": {
+    slug: "contact-us",
+    title: "Contact Us",
+    subtitle: "We're Here to Help",
+    bannerImage: "/img/contact-banner.png",
+    showEnquiry: true,
+  },
+  radiology: {
+    slug: "radiology",
+    title: "Radiology & Laboratory",
+    subtitle: "Diagnostic Care Hospital In Kerala",
+    bannerImage: "/img/radiology-banner.png",
+    showEnquiry: true,
+  },
+  "blood-bank": {
+    slug: "blood-bank",
+    title: "Blood Bank",
+    subtitle: "Saving Lives Drop By Drop",
+    bannerImage: "/img/blood-bank-banner.png",
+    showEnquiry: true,
+  },
+  "clinical-nutrition": {
+    slug: "clinical-nutrition",
+    title: "Department of Clinical Nutrition",
+    subtitle: "Kottayam's Nutrition-Centric Hospital",
+    bannerImage: "/img/clinical1.png",
+    showEnquiry: true,
+  },
+  physiotherapy: {
+    slug: "physiotherapy",
+    title: "Physiotherapy",
+    subtitle: "Best Physiotherapy Hospital in Kerala",
+    bannerImage: "/img/physio1.png",
+    showEnquiry: true,
+  },
+};
+
+export const STATIC_PAGE_SLUGS = Object.keys(STATIC_PAGE_REGISTRY);

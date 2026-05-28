@@ -1,0 +1,1405 @@
+{
+  "dermatology": {
+    "h1": "Dermatology & Cosmetology",
+    "h2": "Best Dermatology Hospital in Kerala",
+    "banner": "derma1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      }
+    ],
+    "overviewHeading": "Discover Your Best Self: Your Journey to Beautiful, Healthy Skin Begins Here",
+    "overviewImage": "derma2.png",
+    "overviewParagraphs": [
+      "At Caritas Hospital, the Department of Dermatology is committed to providing top-tier dermatological care that encompasses both clinical and cosmetic aspects. We pride ourselves on offering state-of-the-art facilities and expertise to ensure that patients receive the highest quality treatment for a wide range of skin conditions.",
+      "Our team of experienced dermatologists is dedicated to addressing general dermatological concerns with precision and compassion. Whether you're dealing with common skin ailments or more complex dermatological issues, you can trust that the Department of Dermatology at Caritas Hospital is equipped to provide effective and affordable solutions"
+    ],
+    "overviewList": [],
+    "treatIntro": "The treatments and services offered by the Department include:",
+    "columns": [
+      [
+        "Microdermabrasion",
+        "Chemical peeling",
+        "Facial rejuvenation",
+        "Punch grafting",
+        "Biopsy"
+      ],
+      [
+        "Cryosurgery",
+        "Radiosurgery",
+        "Electro-surgery",
+        "Painless injection for keloids, Iontophoresis, and effective treatment for pigmentation, vitiligo, hair loss/ hair fall, unwanted hair, moles, warts, skin tags, corns and calluses are also done here."
+      ],
+      [],
+      []
+    ],
+    "plainList": [
+      "Microdermabrasion",
+      "Chemical peeling",
+      "Facial rejuvenation",
+      "Punch grafting",
+      "Biopsy",
+      "Cryosurgery",
+      "Radiosurgery",
+      "Electro-surgery",
+      "Painless injection for keloids, Iontophoresis, and effective treatment for pigmentation, vitiligo, hair loss/ hair fall, unwanted hair, moles, warts, skin tags, corns and calluses are also done here."
+    ]
+  },
+  "caritas-gastro": {
+    "h1": "Gastro Sciences",
+    "h2": "Best Gastroenterology Hospital in Kerala",
+    "banner": "Gastro Sciences 859X386.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Guiding Your Digestive Wellness Journey with Precision and Compassion.",
+    "overviewImage": "Gastro Sciences (1).png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "The Gastroenterology Department at Caritas Hospital offers a comprehensive range of services and advanced facilities to address various gastrointestinal conditions.",
+      "Our modern endoscopic theatre is equipped with state-of-the-art technologies, including endoscopy, colonoscopy, enteroscopy, and ERCP, allowing us to perform therapeutic endoscopic procedures such as EVL, polypectomy, APC, PEG/RIG-feeding, and submucosal resection.",
+      "Our outpatient facilities include a general OPD as well as specialized liver and pancreatic clinics, providing patients with dedicated care and expertise.",
+      "&nbsp;",
+      "Caritas Hospital is proud to house the only liver transplantation center in Central Travancore. Our Surgical Gastroenterology & Liver Transplant Department boasts a highly skilled team of professionals, including Hepato-pancreato-biliary & liver-organ transplant surgeons, hepatologists, pancreato-biliary endoscopy experts, Hepato-biliary radiologists/interventional radiologists, and liver transplant anesthesiologists."
+    ],
+    "overviewList": [],
+    "treatIntro": "We are dedicated to delivering the highest standards of care and employing advanced techniques to ensure the well-being of our patients. At Caritas Hospital, you can benefit from a wide range of Therapeutic Upper Gastrointestinal and Diagnostic Radiology Procedures.",
+    "columns": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "FNAC, Liver biopsy",
+      "Biliary obstruction &ndash; Percutaneous Transhepatic Biliary Drainage (PTBD)",
+      "Bile duct strictures &ndash; Stenting",
+      "Bile duct cancer &ndash; Metallic stent placement",
+      "Chronic pancreatitis &ndash; Pancreatic stenting",
+      "Pancreas Divisum &ndash; Minor pappilla stenting",
+      "Papillary carcinoma &ndash; ampullectomy",
+      "Pancreatic Pseudocyst &ndash; Cystogastrostomy, Cystoduodenostomy",
+      "Rendezvous biliary stenting",
+      "Liver tumours &ndash; Percutaneous Ethanol injection (PEI)",
+      "Variceal bleeding &ndash; Sclerotherapy, variceal banding, hemoclips",
+      "Gastric varices &ndash; Cyanoacrylate glue injection",
+      "Ulcer bleed &ndash; Injection Haemostasis, Gold probe, Haemoclips",
+      "Mallory Weiss Tears &ndash; Injection haemostasis",
+      "Foreign body &ndash; extraction",
+      "Corrosive/Peptic stricture &ndash; Savary Gilliard Dilatation, TTS Balloon dilatation",
+      "Achalasia Cardia &ndash; Rigiflex Balloon dilatation",
+      "Carcinoma Esophagus/ GE junction &ndash; Ethanol tumour necrolysis, self-expandable metal stent placement",
+      "Tracheo-esophageal fistulas &ndash; Covered SEMS placement",
+      "Pyloric stenosis &ndash; TTS balloon dilatation, SEMS placement",
+      "Gastric Polyps &ndash; Endoscopic polypectomy",
+      "Early-stage gastric/esophageal cancer &ndash; Endoscopic Mucosal Resection (EMR)",
+      "Feeding technique &ndash; PEG, PEGJ, Nasojejunal feeding tube placement",
+      "Therapeutic lower GI endoscopic procedures",
+      "Colonic polyps &ndash; Polypectomy + tattooing",
+      "Diverticular Bleed &ndash; Injection haemostasis",
+      "Carcinoma colon &ndash; Metallic stent placement",
+      "Therapeutic ERCP procedures",
+      "Bile duct stones &ndash; Basket/balloon extraction; lithotripsy"
+    ]
+  },
+  "caritas-general-medicine": {
+    "h1": "General Medicine",
+    "h2": "General Medicine Hospital in Kerala",
+    "banner": "general-medicine-1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Compassionate Care, Healing Hands: Your Health, Our Priority",
+    "overviewImage": "GM CENTER IMAGE.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "One of the hallmarks of our Department is its steadfast focus on preventive healthcare. We firmly believe that the key to promoting health and well-being lies in proactively addressing potential health issues before they become more serious. To this end, we offer a range of educational programs, routine check-ups, and proactive healthcare initiatives aimed at empowering individuals to take charge of their health.",
+      "Our commitment is to provide accessible, high-quality medical care, ensuring that patients have timely access to the care they need, when they need it most."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Evaluation and management of medical emergencies",
+      "Evaluation and management of snake bite cases",
+      "Evaluation and management of multisystem diseases",
+      "Critical care, ICU care and ventilator care",
+      "Diagnosis, treatment and follow up of diabetes, hypertension, lipid disorders etc.",
+      "Diagnosis, treatment and prevention of infectious diseases",
+      "Prophylactic vaccination for adults"
+    ]
+  },
+  "caritas-rheumatology": {
+    "h1": "Rheumatology",
+    "h2": "Best Rheumatology Hospital in Kerala",
+    "banner": "Rheumatology-1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Empowering Movement, Relieving Pain, Restoring Life",
+    "overviewImage": "Rheumatology CENTER IMAGE.png",
+    "overviewParagraphs": [
+      "According to the National Library of Medicine findings, rheumatological disorders impact about 24% of the population of India. Rural areas have the highest concentration of patients since their daily lives involve heavy manual work."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Clinical problems in joints and soft tissues&nbsp;",
+      "Heritable connective tissue diseases&nbsp;",
+      "Vasculitis",
+      "Autoimmune diseases",
+      "Pediatric Rheumatology disorders"
+    ]
+  },
+  "caritas-urology": {
+    "h1": "Urology",
+    "h2": "Best Urology Hospital in Kerala",
+    "banner": "UROLOGY-1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Where Healing and Innovation Unite in Orthopaedic Excellence.",
+    "overviewImage": "urology2.png",
+    "overviewParagraphs": [
+      "Urology treatment in India is one of the most popular and demanded medical tourism packages. It is the branch of medicine concerned with the genitourinary system and deals with severe ailments like kidney disease, urinary tract infections, bladder dysfunction, erectile dysfunction and others. People from different countries come to India for affordable urology and urologic oncology treatment, which includes prostate cancer surgery and bladder cancer surgery. Caritas has achieved the name of the best urology hospital in Kerala, which is equipped with highly experienced specialists and state-of-the-art facilities. These facilities enable us at Caritas to carry forward the legacy of India being one of the most sought-after destinations for affordable urology treatments.",
+      "Over the years, we have reinstated our position as the best urology hospital in Kerala by being at the top of the latest innovations and technological refinements in the field of urological care. With our team of highly trained urologists, we provide state-of-the-art diagnostic services to all our patients. Our urologists are backed by many support staff dedicated to providing high-quality care, excellent service and personal attention to each patient."
+    ],
+    "overviewList": [],
+    "treatIntro": "Treatment and Procedures Caritas hospital offers urological care at all levels- from primary care to tertiary-level expertise. The urologists at the hospital use state-of-the-art technology to diagnose and treat their patients. Our urologists are highly experienced in the field of urology and provide a range of treatments, including:",
+    "columns": [
+      [
+        "Complete minimally invasive urinary stone management",
+        "Rigid and flexible ureteroscopy to treat ureteral obstruction or to place ureteral stents",
+        "Tr eatment of urinary tract stones of all sizes and locations",
+        "PCNL (Percutaneous Nephrolithotomy), MIP (Minimally invasive PCNL)",
+        "Extracorporeal Shock Wave Lithotripsy (ESWL)",
+        "Non-operative management for renal/ureteric stones",
+        "Lower Tract Endourology and Flexible Cystoscopy",
+        "Conduct urological procedures like urethroplasty, radical cystectomy, incontinence procedures, nephrectomy and partial nephrectomy",
+        "Laparoscopic and endoscopic procedures"
+      ],
+      [
+        "Management of congenital problems like PUJ obstruction, obstructed megaureter etc.",
+        "Treatment for malignancies in kidney, ureter, bladder and prostate (Urologic Oncology)",
+        "Benign Enlargement of Prostate - TURP",
+        "Open Urology Procedures",
+        "Urethroplasty",
+        "Diagnosis and Treatment of Erectile Dysfunction",
+        "Treatment for Male Infertility",
+        "Andrology and Reconstructive",
+        "Renal Transplantation"
+      ],
+      [],
+      []
+    ],
+    "plainList": [
+      "Complete minimally invasive urinary stone management",
+      "Rigid and flexible ureteroscopy to treat ureteral obstruction or to place ureteral stents",
+      "Tr eatment of urinary tract stones of all sizes and locations",
+      "PCNL (Percutaneous Nephrolithotomy), MIP (Minimally invasive PCNL)",
+      "Extracorporeal Shock Wave Lithotripsy (ESWL)",
+      "Non-operative management for renal/ureteric stones",
+      "Lower Tract Endourology and Flexible Cystoscopy",
+      "Conduct urological procedures like urethroplasty, radical cystectomy, incontinence procedures, nephrectomy and partial nephrectomy",
+      "Laparoscopic and endoscopic procedures",
+      "Management of congenital problems like PUJ obstruction, obstructed megaureter etc.",
+      "Treatment for malignancies in kidney, ureter, bladder and prostate (Urologic Oncology)",
+      "Benign Enlargement of Prostate - TURP",
+      "Open Urology Procedures",
+      "Urethroplasty",
+      "Diagnosis and Treatment of Erectile Dysfunction",
+      "Treatment for Male Infertility",
+      "Andrology and Reconstructive",
+      "Renal Transplantation"
+    ]
+  },
+  "caritas-nephrology": {
+    "h1": "Nephrology & Renal Transplant",
+    "h2": "Best Nephrology Hospital in Kerala",
+    "banner": "Nephrology -Photo-01.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Where Healing and Innovation Unite in Excellence.",
+    "overviewImage": "Nephrology-2.png",
+    "overviewParagraphs": [
+      "The department of Nephrology at Caritas Hospital is one of the premier renal centres in the Central Travancore region of Kerala. The department has a large number of patients with Chronic Kidney Disease (CKD) on follow-up. The Centre adopts effective and comprehensive management strategies to reduce the progression of CKD. The Dialysis Unit here is the first dialysis centre under a private sector medical institution in the state of Kerala. The department offers specialized care to patients with various renal problems including end stage renal disease and acute kidney injury.",
+      "The department has all the latest medical equipment to provide the most effective treatment to the patients. A large maintenance Hemodialysis Program and machines for performing CRRT for the critically ill patients are the other notable features. The experienced renal nurses and dialysis technicians offer efficient support to the team of nephrologists to provide the best treatment to the patients."
+    ],
+    "overviewList": [],
+    "treatIntro": "Explore our extensive range of orthopaedic treatments and procedures at Caritas Hospital, where we are dedicated to ensuring your musculoskeletal health and well-being.",
+    "columns": [
+      [],
+      []
+    ],
+    "plainList": [
+      "Hemodialysis for acute chronic renal failures",
+      "Peritoneal dialysis",
+      "CRRT (continuous Veno-venous hemodialysis)",
+      "Plasma exchange",
+      "AV FISTULA creation, fistulogram, and percutaneous interventions",
+      "Insertion of CAPD catheter and tunneled catheter for hemodialysis",
+      "Renal biopsy"
+    ]
+  },
+  "caritas-paediatrics": {
+    "h1": "Paediatrics & Paediatrics Surgery",
+    "h2": "Best Pediatric Hospital in Kerala",
+    "banner": "matha web banner 859x 386 px-01(1).jpg",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Caring for Our Littlest Patients, Healing with Heart and Precision",
+    "overviewImage": "Paediatrics-2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "Caritas Hospital’s department of Paediatrics aims to cater to the comprehensive medical needs of children.",
+      "The department has dedicated consultants and paediatric care nurses who work 24/7 as a team to provide safe and high-quality medical care to children and adolescents.",
+      "Child-friendly ambience is the thrust of Paediatric OPD at Caritas Hospital.",
+      "Pediatric and Neonatal Surgery",
+      "The Paediatric and Neonatal Surgery Division of Caritas Hospital deals with all surgical conditions in children below the age of 14 years."
+    ],
+    "overviewList": [],
+    "treatIntro": "The department has exclusive clinics for:",
+    "columns": [
+      [
+        "General Paediatrics",
+        "Paediatric Cardiology Services",
+        "Paediatric Oncology Services",
+        "Paediatric Pulmonology Services",
+        "Paediatric &amp; Neonatal Surgeries",
+        "Paediatric &amp; Neonatal Cardiothoracic Surgeries"
+      ],
+      [
+        "Learning Disability Clinic",
+        "Paediatric Asthma Allergy Clinic",
+        "Paediatric Nutrition Clinic",
+        "Child Development Clinic",
+        "Vaccination"
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "General Paediatrics",
+      "Paediatric Cardiology Services",
+      "Paediatric Oncology Services",
+      "Paediatric Pulmonology Services",
+      "Paediatric &amp; Neonatal Surgeries",
+      "Paediatric &amp; Neonatal Cardiothoracic Surgeries",
+      "Learning Disability Clinic",
+      "Paediatric Asthma Allergy Clinic",
+      "Paediatric Nutrition Clinic",
+      "Child Development Clinic",
+      "Vaccination"
+    ]
+  },
+  "physical-medicine": {
+    "h1": "Physical Medicine and Rehabilitation",
+    "h2": "Physical Medicine Hospital in Kerala",
+    "banner": "Physiotherapy-Photo-01.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Where Healing and Innovation Unite in Orthopaedic Excellence.",
+    "overviewImage": "Physiotherapy-2.png",
+    "overviewParagraphs": [
+      "The Physical Medicine and Rehabilitation Department at Caritas offers a wide range of services to enhance and restore functional ability and quality of life in people with physical impairments/ disabilities of brain, spinal cord, nerves, bones, joints, ligaments, muscles, and tendons.",
+      "The expert PMR team led by physiatrists provides high quality, evidence-based care including physiotherapy and rehabilitative services with a multidisciplinary approach to patients of all ages."
+    ],
+    "overviewList": [],
+    "columns": [
+      [
+        "Hydrotherapy Unit",
+        "EMG Bio-feedback",
+        "Virtual rehab",
+        "Neurodevelopmental therapy",
+        "Visual Stimulation"
+      ],
+      [
+        "Electrotherapy",
+        "Exercise therapy",
+        "Occupational therapy",
+        "ADL training, Speech and Swallow Therapy"
+      ],
+      [],
+      []
+    ],
+    "plainList": [
+      "Hydrotherapy Unit",
+      "EMG Bio-feedback",
+      "Virtual rehab",
+      "Neurodevelopmental therapy",
+      "Visual Stimulation",
+      "Electrotherapy",
+      "Exercise therapy",
+      "Occupational therapy",
+      "ADL training, Speech and Swallow Therapy"
+    ]
+  },
+  "emergency-medicine": {
+    "h1": "Emergency Medicine & Trauma Care",
+    "h2": "Ambulance Service in Kerala",
+    "banner": "emergency 1.jpg",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Your Safety Bet in the Storm : Expert care in Emergency Moment",
+    "overviewImage": "EMTC-2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "The Emergency Medicine & Trauma care Department at Caritas Hospital offers comprehensive care for all Medical & Surgical Emergencies irrespective of age 24x7. The 60 bedded emergency department has dedicated team of Emergency Physicians, Emergency nurses, Emergency technicians along with a comprehensive support from expert doctors from all major specialities, which is one of the largest department in the state of Kerala.",
+      "The team is always ready to provide the best care to all patients and to fast track medical, interventional or surgical treatments. The team is highly skilled and has provided specialised care for over 50,000 patients annually.",
+      "The Emergency Department at Caritas is NABH Certified state-of-the-art department with all advanced equipments & facilities including India’s First Telemedic AI ED on Wheels ambulance system.",
+      "The team is well backed by a strong ambulance system which is ready to support all emergencies at the doorsteps of the patients.",
+      "The emergency ambulance service has supported patient transportation from patient homes, road assistance and also from hospitals."
+    ],
+    "overviewList": [],
+    "treatIntro": "Caritas heart hospital can be broadly divided into the non-invasive, interventional division of cardiovascular and thoracic Surgery and the heart transplant program. All these cardiovascular units are fully equipped with the best cardiologists to conduct a wide range of cardiothoracic and vascular surgeries under one roof. Our cardiac surgeons have proven expertise in performing complex medical procedures such as heart failure surgery, heart transplantation, coronary artery bypass surgery, heart valve replacement surgery, pediatric cardiac surgeons to treat congenital heart defects in children and others.",
+    "columns": [
+      [],
+      []
+    ],
+    "plainList": [
+      "Airway Management including intubation&nbsp;",
+      "Needle Decompression/Chest Tube Insertion&nbsp;",
+      "Pericardiocentesis",
+      "Cardioversion/Defibrillation&nbsp;",
+      "Cardio pulmonary resuscitation&nbsp;",
+      "Transcutaneous pacing&nbsp;",
+      "Central line placement&nbsp;",
+      "⁠Intraosseous (IO) Access&nbsp;",
+      "Point-of-Care Ultrasound (POCUS)&nbsp;",
+      "⁠Lumbar Puncture&nbsp;",
+      "Wound repairs including suturing&nbsp;",
+      "Foreign Body Removal&nbsp;",
+      "⁠Fracture &amp; Dislocation Management&nbsp;",
+      "Procedural Sedation etc.",
+      "24x7 Medical emergency&nbsp;",
+      "24x7 Surgical emergency&nbsp;",
+      "⁠24x7 Paediatric Emergency&nbsp;",
+      "⁠Rapid Chest pain care&nbsp;",
+      "Rapid Stroke care&nbsp;",
+      "Polytrauma care",
+      "24/7 Emergency care - medical / surgical/ interventional",
+      "Emergency Physicians trained and highly specialized in management of emergencies",
+      "Adult ER",
+      "Pediatric ER",
+      "Dedicated trauma / accident care unit",
+      "Poly-trauma care",
+      "Hyper acute stroke clinic",
+      "Rapid access chest pain clinic",
+      "Dedicated radiology suite for fast-tracking diagnosis&nbsp;",
+      "Emergency ICU care&nbsp;",
+      "Infectious diseases screening area&nbsp;",
+      "Decontamination room&nbsp;",
+      "ICU ambulances services&nbsp;",
+      "Other integrated emergency services"
+    ]
+  },
+  "gynaecology": {
+    "h1": "Obstetrics, Gynaecology and Fetal Medicine",
+    "h2": "Best Gynecology Hospital in Kerala",
+    "banner": "gynaecolgy-banner.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Empowering Women's Health, Celebrating New Beginnings",
+    "overviewImage": "gyneac 2.png",
+    "overviewParagraphs": [
+      "The department of Obstetrics and Gynaecology in Caritas Hospital is one of the most advanced facilities of its kind in the region. The department offers a wide range of highly specialized services for comprehensive management of health problems in women of all ages",
+      "The exceptional team of doctors comprises experts from sub-specialties including obstetrics, gynecology, infertility management, reproductive medicine, fetal medicine and clinical & interventional imaging. Multidisciplinary in approach, they provide high quality, protocol-based treatment to patients..",
+      "The department has an outpatient wing, an inpatient wing, dedicated surgical suites and ICUs, labour suites, a state-of-the-art clinical imaging unit, and a 24 hour unit for handling all emergencies.",
+      "The department performs Vaginal Hysterectomy, Non-descend Vaginal Hysterectomy, Vault prolapsed surgery, sacrospinous colpopexy, advanced laparoscopy and hysteroscopy forremoval of uterus, uterine fibroids, endometriosis, endometrial cyst, uterine septum and uterine synechiae."
+    ],
+    "overviewList": [],
+    "columns": [],
+    "plainList": []
+  },
+  "caritas-orthopaedics": {
+    "h1": "Orthopaedics, Joint Replacement and Arthroscopy",
+    "h2": "Best Orthopaedic Hospital in Kerala",
+    "banner": "ortho (1).png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Where Healing and Innovation Unite in Orthopaedic Excellence.",
+    "overviewImage": "ortho (2).png",
+    "overviewParagraphs": [
+      "At Caritas Hospital, our Orthopaedics, Joint Replacement, and Arthroscopy Department offer cutting-edge treatments, including minimally invasive arthroscopy, interlocking nailing with advanced imaging, total joint replacements, Ilizarov ring fixators, and expert care for fractures and bone tumors. Our Level III emergency care unit, staffed by a dedicated team of emergency medicine, neurosurgery, orthopaedic, and general surgery specialists, provides 24/7 support.",
+      "We maintain a six-bed Emergency ICU with a 1:1 patient-to-nurse ratio and a specialized stainless steel laminar flow operation theater exclusively for orthopaedics, equipped with C-arm facilities for precision hip and spine surgeries. Caritas Hospital is committed to delivering top-notch orthopaedic and emergency care with skill and innovation."
+    ],
+    "overviewList": [],
+    "treatIntro": "Explore our extensive range of orthopaedic treatments and procedures at Caritas Hospital, where we are dedicated to ensuring your musculoskeletal health and well-being.",
+    "columns": [
+      [
+        "Single bundle ACL and PCL reconstruction",
+        "Microfracture",
+        "Arthroscopic Assisted Fracture Fixation",
+        "Bankart's repair",
+        "Subacromial decompression",
+        "Mini open rotator cuff repair"
+      ],
+      [
+        "Arthroscopic rotator cuff repair",
+        "Ankle fusion",
+        "Management of nonunion and bone loss with Illizarov technique",
+        "Tumour surgeries limb salvage with custom made prosthesis",
+        "Correction of limb deformities"
+      ],
+      [
+        "Osteotomies for deformity correction, nonunion and correction of misalignment (HTO)",
+        "Paediatric Orthopaedics (Fractures and Deformities)",
+        "All type of complications fracture fixations",
+        "Polytrauma Management"
+      ]
+    ],
+    "plainList": [
+      "Total Knee Arthroplasty",
+      "Total Hip Arthroplasty",
+      "Total Shoulder Arthroplasty (Normal & Reverse Shoulder)",
+      "Total Elbow Arthroplasty",
+      "Arthroscopy of Knee, Shoulder and Ankle: Single bundle ACL and PCL reconstruction",
+      "Microfracture",
+      "Arthroscopic Assisted Fracture Fixation",
+      "Bankart's repair",
+      "Subacromial decompression",
+      "Mini open rotator cuff repair",
+      "Arthroscopic rotator cuff repair",
+      "Ankle fusion",
+      "Management of nonunion and bone loss with Illizarov technique",
+      "Tumour surgeries limb salvage with custom made prosthesis",
+      "Correction of limb deformities",
+      "Osteotomies for deformity correction, nonunion and correction of misalignment (HTO)",
+      "Paediatric Orthopaedics (Fractures and Deformities)",
+      "All type of complications fracture fixations",
+      "Polytrauma Management",
+      "FDA-approved CT-based robotic system",
+      "Data insights for personalized knee and hip surgeries",
+      "Higher Precision",
+      "Smaller Incision",
+      "Quick Recovery",
+      "Less Pain Minimal Ligament Release"
+    ]
+  },
+  "general-surgery": {
+    "h1": "General, Minimal Access and Bariatric Surgery (General Surgery)",
+    "h2": "General Surgery Hospital in Kerala",
+    "banner": "general-surgery-banner.webp",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Pioneering Surgical Excellence, With Precision, Compassion, and Lifelong Transformation",
+    "overviewImage": "general-surgery.jpg",
+    "overviewParagraphs": [
+      "The Department of General Surgery at the Caritas Hospital offers advanced surgical care and support for patients with acute illness or injury, based on a multi-disciplinary approach.",
+      "The team here, comprising highly experienced surgeons, is capable of handling even the most complicated cases. They provide evidence-based medical care with unparalleled expertise and state-of-the-art technical support, adhering to global treatment protocols.",
+      "The Department has modern surgical operation theatres with facilities for major open and minimal access operations. Moreover, the Department is one of the finest centres in the region, offering outpatient, inpatient and 24/7 Emergency Care."
+    ],
+    "overviewList": [],
+    "treatIntro": "Comprehensive general surgical service with three units for integrated all-round surgical care backed by dedicated anesthesiology and critical care teams.",
+    "columns": [
+      [
+        "Head and neck surgery including thyroid, parotid, neck nodes.",
+        "Surgical option for conventional mastectomy/breast reconstruction/breast conservative surgery/oncoplastic breast",
+        "OP Services on all weekdays",
+        "24 hour emergency surgical services",
+        "All major and minor general surgical procedures",
+        "All basic and advanced laparoscopic procedures",
+        "All gastrointestinal surgeries (both open and laparoscopic)",
+        "Head and neck surgeries"
+      ],
+      [
+        "Integrated breast care programmes; clinical examination, FNAC, mammography, breast surgeries, mastectomy, breast conservation and reconstruction",
+        "Management of hemorrhoids; open surgery, stapler haemorrhoidectomy , banding , infra red coagulation",
+        "Comprehensive diabetic foot management",
+        "Varicose vein surgery",
+        "Open and laparoscopic surgery for hernia",
+        "Pilonidal sinus surgery; excision and multiple Z plasty",
+        "Dedicated obesity clinic; dietary advice, exercise training, psychotherapy and cosmetic surgery",
+        "Dedicated bariatric surgical team"
+      ],
+      [],
+      []
+    ],
+    "plainList": [
+      "Head and neck surgery including thyroid, parotid, neck nodes.",
+      "Surgical option for conventional mastectomy/breast reconstruction/breast conservative surgery/oncoplastic breast",
+      "OP Services on all weekdays",
+      "24 hour emergency surgical services",
+      "All major and minor general surgical procedures",
+      "All basic and advanced laparoscopic procedures",
+      "All gastrointestinal surgeries (both open and laparoscopic)",
+      "Head and neck surgeries",
+      "Integrated breast care programmes; clinical examination, FNAC, mammography, breast surgeries, mastectomy, breast conservation and reconstruction",
+      "Management of hemorrhoids; open surgery, stapler haemorrhoidectomy , banding , infra red coagulation",
+      "Comprehensive diabetic foot management",
+      "Varicose vein surgery",
+      "Open and laparoscopic surgery for hernia",
+      "Pilonidal sinus surgery; excision and multiple Z plasty",
+      "Dedicated obesity clinic; dietary advice, exercise training, psychotherapy and cosmetic surgery",
+      "Dedicated bariatric surgical team"
+    ]
+  },
+  "anaesthesiology": {
+    "h1": "Anaesthesiology",
+    "h2": "Anaesthesia Hospital in Kerala",
+    "banner": "anastesia1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Facilties Offered"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Silencing Pain, Elevating Comfort: Where Every Breath Matters.",
+    "overviewImage": "anastesia2.png",
+    "overviewParagraphs": [
+      "The Department of Anaesthesiology and Critical Care provides inter-disciplinary medical care based on applications of anaesthesia in surgery, diagnostics, critical care and pain management. The ALS/BLS trained team of anaesthesiologists in the Anaesthesiology Department efficiently extends expert services to all specialties. The high-tech monitoring and life-saving equipment and other facilities also make the Anaesthesiology Department of Caritas one of the best in Kerala.",
+      "The Department provides anaesthesia services to various surgical specialties and super specialties. The Anaesthesia Department also provides services for procedures outside the theatres like ERCP.",
+      "The pre-anaesthesia clinic treats and screens surgical patients on an outpatient basis. The anaesthetists visit patients admitted for surgeries on the previous day of surgery. Labor analgesia also rendered by the department when required."
+    ],
+    "overviewList": [],
+    "columns": [
+      [
+        "Latest anesthesia workstations and monitors",
+        "Ventilators",
+        "Ultrasound-guided line insertion and nerve blocks"
+      ],
+      [
+        "Echo machine",
+        "Gadgets for difficult intubations including fiber-optic bronchoscope, video laryngoscope and intubating LMA."
+      ],
+      [],
+      []
+    ],
+    "plainList": [
+      "Latest anesthesia workstations and monitors",
+      "Ventilators",
+      "Ultrasound-guided line insertion and nerve blocks",
+      "Echo machine",
+      "Gadgets for difficult intubations including fiber-optic bronchoscope, video laryngoscope and intubating LMA."
+    ]
+  },
+  "community-medicine": {
+    "h1": "Community Medicine",
+    "h2": "Healthcare Beyond Limits",
+    "banner": "community medicine 1.jpg",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Continuity of Care for Underserved Populations",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "Department of Community Medicine works in improving health care delivery models in the community. Health service delivery models play a significant role in access to health care. Outreach services acts as a means to enhance health of people in underserved areas. Outreach activity shall provide a range of services to the needy, as well as continuity of care for underserved populations.",
+      "&nbsp;",
+      "&nbsp;",
+      "Book An Appointment"
+    ],
+    "overviewList": [
+      "Provision of medical support to adopted community block with designated community projects- Nalpathimala Karuthal community project",
+      "Technical and medical support to health camps, health awareness programs and health exhibition",
+      "Provision of health care services to the underserved population through sustainable health care delivery models- Caritas Lifeboat",
+      "School health programs including health screening",
+      "Collaboration with local self government and involvement in LSG health projects- eg. CAN Kottayam mammogram project",
+      "Capacity Building of local people",
+      "Collaborative activities with Government / Non-government agencies to support and implement health programs",
+      "Community based palliative home care services"
+    ],
+    "columns": [],
+    "plainList": []
+  },
+  "ophthalmology": {
+    "h1": "Ophthalmology",
+    "h2": "Eye Hospital in Kerala",
+    "banner": "optamology1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Facilities Offered"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Dedicated to the Tiniest Warriors: Where Hope Meets Healing.",
+    "overviewImage": "optamology2.png",
+    "overviewParagraphs": [
+      "The department of Ophthalmology provides both basic and specialized eye care services for patients. We have a team of trained and experienced consultants, capable of offering specialized treatment for a range of eye problems. The department also has state-of-the-art equipment and technical facilities to provide quality treatment. These include argon laser for treatment of diabetic eye diseases and computerized visual field analyzers for assessment of glaucoma. The consultants are also trained in optometry and they help in the prescription of glasses for both adults and children.",
+      "The department is equipped with a world class theatre facility and is specialized in painless, no-injection cataract surgery (phacoemulsification). The Department also specializes in adult and pediatric squint evaluation and surgery.The other specialized services provided by the Department include pediatric ophthalmology, glaucoma diseases and treatment and diabetic retinopathy treatment."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Operating Microscope Carl Zeiss (Germany)",
+      "Sovereign phacoemulsification system with White Star (USA)",
+      "Biometry-Sonomed (USA) F",
+      "Fully automated surgical chair",
+      "Keratometer",
+      "Goldman Applanation Tonometer",
+      "Ophthalmic examination units",
+      "Slit Lamp Biomicroscope",
+      "Autorefractometer (Canon)",
+      "Indirect Ophthalmoscopes (Heine)",
+      "Topical phacoemulsification (Painless cataract surgery without injection)",
+      "Toric intraocular lenses (Correcting astigmatism)",
+      "Multifocal intraocular lens (for distance or near vision)",
+      "Pediatric cataract surgery",
+      "Horizontal squint surgery",
+      "Vertical squint surgery",
+      "Pediatric squint surgery",
+      "Adult squint surgery",
+      "Complicated squint surgery"
+    ]
+  },
+  "neonatology": {
+    "h1": "Neonatology",
+    "h2": "Neonatology Hospital in Kerala",
+    "banner": "neno1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      }
+    ],
+    "overviewHeading": "Balancing Hormones, Transforming Lives: Your Health, Our Expertise",
+    "overviewImage": "neno2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "The Neonatology Department is dedicated for the care of babies less than one month of age. The 15-bedded Neonatal Intensive Care Unit attached to the Delivery Suite is capable of dealing with all sorts of neonatal emergencies including surgical emergencies.",
+      "The Department offers high quality medical care to babies, based on various national and international guidelines.",
+      "The doctors at the Neonatology Department are well trained and qualified, with international experience."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      []
+    ],
+    "plainList": [
+      "Intubation &amp; ventilation&nbsp;",
+      "Surfactant administration&nbsp;",
+      "Blood gas monitoring&nbsp;",
+      "Total parenteral nutrition&nbsp;",
+      "Phototherapy&nbsp;",
+      "Exchange transfusion&nbsp;",
+      "Neonatal surgery&nbsp;",
+      "Neonatal hearing check&nbsp;",
+      "Retinopathy of prematurity screening etc.",
+      "Neonatal ventilators",
+      "&nbsp;Radiant warmers&nbsp;",
+      "LED phototherapy units&nbsp;",
+      "Neonatal monitors&nbsp;",
+      "Arterial blood gas analysers&nbsp;",
+      "Neonatal echocardiogram&nbsp;",
+      "Neonatal ultrasonogram"
+    ]
+  },
+  "endocrinology": {
+    "h1": "Endocrinology",
+    "h2": "Endocrinology Hospital in Kerala",
+    "banner": "endocrinology1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Balancing Hormones, Transforming Lives: Your Health, Our Expertise",
+    "overviewImage": "endocrinology2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "One of the most advanced facilities of its kind in the region, Caritas Diabetes Care provides a comprehensive and customized treatment plan for patients suffering from endocrine and metabolic disorders, especially diabetes.",
+      "Our endocrinologists and registered dietitians provide expert care to prevent, manage and treat diabetes through a comprehensive and personalized treatment plan.",
+      "The Endocrinology department has expertise in treating people with all types of diabetes including advanced and complex diabetes. Referral and prompt access to ophthalmologists, nephrologists, neurologists and surgeons is also readily available here.",
+      "Diabetic patients receive nutritional counseling and planning. Besides, obese diabetes patients are offered psychological counseling."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      []
+    ],
+    "plainList": [
+      "Comprehensive diabetes management for adults (Type 1 and 2 diabetes care)",
+      "Antenatal diabetes (diabetes in pregnancy) care",
+      "Assessment and treatment of associated complications of diabetes such as neuropathy, nephropathy and retinopathy",
+      "Specialized lab tests (C-peptide, anti-GAD, TSH receptor antibodies, Chromogranin, IGF 1, IGFBP3)",
+      "Dynamic endocrine tests, ACTH stimulation tests, glucose tolerance test, dexamethasone suppression test and water deprivation test",
+      "Continuous Glucose Monitoring (CGM) using Ipro 2 CGM device",
+      "Insulin pump therapy",
+      "Assessment of diabetic retinopathy",
+      "Treatment for associated diseases such as hypercholesterolaemia &nbsp;and hypertension",
+      "Thyroid disorders",
+      "Metabolic bone disease",
+      "Obesity / overweight(including bariatric management and surgery)",
+      "Sexual disorders",
+      "Obstetrics and gynecology-related endocrine issues"
+    ]
+  },
+  "dental": {
+    "h1": "Dental, Oral & Maxillofacial Surgery",
+    "h2": "Dental Hospital in Kerala",
+    "banner": "Dental1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicatedDoctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Creating Confident Smiles, One Procedure at a Time.",
+    "overviewImage": "Denal2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "Caritas Hospital's Dental, Oral & Maxillofacial Surgery Department is a hub of expertise and dedication in the field of oral health. Our team comprises seasoned Maxillofacial surgeons, consultants, specialists, and skilled technicians who are committed to providing exceptional dental care",
+      "At the heart of our approach is a commitment to a multi-disciplinary methodology. This enables us to tailor our treatments to the unique needs of each patient, ensuring the highest quality of personalized dental care.",
+      ".Whether you require routine dental check-ups, oral surgery, or specialized treatments, we stand ready to deliver comprehensive solutions, always with a focus on your oral health and well-being."
+    ],
+    "overviewList": [],
+    "treatIntro": "The treatments offered by the Department of Dental, Oral and Maxillofacial Surgery at Caritas Hospital are:",
+    "columns": [
+      [
+        "Implants (Single tooth implants, implant supported hybrid dentures and over dentures)",
+        "Periodontal surgeries",
+        "Dentures (full, partial, fixed, cast partial, immediate and over dentures)",
+        "Preventive treatments for dental caries in children (sealants and fluoride application)"
+      ],
+      [
+        "Dental, cosmetic dental treatment (tooth colour filling, correction of spaced teeth in single visit)",
+        "Ceramic bridge and crowns",
+        "Root canal treatment (multiple and single visits)",
+        "Surgical removal of teeth",
+        "Maxillofacial surgeries"
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Implants (Single tooth implants, implant supported hybrid dentures and over dentures)",
+      "Periodontal surgeries",
+      "Dentures (full, partial, fixed, cast partial, immediate and over dentures)",
+      "Preventive treatments for dental caries in children (sealants and fluoride application)",
+      "Dental, cosmetic dental treatment (tooth colour filling, correction of spaced teeth in single visit)",
+      "Ceramic bridge and crowns",
+      "Root canal treatment (multiple and single visits)",
+      "Surgical removal of teeth",
+      "Maxillofacial surgeries"
+    ]
+  },
+  "caritas-ent-audiology": {
+    "h1": "Department of ENT & Audiology",
+    "h2": "Best ENT Hospital in Kerala",
+    "banner": "ENT 1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Harmonizing Sound, Enhancing Lives: Your Ear and Throat Health, Our Priority",
+    "overviewImage": "ENT 2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "The Department of Otorhinolaryngology (ENT) at the Caritas Hospital offers comprehensive care for all disorders related to the ear, nose, and throat. The Department is one of the best centers in Central Travancore providing:",
+      "Audiology and speech –language pathology is designed to provide for the development of advanced knowledge and skills related to the professions that specialize in communication disorders, speech language pathology, hearing and speech and language science.",
+      "Audiologists treat those with hearing loss and proactively prevent damage. Employing various testing strategies, audiologists aim to determine whether someone has normal sensitivity to sounds. If hearing loss is identified, audiologists determine which portions of hearing are affected, to what degree and where the lesion causing the hearing loss is found. In addition to diagnostic audiologic and vestibular pathologies , audiologists can also specialize in rehabilitation of tinnitus, hyperacusis, auditory processing disordes, cochlear implant use and hearing aid use.",
+      "The scope of practice as determined by the American speech-language-hearing association for these professions; multicultural service delivery for individuals with communication disorders; practice settings; employment opportunities; and the use of technology in management and treatment of communication disorders."
+    ],
+    "overviewList": [
+      "General ENT surgeries including septoplasty, SMR, tonsillectomy, adenoidectomy, pre-auricular cyst excision, Caldwell-luc, dental cyst enucleation and cosmetic septorhinoplasty",
+      "Micro ear surgeries including tympanoplasty, mastoidectomy, modified radical mastoidectomy",
+      "Endoscopic nasal surgery (FESS) for chronic sinusitis, nasal polyp, DCR, benign tumors of nerve & nasopharynx",
+      "Micro-laryngeal surgeries for vocal cord polyp and vocal cord nodules, both benign and malignant",
+      "Management of all head & neck pathologies including benign and malignant tumors and abscess drainage",
+      "Therapeutic & diagnostic procedures for larynx & esophagus including foreign body removal",
+      "OPD consultation (available on all working days including Saturdays)",
+      "Nasal endoscopy & video-laryngoscopy done as outpatient procedures",
+      "Tests for hearing loss & giddiness( available on all working days)",
+      "Assessment, diagnosis and management of speech & language delay, done in Speech Therapy Department"
+    ],
+    "treatIntro": "The services offered by audiologist and speech-language pathologist are",
+    "columns": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Audiometry",
+      "Impedence audiometry",
+      "BERA",
+      "VEMP",
+      "Speech consultation",
+      "Speech therapy for Delayed speech and language development",
+      "DSL with hearing loss",
+      "DSL with intellectual disability",
+      "DSL with Autism",
+      "DSL with cerebral palsy",
+      "Misarticulation",
+      "Cleft lip and palate",
+      "Stuttering",
+      "Aphasia",
+      "Dysarthria|",
+      "Dysphagia (Swallowing) Assessment and Management",
+      "Voice therapy",
+      "Hearing aid trail and fitting",
+      "TRT ; Tinnitus re-training Therapy",
+      "Ear molds",
+      "Ear plugs"
+    ]
+  },
+  "interventional-radiology": {
+    "h1": "Radiology & Interventional Radiology",
+    "h2": "Radiology Hospital in Kerala",
+    "banner": "radiology1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Unveiling the Epitome of Precision in Healthcare with the Best Radiology Hospital in Kerala",
+    "overviewImage": "radiology 2.png",
+    "overviewParagraphs": [
+      "&nbsp;",
+      "Caritas Hospital has charted its growth from providing medical care for maternity needs and snakebite management to complex treatment procedures, high-precision surgeries and providing evidence-based treatments. Interventional radiology has played a critical role in this journey. The well-equipped radiology department generates highly-precise and accurate diagnosis that facilitate evidence-based therapy for patients. It earned us the name of the best radiology hospital in Kerala.",
+      "Our radiology department has a wide range of state-of-the-art imaging equipment, including digital X-ray, fluoroscopy, CT scan and ultrasound. The department also provides 3D/4D/contrast ultrasound and Doppler/colour doppler imaging. The Radiology Department also houses mammography units for highly-precise breast imaging, multi-slice CT and MRI.",
+      "All procedures are performed by highly trained medical professionals dedicated to providing quality care. Our radiology department offers same-day service for all your radiological needs. You can get treated at our hospital without waiting for days or weeks for your appointment. If needed, our radiologists use local anaesthesia during diagnosis & interventional procedures so that you do not feel any pain during the test itself. It means that you will be able to undergo almost any type of test without feeling any discomfort or pain whatsoever."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "FNAC/biopsy",
+      "Aspiration/Percutaneous Catheter Drainage (PCD)",
+      "Percutaneous Trans-hepatic Biliary Drainage (PTBD)",
+      "Trans Arterial Chemoembolization (TACE)",
+      "Embolisation and coiling (bronchial, GI bleed, uterine, traumatic, intracranial)",
+      "Angioplasty/Thrombolysis (GI, peripheral)",
+      "Stenting (biliary, ureteric and vascular interventions)",
+      "Radio Frequency Ablation (RFA) in HCC, RCC, lung and bone tumours",
+      "Varicose vein ablation and Injection Sclerotherapy",
+      "Hepatic Venous Pressure Gradient Estimation (HVPG)",
+      "Trans-jugular Liver Biopsy (TJLB)",
+      "Trans-jugular Intrahepatic Porto-systemic Shunt (TIPS)",
+      "Balloon-Occluded Retrograde Trans-venous Obliteration (BRTO) of Gastric Varices"
+    ]
+  },
+  "pathology": {
+    "h1": "Pathology, Microbiology & Laboratory Medicine",
+    "h2": "Pathology Hospital in Kerala",
+    "banner": "Pathology.jpg",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Where Every Sample Tells a Story: Excellence in Diagnostic Discovery.",
+    "overviewImage": "pathology-2.png",
+    "overviewParagraphs": [
+      "The department of Laboratory Medicine has state-of-the-art modular systems, automated analysers and other equipment that render accurate test results in the shortest time possible.",
+      "The Lab is manned by a team of highly experienced doctors, technicians and ancillary staff. Stringent quality control measures are followed in the lab to ensure accuracy and precision in results and rapid turn-around time.",
+      "The Laboratory is integrated with the Hospital Information System (HIS) to facilitate immediate and efficient zero-error flow of information/results to the concerned department."
+    ],
+    "overviewList": [],
+    "columns": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Phlebotomy",
+      "Hematology and Clinical Pathology",
+      "Clinical Biochemistry",
+      "Immunology",
+      "Histopathology",
+      "Microbiology and Serology"
+    ]
+  },
+  "psychiatry": {
+    "h1": "Psychiatry, Counseling and Psychotherapy Services",
+    "h2": "Psychiatry Hospital in Kerala",
+    "banner": "Psych1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      },
+      {
+        "id": "psychological-services",
+        "label": "Psychological Services"
+      }
+    ],
+    "overviewHeading": "Healing Minds, Restoring Lives: Your Path to Mental Wellness",
+    "overviewImage": "psych2.png",
+    "overviewParagraphs": [
+      "According to a Deloitte survey, mental health issues in India constitute about 15% of the global mental health disorder burden. Such a considerable percentage is mainly attributed to inadequate medical care. This lag in medical care is not because of a lacuna in psychiatric care quality but because of the general stigma associated with mental health issues.",
+      "To break this stigma, Caritas Hospital has designed a unique package that offers an inclusive approach towards patients with behavioral or mental health issues. Such an approach invites a massive footfall of care-seekers at our premises, which has eventually helped us become one of the best psychiatry hospitals in Kerala",
+      "The psychiatry department at Caritas Hospital is a specialized healthcare institution that provides evidence-based preventive and therapeutic treatment of mental disorders. Our target is to offer quality services in psychiatric care including geriatric and paediatric care with a calm atmosphere, privacy and respect."
+    ],
+    "overviewList": [],
+    "treatIntro": "Psychiatrists at Caritas hospital specialize in the evaluation and treatment of psychiatric disorders. They evaluate patients, diagnose their problems and treat those problems with medication and therapy. Counsellors provide individual or group therapy sessions to help people deal with specific issues such as anxiety, depression or relationship problems. They also may provide counselling services to help people cope with stress or trauma related to an event such as a natural disaster or abuse.",
+    "columns": [
+      [],
+      []
+    ],
+    "plainList": [
+      "Treatment for general adult psychiatric disorders",
+      "Learning and behavioural disorders in children",
+      "Geriatric psychiatric disorders",
+      "Psychosexual disorders",
+      "Sleep disorders and Substance use disorders(De-addiction)",
+      "Assessment for children with learning disabilities and remedial teaching.",
+      "Assessment and therapy for children with attention deficit hyperactivity disorders.",
+      "Psychotherapy for children with emotional problems like anxiety, phobias, uncontrollable anger, temper tantrums, acute stress reactions, depression, dissociative disorders.",
+      "Counseling and psychotherapy for children with conduct disorders, oppositional defiant disorders, adjustment problems, risk behaviors and all addictive behaviors.",
+      "Adults with emotional and behavioral problems, adjustment problems, personality disorders, relationship conflicts, risk behaviors, acute stress reactions etc, are helped by using appropriate psychotherapies.",
+      "Marital conflicts and family adjustment problems are helped through family therapy sessions.",
+      "Premarital Counselling – Guidance for couples before marriage on health, family planning, and emotional well-being to build a strong and healthy relationship.",
+      "Psychological assessment",
+      "Individual therapy for school-related issues, addiction, conduct/behavioral issues, sex education, and promotion of emotional well-being",
+      "Life skill education",
+      "Parent management training",
+      "Management of risk-taking behavior in adolescents"
+    ]
+  },
+  "pulmonology": {
+    "h1": "Pulmonology & Interventional Pulmonology",
+    "h2": "Best Pulmonology Hospital in Kerala",
+    "banner": "pulmonology.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Breathing Life into Health: Your Lungs, Our Expertise.",
+    "overviewImage": "Pulminology2.png",
+    "overviewParagraphs": [
+      "Findings of the Seasonal Waves Of Respiratory Disorders (SWORD) study stated that chronic and acute respiratory problems are the most significant contributors to India’s growing mortality rate after heart diseases.",
+      "The lack of awareness about such morbid conditions has resulted in demography leading to reckless lifestyles and food habits. Such a lifestyle eventually leads to symptoms like chest tightness, sleep apnea, and wheezing that ultimately manifests into severe ailments like lung cancer.",
+      "At Caritas, our motto is to relieve a patient from their respiratory problems and educate the masses about the gravity of COPD illnesses and the necessity to lead a healthy lifestyle to remove this disease from its roots.",
+      "Over the years, we have successfully achieved the objective that helped us to be identified as the best pulmonology hospital in Kerala."
+    ],
+    "overviewList": [],
+    "treatIntro": "Caritas Hospital provides highly effective treatment for recurring allergies, asthma, COPD, lung cancer, obstructive sleep apnoea and chronic ventilatory failure - especially those secondary to neuromuscular disorders. Our team of pulmonologists also provide specialized critical care for patients with acute respiratory conditions and respiratory failure:",
+    "columns": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Cryobiopsy for DPLDs",
+      "Foreign Body Removal",
+      "Pleural Biopsy",
+      "Forceps/Cryo Biopsy",
+      "Adhesiolysis",
+      "Mechanical/Chemical",
+      "Pleurodesis",
+      "Indwelling tunneled Pleural Catheter (IPC)",
+      "Pigtail Catheter",
+      "Conventional ICD",
+      "Haemoptysis management",
+      "BPF Management",
+      "Brachytherapy",
+      "EndoBrochial UltraSound (EBUS)",
+      "Mediastinal Node FNAC/FNAB",
+      "Staging EBUS for Lung Cancer",
+      "Peripheral Pulmonary Nodule (PPN) Evaluation",
+      "Thin Scope + Radial EBUS + Fluoroscopy",
+      "EUS-B-FNA",
+      "Pleural Biopsy"
+    ]
+  },
+  "plastic-microvascular": {
+    "h1": "Plastic and Microvascular Surgery",
+    "h2": "Plastic and Microvascular Surgery Hospital in Kerala",
+    "banner": "Plastic1.png",
+    "nav": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "treatments-procedures",
+        "label": "Treatments and Procedures"
+      },
+      {
+        "id": "dedicated-doctors",
+        "label": "Doctors"
+      },
+      {
+        "id": "articles",
+        "label": "Articles"
+      }
+    ],
+    "overviewHeading": "Reconstructing Beauty, Restoring Confidence: Precision in Every Procedure",
+    "overviewImage": "plastic2.png",
+    "overviewParagraphs": [
+      "The Department of Plastic, Aesthetic & Reconstructive Surgery at Caritas is a beacon of advanced medical care in the region, specializing in plastic, aesthetic/cosmetic, reconstructive, dermatology, and hand surgery. With an expert team of highly experienced surgeons, we offer a wide range of specialized services aimed at restoring, altering, and correcting both function and appearance.",
+      "Whether it's reconstructive surgery to regain lost function or cosmetic procedures to enhance appearance, our department provides personalized, comprehensive care that uplifts the physical well-being and self-confidence of our patients. At Caritas, we are dedicated to setting new standards in plastic and reconstructive surgery, ensuring that our patients receive the best care possible.",
+      "Our Department is known for its commitment to excellence, and our surgeons are at the forefront of their fields, bringing their specialized expertise to address a wide spectrum of surgical needs. From reconstructive surgery that restores lost function to cosmetic enhancements that fulfill individual desires, our mission is to provide precise and transformative solutions. Caritas Hospital's Department of Plastic, Aesthetic & Reconstructive Surgery is not just a healthcare facility; it's a center of innovation, compassion, and exceptional care in the realm of plastic and reconstructive surgery."
+    ],
+    "overviewList": [],
+    "treatIntro": "The major types of reconstructive surgeries performed at the Department are:",
+    "columns": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "plainList": [
+      "Microvascular Surgery",
+      "Surgeries For Cleft Lip And Palate",
+      "Reconstruction For Head & Neck Cancers",
+      "Post-Mastectomy Breast Reconstruction",
+      "Soft Tissue Reconstruction For Limb Trauma",
+      "Lymphoedema Management",
+      "Reconstruction For Facial Nerve Paralysis",
+      "Peripheral Nerve Surgery",
+      "Management Of Scars And Keloids",
+      "Reconstruction Of Congenital Deformities",
+      "Hypospadias Operations",
+      "Ear Reconstruction",
+      "Pharyngoplasty",
+      "Alveolar Bone Grafting",
+      "Reconstructive Surgeries For Bedsores & Ulcers",
+      "Reconstructive Surgery For Burn Deformities."
+    ]
+  }
+}

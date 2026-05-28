@@ -1,0 +1,42 @@
+[
+  {
+    "id": "7",
+    "desktopSrc": "/media/slider_images/CR-banner-11_A6u6j1a.jpg",
+    "mobileSrc": "/media/mobileslider_images/CR-banner-21_S0EGW5P.jpg",
+    "title": "",
+    "description": "",
+    "variant": "image-only"
+  },
+  {
+    "id": "5",
+    "desktopSrc": "/media/slider_images/banner-1_lUqAwHp.webp",
+    "mobileSrc": "/media/mobileslider_images/mobile-banner-4_AiJ5pZv.webp",
+    "title": "",
+    "description": "",
+    "variant": "donate"
+  },
+  {
+    "id": "3",
+    "desktopSrc": "/media/slider_images/banner-3.webp",
+    "mobileSrc": "/media/mobileslider_images/mobile-banner-2.webp",
+    "title": "Walking in Compassion, <br/>Serving with Love",
+    "description": "Take each step with us, where the path of compassion intersects with the essence of love. Experience a commitment to care that transcends every stride, fostering a healing environment that is driven by genuine warmth and heartfelt service.",
+    "variant": "content"
+  },
+  {
+    "id": "2",
+    "desktopSrc": "/media/slider_images/banner-2.webp",
+    "mobileSrc": "/media/mobileslider_images/mobile-banner-3.webp",
+    "title": "60+ Years of Healing,<br/> a Legacy of Excellence",
+    "description": "Embark on a journey through six decades of unwavering commitment to healing, where every year has woven a tapestry of excellence, creating a legacy that continues to redefine healthcare with each passing moment.",
+    "variant": "content"
+  },
+  {
+    "id": "1",
+    "desktopSrc": "/media/slider_images/banner-4_VXazWmF.webp",
+    "mobileSrc": "/media/mobileslider_images/mobile-banner-1_77tbw9e.webp",
+    "title": "Walking in Compassion, <br/> Serving with Love",
+    "description": "Take each step with us, where the path of compassion intersects with the essence of love. Experience a commitment to care that transcends every stride, fostering a healing environment that is driven by genuine warmth and heartfelt service.",
+    "variant": "content"
+  }
+]

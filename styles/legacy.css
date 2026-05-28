@@ -1,0 +1,831 @@
+/* Tailwind + legacy coexistence — preserve Django visual identity */
+@import "tailwindcss";
+
+@theme inline {
+  --color-caritas-blue: #0072bc;
+  --color-caritas-magenta: #c71782;
+  --color-caritas-bg: #f4f6f6;
+}
+
+body {
+  font-family: "Gilroy", Arial, sans-serif !important;
+  color: #000 !important;
+}
+
+.page-home #header {
+  border-bottom: none !important;
+}
+
+/* Top bar — utility strip above main header */
+.site-topbar {
+  background: linear-gradient(180deg, #fafafa 0%, #f4f6f6 100%);
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0;
+}
+
+.site-topbar__container {
+  max-width: 100% !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.site-topbar__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.site-topbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+}
+
+.site-topbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none !important;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.site-topbar__link i {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.site-topbar__link--accent {
+  color: #c61681 !important;
+}
+
+.site-topbar__link--accent:hover {
+  color: #a0126a !important;
+  background-color: rgba(198, 22, 129, 0.06);
+}
+
+.site-topbar__link--dark {
+  color: #1a1a1a !important;
+}
+
+.site-topbar__link--dark:hover {
+  color: #c61681 !important;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.site-topbar__link--emergency {
+  color: #c61681 !important;
+  background-color: rgba(198, 22, 129, 0.08);
+  padding: 0.4rem 0.65rem;
+}
+
+.site-topbar__link--emergency:hover {
+  background-color: rgba(198, 22, 129, 0.14);
+  color: #a0126a !important;
+}
+
+.site-topbar__emergency-text {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.35rem;
+}
+
+.site-topbar__emergency-label {
+  font-weight: 600;
+}
+
+.site-topbar__emergency-number {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-topbar__divider {
+  width: 1px;
+  height: 1rem;
+  background: #ccc;
+  flex-shrink: 0;
+  margin: 0 0.15rem;
+}
+
+.site-topbar__appointment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: #c61681;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.site-topbar__appointment:hover {
+  background: #a0126a;
+  color: #fff !important;
+}
+
+/* Desktop: single row, right-aligned */
+@media (min-width: 768px) {
+  .site-topbar__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.4rem 0;
+    gap: 0;
+  }
+
+  .site-topbar__links {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .site-topbar__link {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .site-topbar__link--emergency {
+    margin-left: 0.25rem;
+  }
+
+  .site-topbar__divider--before-emergency {
+    margin-left: 0.35rem;
+    margin-right: 0.15rem;
+  }
+}
+
+/* Override legacy style3.css #topbar rules */
+#topbar.site-topbar a {
+  display: inline-flex;
+  text-decoration: none !important;
+}
+
+.topmenu {
+  text-align: inherit;
+}
+
+/* Extracted Django static page body */
+.legacy-static-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.legacy-static-content .fixed-topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+.legacy-static-content .video-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.legacy-static-content .yt-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Caritas Home Care — contact aside */
+.home-care-contact-aside {
+  padding: 2rem 2.25rem;
+  border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+  .home-care-contact-aside {
+    padding: 2.5rem 3rem;
+  }
+}
+
+.home-care-contact-method + .home-care-contact-method {
+  padding-top: 0.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+}
+
+/* Department treatment procedure lists */
+.treatment-procedure-list {
+  list-style-position: outside;
+  padding-left: 1.35rem;
+  margin-bottom: 0;
+}
+
+.treatment-procedure-list li {
+  margin-bottom: 0.65rem;
+  line-height: 1.65;
+  padding-left: 0.15rem;
+}
+
+.treatment-procedure-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Department "Treatment and Procedures" unified styling */
+.department-treatments-section {
+  padding-bottom: 2.5rem;
+}
+
+.department-treatments-section #treatments-procedures ul {
+  padding-left: 1.35rem !important;
+  margin-bottom: 0.25rem;
+}
+
+.department-treatments-section__title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.department-treatments-section__intro {
+  color: #374151;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.department-treatments-content {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.department-treatments-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.department-treatments-content h4,
+.department-treatments-content h5 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.department-treatments-content p {
+  line-height: 1.75;
+  color: #374151;
+}
+
+.department-treatments-content ul {
+  list-style: disc;
+  padding-left: 1.35rem;
+}
+
+.department-treatments-content li {
+  line-height: 1.7;
+  margin-bottom: 0.45rem;
+  color: #111827;
+}
+
+.department-treatments-section .accordion-wrapper {
+  width: min(980px, 100%) !important;
+}
+
+.department-treatments-section .accordion-wrapper .accordion {
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  margin-bottom: 0.65rem;
+  background: #fff;
+  color: #111827;
+  font-weight: 600;
+}
+
+.department-treatments-section .accordion-wrapper .panel {
+  background: #fff;
+  border: 1px solid #dbe4ee;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  margin-top: -0.7rem;
+  margin-bottom: 0.8rem;
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .department-treatments-section {
+    padding-bottom: 1.6rem;
+  }
+
+  .department-treatments-content {
+    width: 100%;
+  }
+
+  .department-treatments-section .accordion-wrapper {
+    width: 100% !important;
+  }
+}
+
+/* Homepage hero slider — match Django index.html */
+.page-home .new-slide {
+  position: relative;
+}
+
+.page-home .new-slide .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.page-home .new-slides {
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (min-width: 769px) {
+  .page-home .new-slide .tab-img-description {
+    display: block;
+    max-width: 90%;
+  }
+}
+
+/* Hero slide copy + CTAs */
+.page-home .hero-slide-title {
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.page-home .hero-slide-description {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  max-width: 36rem;
+}
+
+.page-home .hero-slide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.page-home .hero-slide-actions__link {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.page-home .hero-slide-actions__link:hover {
+  opacity: 0.9;
+  color: #fff !important;
+}
+
+.page-home .hero-slide-actions__booking {
+  display: inline-flex;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.page-home .hero-slide-actions__btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #0072bc !important;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.page-home .hero-slide-actions__booking:hover .hero-slide-actions__btn {
+  background-color: #f0f7fc;
+}
+
+.page-home .hero-slide-donate {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-home .hero-slide-donate__btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #c71782;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.page-home .hero-slide-donate__link {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .page-home .hero-slide-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .page-home .hero-slide-row {
+    margin-top: 0 !important;
+  }
+
+  .page-home .hero-slide-col {
+    max-width: 100%;
+  }
+
+  .page-home .hero-slide-title {
+    font-size: 1.65rem !important;
+    margin-bottom: 0.65rem;
+    padding-right: 0.5rem;
+  }
+
+  .page-home .hero-slide-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .page-home .hero-slide-actions__link {
+    font-size: 1rem;
+    padding: 0.15rem 0;
+  }
+
+  .page-home .hero-slide-actions__booking {
+    width: 100%;
+  }
+
+  .page-home .hero-slide-actions__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+  }
+
+  .page-home .hero-slide-donate {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-home .hero-slide-donate__btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-home .hero-slide-title {
+    font-size: 1.45rem !important;
+  }
+
+  .page-home .hero-slide-actions__btn {
+    font-size: 0.875rem;
+    padding: 11px 16px;
+  }
+}
+
+/* Footer bar — social + legal (desktop & mobile) */
+#footer .footer-bar {
+  border-top: 1px solid #e0e4e8;
+  padding: 1.5rem 0 2rem;
+  margin-top: 0.5rem;
+  background: #fff;
+}
+
+#footer .footer-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+}
+
+#footer .footer-bar__social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+#footer .footer-bar__social a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #f4f6f6 !important;
+  border-radius: 50%;
+  line-height: 1;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#footer .footer-bar__social a:hover {
+  background: #e8eef2 !important;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+#footer .footer-bar__social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+#footer .footer-bar__legal {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+}
+
+#footer .footer-bar__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+#footer .footer-bar__links a {
+  color: #111 !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#footer .footer-bar__links a:hover {
+  color: #0072bc !important;
+  text-decoration: underline;
+}
+
+#footer .footer-bar__sep {
+  color: #9ca3af;
+  font-weight: 400;
+  user-select: none;
+  padding: 0 0.15rem;
+}
+
+#footer .footer-bar__copy {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+@media (max-width: 991px) {
+  #footer .footer-bar {
+    padding: 1.25rem 0 1.75rem;
+  }
+
+  #footer .footer-bar__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  #footer .footer-bar__social {
+    justify-content: center;
+  }
+
+  #footer .footer-bar__legal {
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer .footer-bar__links {
+    justify-content: center;
+  }
+
+  #footer .footer-bar__copy {
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer .footer-bar__links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #footer .footer-bar__sep {
+    display: none;
+  }
+
+  #footer .footer-bar__copy {
+    font-size: 0.75rem;
+    max-width: 18rem;
+  }
+}
+
+/* Biomedical / quality indicator filters */
+.data-filter-section {
+  padding: 2rem 0 3rem;
+}
+
+.data-filter-form {
+  margin-bottom: 1.5rem;
+}
+
+.data-filter-form__label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.data-filter-form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.data-filter-form__controls select {
+  min-width: 140px;
+  max-width: 100%;
+}
+
+.data-filter-form__btn {
+  width: auto !important;
+  min-width: 160px;
+  padding: 8px 30px !important;
+}
+
+.data-filter-form__error {
+  color: #c71782;
+  font-weight: 600;
+  margin: 0.75rem 0 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .data-filter-form__controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .data-filter-form__controls select,
+  .data-filter-form__btn {
+    width: 100% !important;
+    min-width: 0;
+  }
+
+  .biomedical-results h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Preloader must not cover floating icons after load */
+#preloader[style*="display: none"],
+#preloader.hidden {
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
+}
+
+/* Fixed right-side action icons (Django base.html) */
+.site-floating-icons-root {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10050;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.site-floating-icon {
+  position: fixed;
+  right: 10px;
+  z-index: 10050;
+  pointer-events: auto;
+  width: auto;
+  height: auto;
+}
+
+.site-floating-icon a {
+  display: block;
+  line-height: 0;
+}
+
+/* Override Bootstrap img { max-width: 100% } — source PNG is 512×512 */
+.site-floating-icons-root .site-floating-icon img {
+  display: block;
+  max-width: none;
+  object-fit: contain;
+}
+
+.site-floating-icons-root .site-floating-icon--whatsapp img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.site-floating-icons-root .site-floating-icon--pdf img {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.site-floating-icons-root .site-floating-icon--call img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.site-floating-icons-root .site-floating-icon--whatsapp,
+.site-floating-icons-root .site-floating-icon--whatsapp a {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.site-floating-icons-root .site-floating-icon--pdf,
+.site-floating-icons-root .site-floating-icon--pdf a {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.site-floating-icons-root .site-floating-icon--call,
+.site-floating-icons-root .site-floating-icon--call a {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.site-floating-icon--whatsapp {
+  bottom: 70px;
+}
+
+.site-floating-icon--pdf {
+  bottom: 135px;
+}
+
+.site-floating-icon--call {
+  bottom: 200px;
+  background: #fff;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+@media (min-width: 760px) {
+  .call-icon,
+  .site-floating-icon--call {
+    display: none !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .hide_desktop {
+    display: none !important;
+  }
+}

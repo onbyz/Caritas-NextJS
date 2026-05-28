@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Caritas Hospital — Next.js
 
-## Getting Started
+Modern rebuild of the Caritas Hospital website, migrated from Django while preserving the original design language.
 
-First, run the development server:
+## Quick start
 
 ```bash
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 (App Router) + TypeScript
+- Tailwind CSS + legacy CSS (`style3.css`, `navbar.css`)
+- Framer Motion
+- Sanity CMS
+- Bootstrap 5 / Swiper / AOS (from Django vendor assets)
 
-## Learn More
+## Documentation
 
-To learn more about Next.js, take a look at the following resources:
+See [MIGRATION.md](./MIGRATION.md) for the full migration plan, architecture, CMS setup, and remaining work.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `node scripts/generate-department-routes.mjs` | Scaffold placeholder department pages |
 
-## Deploy on Vercel
+## Sanity CMS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a project at [sanity.io](https://sanity.io)
+2. Set `NEXT_PUBLIC_SANITY_PROJECT_ID` in `.env.local`
+3. Run `npx sanity dev` to open Studio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Without Sanity credentials, the site uses static fallbacks for hero slides and shows empty doctor listings.
