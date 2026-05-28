@@ -1,5 +1,6 @@
-import { renderStaticPage } from "@/features/pages/renderStaticPage";
+import { CsrListPage } from "@/features/pages/CsrListPage";
 import { STATIC_PAGE_REGISTRY } from "@/constants/pages/registry";
+import { getCsrActivities } from "@/services/cms";
 import { getStaticPage } from "@/services/static-pages";
 import { buildMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -13,7 +14,18 @@ export const metadata = buildMetadata({
   path: `/${SLUG}`,
 });
 
-export default function Page() {
-  if (!getStaticPage(SLUG)) notFound();
-  return renderStaticPage(SLUG);
+type Props = { searchParams: Promise<{ page?: string }> };
+
+export default async function Page({ searchParams }: Props) {
+  const page = getStaticPage(SLUG);
+  if (!page) notFound();
+  const sp = await searchParams;
+  const currentPage = Math.max(1, Number.parseInt(sp.page ?? "1", 10) || 1);
+  return (
+    <CsrListPage
+      page={page}
+      activities={getCsrActivities()}
+      currentPage={currentPage}
+    />
+  );
 }

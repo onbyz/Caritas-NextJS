@@ -14,9 +14,13 @@ export const metadata = buildMetadata({
   path: `/${SLUG}`,
 });
 
-export default async function Page() {
+type Props = { searchParams: Promise<{ page?: string }> };
+
+export default async function Page({ searchParams }: Props) {
   const page = getStaticPage(SLUG);
   if (!page) notFound();
+  const sp = await searchParams;
+  const currentPage = Math.max(1, Number.parseInt(sp.page ?? "1", 10) || 1);
   const items = await getNewsPostsResolved();
-  return <NewsListPage page={page} items={items} />;
+  return <NewsListPage page={page} items={items} currentPage={currentPage} perPage={15} />;
 }

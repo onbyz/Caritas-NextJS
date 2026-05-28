@@ -22,7 +22,8 @@ export function ContactUsForm() {
 
     try {
       const res = await fetch("/api/contact-us", { method: "POST", body: formData });
-      if (res.ok) router.push("/success");
+      const data = (await res.json().catch(() => ({}))) as { redirect?: string };
+      if (res.ok) router.push(data.redirect ?? "/success");
     } catch {
       router.push("/success");
     }

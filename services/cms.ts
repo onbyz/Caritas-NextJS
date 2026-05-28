@@ -1,6 +1,8 @@
 import albums from "@/constants/cms/albums.json";
 import biomedical from "@/constants/cms/biomedical.json";
 import careers from "@/constants/cms/careers.json";
+import csrActivities from "@/constants/cms/csr-activities.json";
+import postImages from "@/constants/cms/post-images.json";
 import posts from "@/constants/cms/posts.json";
 import qualityControl from "@/constants/cms/quality-control.json";
 import testimonialVideos from "@/constants/cms/testimonial-videos.json";
@@ -33,6 +35,17 @@ export type CmsVideo = {
   created_at?: string;
 };
 
+export type CsrActivity = {
+  id: string;
+  title: string;
+  slug: string;
+  body: string;
+  image?: string | null;
+  created?: string;
+  date_of_added?: string;
+  extraImages?: string[];
+};
+
 export function getArticles(): CmsPost[] {
   return (posts as CmsPost[]).filter((p) => p.categoryTitle !== "News & Events");
 }
@@ -43,6 +56,19 @@ export function getNewsPosts(): CmsPost[] {
 
 export function getPostBySlug(slug: string): CmsPost | undefined {
   return (posts as CmsPost[]).find((p) => p.slug === slug);
+}
+
+export function getPostGalleryImages(slug: string): string[] {
+  const map = postImages as Record<string, string[]>;
+  return map[slug] ?? [];
+}
+
+export function getCsrActivities(): CsrActivity[] {
+  return csrActivities as CsrActivity[];
+}
+
+export function getCsrBySlug(slug: string): CsrActivity | undefined {
+  return getCsrActivities().find((a) => a.slug === slug);
 }
 
 export function getAlbums(): CmsAlbum[] {

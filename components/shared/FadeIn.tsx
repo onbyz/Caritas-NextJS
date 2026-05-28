@@ -1,15 +1,21 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import type { ReactNode } from "react";
+import { EASE_SMOOTH, MOTION_DURATION, VIEWPORT_DEFAULT } from "@/lib/motion";
 
 const variants: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: MOTION_DURATION.item, ease: EASE_SMOOTH },
   },
+};
+
+const reducedVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.2 } },
 };
 
 type FadeInProps = {
@@ -25,19 +31,24 @@ export function FadeIn({
   delay = 0,
   as = "div",
 }: FadeInProps) {
+  const prefersReducedMotion = useReducedMotion();
   const Component = motion[as];
+  const base = prefersReducedMotion ? reducedVariants : variants;
+
   return (
     <Component
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={VIEWPORT_DEFAULT}
       variants={{
-        hidden: variants.hidden,
+        hidden: base.hidden,
         visible: {
-          ...variants.visible,
+          ...base.visible,
           transition: {
-            ...(variants.visible as { transition: object }).transition,
+            ...(typeof base.visible === "object" && "transition" in base.visible
+              ? base.visible.transition
+              : {}),
             delay,
           },
         },

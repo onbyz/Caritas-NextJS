@@ -6,6 +6,7 @@ import { DonationBanner } from "@/components/home/DonationBanner";
 import { DoctorSearch } from "@/components/home/DoctorSearch";
 import { FutureFirstSection } from "@/components/home/FutureFirstSection";
 import { HeroSlider } from "@/components/home/HeroSlider";
+import { HomeScrollSection } from "@/components/home/HomeScrollSection";
 import { HomeFeatureCards } from "@/components/home/HomeFeatureCards";
 import { OurHospitals } from "@/components/home/OurHospitals";
 import { PatientVoices } from "@/components/home/PatientVoices";
@@ -45,20 +46,46 @@ export default async function HomePage() {
       <SiteLayout>
         <HeroSlider slides={slides} />
         <main id="main">
-          <QuickServices />
+          <HomeScrollSection>
+            <QuickServices />
+          </HomeScrollSection>
           <hr style={{ width: "85%", margin: "0 auto" }} />
-          <RatingsSection />
-          <DoctorSearch />
-          <CentresOfExcellence />
-          <FutureFirstSection />
-          <DonationBanner />
-          <CaritasInsights news={news} articles={articles} videos={videos} />
-          <HomeFeatureCards />
-          <VirtualTourBanner />
-          <OurHospitals />
-          <StatsCounts />
-          <PatientVoices videos={videos} />
-          <AccreditationsSection />
+          <HomeScrollSection variant="fade-in">
+            <RatingsSection />
+          </HomeScrollSection>
+          <HomeScrollSection>
+            <DoctorSearch />
+          </HomeScrollSection>
+          <HomeScrollSection variant="scale-up">
+            <CentresOfExcellence />
+          </HomeScrollSection>
+          <HomeScrollSection>
+            <FutureFirstSection />
+          </HomeScrollSection>
+          <HomeScrollSection variant="fade-in">
+            <DonationBanner />
+          </HomeScrollSection>
+          <HomeScrollSection>
+            <CaritasInsights news={news} articles={articles} videos={videos} />
+          </HomeScrollSection>
+          <HomeScrollSection variant="scale-up">
+            <HomeFeatureCards />
+          </HomeScrollSection>
+          <HomeScrollSection variant="fade-in">
+            <VirtualTourBanner />
+          </HomeScrollSection>
+          <HomeScrollSection>
+            <OurHospitals />
+          </HomeScrollSection>
+          <HomeScrollSection variant="fade-up">
+            <StatsCounts />
+          </HomeScrollSection>
+          <HomeScrollSection>
+            <PatientVoices videos={videos} />
+          </HomeScrollSection>
+          <HomeScrollSection variant="fade-in">
+            <AccreditationsSection />
+          </HomeScrollSection>
         </main>
       </SiteLayout>
     </div>

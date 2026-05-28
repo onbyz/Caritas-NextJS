@@ -7,6 +7,7 @@ const FORM_ROUTES: Record<string, string> = {
   "/health_package_form/": "/api/health-package",
   "/health_package_form": "/api/health-package",
   "/nri-health-checkup-packages": "/api/nri-health-package",
+  "/nri-health-checkup-packages/": "/api/nri-health-package",
 };
 
 export function StaticFormsBridge() {
@@ -25,10 +26,18 @@ export function StaticFormsBridge() {
         const fd = new FormData(form);
         try {
           const res = await fetch(api, { method: "POST", body: fd });
-          if (res.ok) router.push("/success");
+          const data = (await res.json().catch(() => ({}))) as {
+            ok?: boolean;
+            redirect?: string;
+          };
+          if (res.ok) {
+            router.push(data.redirect ?? "/success");
+            return;
+          }
         } catch {
-          router.push("/success");
+          /* fall through */
         }
+        router.push("/success");
       };
 
       form.addEventListener("submit", listener);

@@ -4,6 +4,7 @@ import { Analytics } from "@/components/layout/Analytics";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { FloatingActionIcons } from "@/components/layout/FloatingActionIcons";
 import { Preloader } from "@/components/layout/Preloader";
+import { SmoothScrollProvider } from "@/components/layout/SmoothScrollProvider";
 import { defaultMetadata } from "@/lib/metadata";
 import "./globals.css";
 import "@/styles/legacy.css";
@@ -48,10 +49,12 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
         <Analytics />
+        <SmoothScrollProvider>
         {children}
         <FloatingActionIcons />
         <Preloader />
         <BackToTop />
+        </SmoothScrollProvider>
         <Script
           src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
           strategy="lazyOnload"

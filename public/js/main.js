@@ -411,6 +411,7 @@ function initLegacyAccordions() {
     }
     acc.addEventListener("click", function (e) {
       e.preventDefault();
+      e.stopPropagation();
       const isActive = this.classList.contains("active");
       this.classList.toggle("active", !isActive);
       const next = this.nextElementSibling;
@@ -418,20 +419,6 @@ function initLegacyAccordions() {
       next.style.display = isActive ? "none" : "block";
     });
   });
-
-  if (!window.__legacyAccordionDelegateBound) {
-    document.addEventListener("click", function (e) {
-      const target = e.target.closest(".accordion-wrapper .accordion");
-      if (!target) return;
-      e.preventDefault();
-      const isActive = target.classList.contains("active");
-      target.classList.toggle("active", !isActive);
-      const next = target.nextElementSibling;
-      if (!next || !next.classList.contains("panel")) return;
-      next.style.display = isActive ? "none" : "block";
-    });
-    window.__legacyAccordionDelegateBound = true;
-  }
 }
 
 if (document.readyState === "loading") {

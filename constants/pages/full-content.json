@@ -355,5 +355,21 @@
     "showEnquiry": false,
     "hasHeroBanner": false,
     "contentPath": "/content/pages/caritaskkm.html"
+  },
+  "privacy-policy": {
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "subtitle": "Your Trust, Our Responsibility",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/privacy-policy.html"
+  },
+  "terms-and-conditions": {
+    "slug": "terms-and-conditions",
+    "title": "Terms & Conditions",
+    "subtitle": "Understanding Our Commitment",
+    "showEnquiry": false,
+    "hasHeroBanner": false,
+    "contentPath": "/content/pages/terms-and-conditions.html"
   }
 }

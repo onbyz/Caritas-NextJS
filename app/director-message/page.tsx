@@ -53,20 +53,8 @@ export default function DirectorMessagePage() {
           >
             <i className="bi bi-instagram" style={{ fontSize: 30 }} />
           </a>
-          <a
-            style={{ color: "#fff" }}
-            href="https://www.youtube.com/@frdrbinukunnath"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-youtube" style={{ fontSize: 30 }} />
-          </a>
         </div>
       </div>
-      <p>&nbsp;</p>
-      <Link href="/contact-us" className="btn btn-light">
-        Contact Us
-      </Link>
     </>
   );
 

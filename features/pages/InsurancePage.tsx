@@ -2,26 +2,12 @@ import { ContentStaticPage } from "@/features/pages/ContentStaticPage";
 import { ServiceQuickLinks } from "@/components/shared/ServiceQuickLinks";
 import type { StaticPageFullContent } from "@/constants/pages/full-content";
 
-const MISSING_LOGOS = new Set([
-  "bluedor.jpg",
-  "care-health.jpg",
-  "digit.jpg",
-  "navi.jpg",
-  "tokio.jpg",
-  "volvo.jpg",
-  "galaxy.jpg",
-]);
-
 function fixInsuranceHtml(html: string | undefined): string | undefined {
   if (!html) return html;
   let h = html;
 
   // Encode spaces in image paths for reliable loading
   h = h.replace(/src="(\/img\/[^"]+)"/g, (_, src: string) => {
-    const filename = src.split("/").pop() ?? "";
-    if (MISSING_LOGOS.has(filename)) {
-      return 'src="" data-missing="true" style="display:none"';
-    }
     return `src="${src.replace(/ /g, "%20")}"`;
   });
 

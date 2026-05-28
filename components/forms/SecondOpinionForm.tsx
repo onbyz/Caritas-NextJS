@@ -141,7 +141,8 @@ export function SecondOpinionForm() {
               required
               placeholder="Phone Number"
               maxLength={30}
-              pattern="[0-9]{10}"
+              pattern="[0-9]{10,14}"
+              title="Please enter a valid phone number (10-14 digits)"
             />
             <span
               style={{

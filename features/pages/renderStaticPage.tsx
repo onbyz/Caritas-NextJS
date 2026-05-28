@@ -1,12 +1,11 @@
 import { notFound } from "next/navigation";
 import {
   ArticlesListPage,
-  CareerJobsSection,
   GalleryPage,
   NewsListPage,
-  VideoGridPage,
 } from "@/features/pages/CmsListPages";
 import { BiomedicalWastePanel, QualityControlPanel } from "@/features/pages/DataFilterPanels";
+import { CareerPage } from "@/features/pages/CareerPage";
 import { ClinicalNutritionPage } from "@/features/pages/ClinicalNutritionPage";
 import { ContentStaticPage } from "@/features/pages/ContentStaticPage";
 import { HomeCarePage } from "@/features/pages/HomeCarePage";
@@ -16,35 +15,27 @@ import { SecondOpinionPage } from "@/features/pages/SecondOpinionPage";
 import {
   getAlbums,
   getArticles,
-  getCareers,
   getNewsPosts,
-  getTestimonialVideos,
-  getVideoGallery,
 } from "@/services/cms";
 import { getStaticPage } from "@/services/static-pages";
 import type { ReactNode } from "react";
 
+type StaticPageOptions = { sidebar?: ReactNode };
+
 const CMS_HANDLERS: Record<
   string,
-  (page: NonNullable<ReturnType<typeof getStaticPage>>) => React.ReactNode
+  (
+    page: NonNullable<ReturnType<typeof getStaticPage>>,
+    options?: StaticPageOptions,
+  ) => React.ReactNode
 > = {
   articles: (page) => <ArticlesListPage page={page} items={getArticles()} />,
   "news-and-events": (page) => <NewsListPage page={page} items={getNewsPosts()} />,
   gallery: (page) => <GalleryPage page={page} albums={getAlbums()} />,
-  testimonials: (page) => (
-    <VideoGridPage page={page} videos={getTestimonialVideos()} />
-  ),
-  "video-gallery": (page) => (
-    <VideoGridPage page={page} videos={getVideoGallery()} />
-  ),
-  career: (page) => (
-    <ContentStaticPage {...page}>
-      <CareerJobsSection jobs={getCareers()} />
-    </ContentStaticPage>
-  ),
-  biomedical: (page) => (
+  career: (page) => <CareerPage page={page} />,
+  biomedical: (page, options) => (
     <>
-      <ContentStaticPage {...page} />
+      <ContentStaticPage {...page} sidebar={options?.sidebar} />
       <BiomedicalWastePanel />
     </>
   ),
@@ -67,7 +58,7 @@ export function renderStaticPage(slug: string, options?: { sidebar?: ReactNode }
   if (!page) notFound();
 
   const handler = CMS_HANDLERS[slug];
-  if (handler) return handler(page);
+  if (handler) return handler(page, options);
 
   return <ContentStaticPage {...page} sidebar={options?.sidebar} />;
 }

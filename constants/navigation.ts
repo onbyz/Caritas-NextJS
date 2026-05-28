@@ -84,6 +84,18 @@ export const RESOURCE_LINKS: NavLink[] = [
   { label: "Video Gallery", href: "/video-gallery" },
 ];
 
+export type AcademicsMenuItem = { label: string; href: string; img: string };
+
+/** Desktop navbar — Academics & Research dropdown cards */
+export const ACADEMICS_MENU_ITEMS: AcademicsMenuItem[] = [
+  { img: "/img/pharmacy 1.png", label: "Caritas DNB Programme", href: "/dnb" },
+  { img: "/img/nursing 1 (1).png", label: "Caritas College of Nursing", href: "/college-of-nursing" },
+  { img: "/img/pharmacy 2.png", label: "Caritas College of Pharmacy", href: "/college-of-pharmacy" },
+  { img: "/img/paramedical 1 (1).png", label: "Caritas Allied Health Science", href: "/caritas-allied-health-science" },
+  { img: "/img/academics-navbar.png", label: "Caritas Internship Program", href: "/caritas-internship" },
+  { img: "/img/fellowship-navbar-img.jpg", label: "Caritas Certificate Programme", href: "/caritas-fellowship-programme" },
+];
+
 export const SERVICE_LINKS: NavLink[] = [
   { label: "Radiology & Laboratory", href: "/radiology" },
   { label: "Blood Bank", href: "/blood-bank" },

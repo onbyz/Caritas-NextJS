@@ -150,6 +150,89 @@ def main() -> None:
 
     c.execute(
         """
+        SELECT post_id, title, slug, body, image, created, date_of_added
+        FROM caritasapp_csractivitys
+        ORDER BY COALESCE(date_of_added, created) DESC
+        """
+    )
+    csr_rows = []
+    for row in c.fetchall():
+        rel = row["image"]
+        if rel:
+            src = MEDIA_SRC / rel
+            dst = MEDIA_DST / rel
+            if src.exists() and not dst.exists():
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dst)
+        csr_rows.append(
+            {
+                "id": row["post_id"],
+                "title": row["title"],
+                "slug": row["slug"],
+                "body": row["body"] or "",
+                "image": f"/media/{rel}" if rel else None,
+                "created": row["created"],
+                "date_of_added": row["date_of_added"],
+                "extraImages": [],
+            }
+        )
+
+    c.execute(
+        """
+        SELECT e.image, c.slug
+        FROM caritasapp_csrextraimages e
+        JOIN caritasapp_csractivitys c ON c.post_id = e.csrPost_id
+        """
+    )
+    extra_by_slug: dict[str, list[str]] = {}
+    for row in c.fetchall():
+        rel = row["image"]
+        slug = row["slug"]
+        if not rel or not slug:
+            continue
+        src = MEDIA_SRC / rel
+        dst = MEDIA_DST / rel
+        if src.exists() and not dst.exists():
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+        extra_by_slug.setdefault(slug, []).append(f"/media/{rel}")
+
+    for item in csr_rows:
+        item["extraImages"] = extra_by_slug.get(item["slug"], [])
+
+    (OUT / "csr-activities.json").write_text(
+        json.dumps(csr_rows, indent=2), encoding="utf-8"
+    )
+    print("csr activities", len(csr_rows))
+
+    c.execute(
+        """
+        SELECT p.slug, i.image
+        FROM caritasapp_postimage i
+        JOIN caritasapp_post p ON p.post_id = i.post_id
+        ORDER BY i.id
+        """
+    )
+    post_images: dict[str, list[str]] = {}
+    for row in c.fetchall():
+        rel = row["image"]
+        slug = row["slug"]
+        if not rel or not slug:
+            continue
+        src = MEDIA_SRC / rel
+        dst = MEDIA_DST / rel
+        if src.exists() and not dst.exists():
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+        post_images.setdefault(slug, []).append(f"/media/{rel}")
+
+    (OUT / "post-images.json").write_text(
+        json.dumps(post_images, indent=2), encoding="utf-8"
+    )
+    print("post gallery slugs", len(post_images))
+
+    c.execute(
+        """
         SELECT id, image, title, description, created_at
         FROM caritasapp_sliderimage
         ORDER BY created_at DESC

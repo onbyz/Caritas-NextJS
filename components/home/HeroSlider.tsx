@@ -1,8 +1,15 @@
 "use client";
 
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BRAND } from "@/constants/brand";
+import { EASE_SMOOTH, MOTION_DURATION } from "@/lib/motion";
 
 export type SlideVariant = "image-only" | "donate" | "content";
 
@@ -71,43 +78,37 @@ function SlideContent({ slide }: { slide: SlideData }) {
 }
 
 export function HeroSlider({ slides }: HeroSliderProps) {
+  const prefersReducedMotion = useReducedMotion();
   const [active, setActive] = useState(0);
-  const slidesContainerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const count = slides.length;
 
-  const updateSlider = useCallback(() => {
-    const container = slidesContainerRef.current;
-    if (!container) return;
-    const slideEls = container.querySelectorAll<HTMLElement>(".new-slide");
+  /* Parallax — single scroll listener shared across all slides */
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const parallaxScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
 
-    if (window.innerWidth <= 768) {
-      container.style.transform = "";
-      slideEls.forEach((slide, index) => {
-        slide.classList.toggle("active", index === active);
-        slide.style.display = index === active ? "block" : "none";
-      });
-    } else {
-      slideEls.forEach((slide) => {
-        slide.classList.remove("active");
-        slide.style.display = "";
-      });
-      container.style.transform = `translateX(-${active * 100}%)`;
-    }
-  }, [active]);
-
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    updateSlider();
-    window.addEventListener("resize", updateSlider);
-    return () => window.removeEventListener("resize", updateSlider);
-  }, [updateSlider]);
+    const mq = window.matchMedia("(max-width: 768px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
-  const next = useCallback(() => {
-    setActive((i) => (i + 1) % count);
-  }, [count]);
+  const parallaxEnabled = !prefersReducedMotion && !isMobile;
 
-  const prev = useCallback(() => {
-    setActive((i) => (i - 1 + count) % count);
-  }, [count]);
+  const dissolveTransition = {
+    duration: prefersReducedMotion ? 0.15 : MOTION_DURATION.heroDissolve,
+    ease: EASE_SMOOTH,
+  };
+
+  const next = useCallback(() => setActive((i) => (i + 1) % count), [count]);
+  const prev = useCallback(() => setActive((i) => (i - 1 + count) % count), [count]);
 
   useEffect(() => {
     if (count <= 1) return;
@@ -118,30 +119,47 @@ export function HeroSlider({ slides }: HeroSliderProps) {
   if (!count) return null;
 
   return (
-    <section>
-      <div className="new-slider-container">
-        <div ref={slidesContainerRef} className="new-slides d-flex">
-          {slides.map((slide, index) => (
-            <div
+    <section ref={sectionRef} className="hero-slider-section">
+      <div className="new-slider-container hero-dissolve-container">
+        {slides.map((slide, index) => {
+          const isActive = index === active;
+
+          return (
+            <motion.div
               key={slide.id}
-              className={`new-slide position-relative${index === active ? " active" : ""}`}
+              className="hero-dissolve-slide"
+              initial={false}
+              animate={{ opacity: isActive ? 1 : 0 }}
+              transition={dissolveTransition}
+              aria-hidden={!isActive}
+              style={{ zIndex: isActive ? 2 : 1 }}
             >
-              <picture>
-                {slide.mobileSrc && (
-                  <source media="(max-width: 768px)" srcSet={slide.mobileSrc} />
-                )}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={slide.desktopSrc}
-                  alt={slide.title?.replace(/<[^>]+>/g, "") || "Caritas Hospital"}
-                  width={1920}
-                  height={752}
-                  className="new-slider-img"
-                  loading={index === 0 ? "eager" : "lazy"}
-                  fetchPriority={index === 0 ? "high" : undefined}
-                  decoding="async"
-                />
-              </picture>
+              {/* Background image layer with parallax */}
+              <motion.div
+                className="hero-dissolve-bg"
+                style={
+                  parallaxEnabled
+                    ? { y: parallaxY, scale: parallaxScale, willChange: "transform" }
+                    : undefined
+                }
+              >
+                <picture>
+                  {slide.mobileSrc && (
+                    <source media="(max-width: 768px)" srcSet={slide.mobileSrc} />
+                  )}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={slide.desktopSrc}
+                    alt={slide.title?.replace(/<[^>]+>/g, "") || "Caritas Hospital"}
+                    className="hero-dissolve-img"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : undefined}
+                    decoding="async"
+                  />
+                </picture>
+              </motion.div>
+
+              {/* Slide content overlay */}
               <div className="new-slide-content">
                 <div className="container hero-slide-container">
                   <div className="row hero-slide-row">
@@ -151,9 +169,10 @@ export function HeroSlider({ slides }: HeroSliderProps) {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            </motion.div>
+          );
+        })}
+
         {count > 1 && (
           <>
             <i

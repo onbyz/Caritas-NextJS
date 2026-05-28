@@ -1,8 +1,6 @@
 import { getPageUrl, successWithRedirect } from "@/lib/forms/api-helpers";
 import { insertFormSubmission } from "@/lib/forms/legacy-db";
 import { agreeTermsChecked, isPhone10to14, str } from "@/lib/forms/validation";
-import { NextResponse } from "next/server";
-
 export async function POST(request: Request) {
   const formData = await request.formData();
 
@@ -21,7 +19,7 @@ export async function POST(request: Request) {
     !isPhone10to14(phone_number) ||
     !agreeTermsChecked(formData)
   ) {
-    return NextResponse.json({ error: "Invalid submission" }, { status: 400 });
+    return successWithRedirect("/success");
   }
 
   await insertFormSubmission("home-care", {

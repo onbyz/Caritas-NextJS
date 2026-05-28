@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { StaticFormsBridge } from "@/components/forms/StaticFormsBridge";
+import { LegacyContentEnhancer } from "@/components/shared/LegacyContentEnhancer";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { EnquiryForm } from "@/components/shared/EnquiryForm";
 import type { StaticPageFullContent } from "@/constants/pages/full-content";
@@ -111,6 +112,7 @@ export function ContentStaticPage({
         />
       )}
       {children}
+      <LegacyContentEnhancer />
       <StaticFormsBridge />
     </SiteLayout>
   );

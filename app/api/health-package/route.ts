@@ -1,4 +1,4 @@
-import { fakeSuccess, getPageUrl } from "@/lib/forms/api-helpers";
+import { getPageUrl, successWithRedirect } from "@/lib/forms/api-helpers";
 import { insertFormSubmission } from "@/lib/forms/legacy-db";
 import { str } from "@/lib/forms/validation";
 
@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   const pkg = str(formData, "package");
 
   if (!name || !phone_number || !pkg) {
-    return fakeSuccess();
+    return successWithRedirect("/success");
   }
 
   await insertFormSubmission("health-package", {
@@ -22,5 +22,5 @@ export async function POST(request: Request) {
     page_url: getPageUrl(request),
   });
 
-  return fakeSuccess();
+  return successWithRedirect("/success");
 }

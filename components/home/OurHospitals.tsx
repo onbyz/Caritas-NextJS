@@ -1,14 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { AFFILIATED_HOSPITALS } from "@/constants/homepage";
-import { FadeIn } from "@/components/shared/FadeIn";
+import { StaggerReveal, StaggerItem } from "@/components/shared/StaggerReveal";
+import { EASE_SMOOTH } from "@/lib/motion";
 
 export function OurHospitals() {
   return (
-    <section className="pb-0 animation-element bounce-up">
-      <div
+    <section className="pb-0">
+      <motion.div
         className="container px-5 py-5 box box1 our-hospital"
         style={{ backgroundColor: "#F4F6F6", borderRadius: 25 }}
+        initial={{ opacity: 0, y: 32 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-8%" }}
+        transition={{ duration: 0.7, ease: EASE_SMOOTH }}
       >
         <div className="row justify-content-center text-center">
           <h3 className="mb-3">Our Hospitals and Institutes</h3>
@@ -18,10 +26,17 @@ export function OurHospitals() {
             each committed to providing comprehensive healthcare with expertise and compassion.
           </p>
         </div>
-        <div className="box-row mt-4">
+
+        <StaggerReveal className="box-row mt-4">
           {AFFILIATED_HOSPITALS.map((hospital) => (
-            <FadeIn key={hospital.name} className="box-container marged animation-element bounce-up">
-              <div className="block">
+            <StaggerItem key={hospital.name} className="box-container marged">
+              <motion.div
+                className="block"
+                whileHover={{
+                  y: -6,
+                  transition: { duration: 0.3, ease: EASE_SMOOTH },
+                }}
+              >
                 <div className="image">
                   <Image
                     src={hospital.image}
@@ -60,11 +75,11 @@ export function OurHospitals() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </FadeIn>
+              </motion.div>
+            </StaggerItem>
           ))}
-        </div>
-      </div>
+        </StaggerReveal>
+      </motion.div>
     </section>
   );
 }

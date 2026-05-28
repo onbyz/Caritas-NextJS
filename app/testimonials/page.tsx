@@ -14,9 +14,21 @@ export const metadata = buildMetadata({
   path: `/${SLUG}`,
 });
 
-export default async function Page() {
+type Props = { searchParams: Promise<{ page?: string }> };
+
+export default async function Page({ searchParams }: Props) {
   const page = getStaticPage(SLUG);
   if (!page) notFound();
+  const sp = await searchParams;
+  const currentPage = Math.max(1, Number.parseInt(sp.page ?? "1", 10) || 1);
   const videos = await getTestimonialVideosResolved();
-  return <VideoGridPage page={page} videos={videos} />;
+  return (
+    <VideoGridPage
+      page={page}
+      videos={videos}
+      currentPage={currentPage}
+      perPage={10}
+      basePath="/testimonials"
+    />
+  );
 }

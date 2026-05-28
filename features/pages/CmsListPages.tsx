@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { CmsAlbum, CmsPost, CmsVideo } from "@/services/cms";
+import { Pagination, paginate, totalPages } from "@/components/shared/Pagination";
+import type { CmsAlbum, CmsPost, CmsVideo, CsrActivity } from "@/services/cms";
 import { ContentStaticPage } from "./ContentStaticPage";
 import type { StaticPageFullContent } from "@/constants/pages/full-content";
 
@@ -42,7 +43,7 @@ function YoutubeEmbed({ youtubeId, title }: { youtubeId: string; title: string }
   return (
     <button
       type="button"
-      className="video-container border-0 bg-transparent p-0 w-100 text-start"
+      className="video-container border-0 bg-transparent p-0 w-100 text-start position-relative"
       onClick={() => setPlaying(true)}
       aria-label={`Play ${title}`}
     >
@@ -50,17 +51,27 @@ function YoutubeEmbed({ youtubeId, title }: { youtubeId: string; title: string }
         className="video-thumbnail w-100"
         src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
         alt={title}
-        style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer", display: "block" }}
       />
-      <div className="yt-play-button">
-        <svg viewBox="0 0 68 48" width="68" height="48" aria-hidden>
+      <span
+        className="yt-play-button"
+        style={{
+          position: "absolute",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          pointerEvents: "none",
+        }}
+        aria-hidden
+      >
+        <svg viewBox="0 0 68 48" width="68" height="48">
           <path
             d="M66.52 7.43c-.78-2.93-3.08-5.23-6.01-6.01C55.4 0 34 0 34 0S12.6 0 7.49 1.42c-2.93.78-5.23 3.08-6.01 6.01C0 12.54 0 24 0 24s0 11.46 1.48 16.57c.78 2.93 3.08 5.23 6.01 6.01C12.6 48 34 48 34 48s21.4 0 26.51-1.42c2.93-.78 5.23-3.08 6.01-6.01C68 35.46 68 24 68 24s0-11.46-1.48-16.57z"
             fill="red"
           />
           <path d="M45 24 27 14v20z" fill="white" />
         </svg>
-      </div>
+      </span>
     </button>
   );
 }
@@ -151,16 +162,23 @@ export function ArticlesListPage({
 export function NewsListPage({
   page,
   items,
+  currentPage = 1,
+  perPage = 15,
 }: {
   page: StaticPageFullContent;
   items: CmsPost[];
+  currentPage?: number;
+  perPage?: number;
 }) {
+  const pages = totalPages(items.length, perPage);
+  const pageItems = paginate(items, currentPage, perPage);
+
   return (
     <ContentStaticPage {...page} showEnquiry={false}>
       <section className="py-3">
         <div className="container">
           <div className="row">
-            {items.map((post) => (
+            {pageItems.map((post) => (
               <div key={post.id} className="col-lg-4 mb-4">
                 <div className="post">
                   <Link href={`/articles/${post.slug}`} style={{ color: "#000" }}>
@@ -178,6 +196,7 @@ export function NewsListPage({
             ))}
             {items.length === 0 && <p>No news found.</p>}
           </div>
+          <Pagination currentPage={currentPage} totalPages={pages} basePath="/news-and-events" />
         </div>
       </section>
     </ContentStaticPage>
@@ -218,86 +237,96 @@ export function GalleryPage({
   );
 }
 
-export function CareerJobsSection({
-  jobs,
-}: {
-  jobs: {
-    id: string;
-    job_title: string;
-    department: string;
-    qualification: string;
-    experience: string;
-    job_discription: string;
-    key_responsibilities: string;
-    preferred_skills: string;
-  }[];
-}) {
-  if (!jobs.length) return null;
-  return (
-    <section id="open-positions" className="py-5">
-      <div className="container">
-        <h3 className="mb-4">Open Positions</h3>
-        {jobs.map((job) => (
-          <div key={job.id} className="mb-5 p-4" style={{ background: "#faf9f9" }}>
-            <h4 style={{ color: "#c71782" }}>{job.job_title}</h4>
-            <p>
-              <strong>Department:</strong> {job.department}
-            </p>
-            {job.qualification && (
-              <p>
-                <strong>Qualification:</strong> {job.qualification}
-              </p>
-            )}
-            {job.experience && (
-              <p>
-                <strong>Experience:</strong> {job.experience}
-              </p>
-            )}
-            {job.job_discription && <p>{job.job_discription}</p>}
-            {job.key_responsibilities && (
-              <>
-                <p>
-                  <strong>Key Responsibilities</strong>
-                </p>
-                <div dangerouslySetInnerHTML={{ __html: job.key_responsibilities }} />
-              </>
-            )}
-            {job.preferred_skills && (
-              <>
-                <p>
-                  <strong>Preferred Skills</strong>
-                </p>
-                <div dangerouslySetInnerHTML={{ __html: job.preferred_skills }} />
-              </>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 export function VideoGridPage({
   page,
   videos,
+  currentPage = 1,
+  perPage = 10,
+  basePath,
 }: {
   page: StaticPageFullContent;
   videos: CmsVideo[];
+  currentPage?: number;
+  perPage?: number;
+  basePath: string;
 }) {
+  const pages = totalPages(videos.length, perPage);
+  const pageVideos = paginate(videos, currentPage, perPage);
+
   return (
     <ContentStaticPage {...page} showEnquiry={false}>
       <section className="py-3">
         <div className="container">
           <div className="row">
-            {videos.map((v) => (
-              <div key={v.id} className="col-lg-6 mb-5 px-3">
+            {pageVideos.map((v) => (
+              <div key={`${v.id}-${v.youtube_id}`} className="col-lg-6 mb-5 px-3">
                 <YoutubeEmbed youtubeId={v.youtube_id} title={v.title} />
                 <h5 className="my-4">{v.title}</h5>
               </div>
             ))}
           </div>
+          <Pagination currentPage={currentPage} totalPages={pages} basePath={basePath} />
         </div>
       </section>
     </ContentStaticPage>
+  );
+}
+
+export function CsrActivitiesSection({
+  activities,
+  currentPage = 1,
+  perPage = 9,
+}: {
+  activities: CsrActivity[];
+  currentPage?: number;
+  perPage?: number;
+}) {
+  const pages = totalPages(activities.length, perPage);
+  const items = paginate(activities, currentPage, perPage);
+
+  return (
+    <section className="py-5">
+      <div className="container">
+        <div className="row justify-content-center">
+          <h3 style={{ fontWeight: 600 }}>Caritas Public Health Mission</h3>
+          <p>&nbsp;</p>
+        </div>
+        <div className="row">
+          {items.map((item) => (
+            <div key={item.id} className="col-lg-4 mb-4">
+              <div className="post">
+                <Link
+                  href={`/caritas-social-responsibility/${item.slug}`}
+                  style={{ color: "#000" }}
+                >
+                  {item.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="img-fluid mb-2"
+                      style={{ borderRadius: 20 }}
+                    />
+                  ) : null}
+                  <h6 className="post-title mt-3" style={{ maxWidth: 560 }}>
+                    {item.title}
+                  </h6>
+                </Link>
+                {item.date_of_added && (
+                  <p style={{ color: "rgba(0, 0, 0, 0.5)" }}>
+                    {formatMonthYear(item.date_of_added)}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={pages}
+          basePath="/caritas-social-responsibility"
+        />
+      </div>
+    </section>
   );
 }

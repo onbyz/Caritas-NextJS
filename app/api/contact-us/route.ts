@@ -1,4 +1,4 @@
-import { fakeSuccess, getPageUrl, verifyRecaptcha } from "@/lib/forms/api-helpers";
+import { getPageUrl, successWithRedirect, verifyRecaptcha } from "@/lib/forms/api-helpers";
 import { insertFormSubmission } from "@/lib/forms/legacy-db";
 import { isPhone10to14, str } from "@/lib/forms/validation";
 
@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const formData = await request.formData();
 
   if (str(formData, "additional_field")) {
-    return fakeSuccess();
+    return successWithRedirect("/success");
   }
 
   const first_name = str(formData, "first_name");
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     (await verifyRecaptcha(captcha));
 
   if (!valid) {
-    return fakeSuccess();
+    return successWithRedirect("/success");
   }
 
   await insertFormSubmission("contact-us", {
@@ -38,5 +38,5 @@ export async function POST(request: Request) {
     page_url: getPageUrl(request),
   });
 
-  return fakeSuccess();
+  return successWithRedirect("/success");
 }

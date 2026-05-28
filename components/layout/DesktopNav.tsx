@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BRAND } from "@/constants/brand";
 import {
   ABOUT_LINKS,
+  ACADEMICS_MENU_ITEMS,
   CENTRES_OF_EXCELLENCE,
   RESOURCE_LINKS,
   SERVICE_LINKS,
@@ -16,6 +17,8 @@ const coeCol1 = CENTRES_OF_EXCELLENCE.slice(0, 9);
 const coeCol2 = CENTRES_OF_EXCELLENCE.slice(9);
 const specCol1 = SPECIALITIES.slice(0, 8);
 const specCol2 = SPECIALITIES.slice(8);
+const academicsRow1 = ACADEMICS_MENU_ITEMS.slice(0, 3);
+const academicsRow2 = ACADEMICS_MENU_ITEMS.slice(3, 6);
 
 export function DesktopNav() {
   useDesktopMenu();
@@ -221,10 +224,14 @@ export function DesktopNav() {
               <div className="cbp-hrsub-inner">
                 <div className="col-lg-4 border-end px-4" style={{ width: "30%" }}>
                   <div className="column-content">
-                    <Image src="/img/academics-navbar.jpg" alt="academics" width={220} height={140} />
-                    <h4>Advancing Knowledge, Transforming Healthcare</h4>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/img/academics-navbar.jpg" alt="doctor and nurses" />
+                    <h4>Advancing Knowledge, Transforming Healthcare </h4>
                     <p style={{ fontSize: 14, textAlign: "justify", fontWeight: 500 }}>
-                      Explore our pioneering endeavours in academics and research at Caritas.
+                      Explore our pioneering endeavours in academics and research at Caritas, where
+                      innovation meets education to shape the future of healthcare. Uncover
+                      breakthroughs, scholarly excellence, and the driving force behind our commitment
+                      to advancing medical knowledge for the benefit of all.
                     </p>
                   </div>
                 </div>
@@ -232,33 +239,69 @@ export function DesktopNav() {
                   <div className="column-content px-5">
                     <h6 className="mb-4">Academics</h6>
                     <div className="row">
-                      {[
-                        { img: "/img/pharmacy 1.png", label: "Caritas DNB Programme", href: "/dnb" },
-                        { img: "/img/nursing 1 (1).png", label: "Caritas College of Nursing", href: "/college-of-nursing" },
-                        { img: "/img/pharmacy 2.png", label: "Caritas College of Pharmacy", href: "/college-of-pharmacy" },
-                        { img: "/img/paramedical 1 (1).png", label: "Caritas Allied Health Science", href: "/caritas-allied-health-science" },
-                        { img: "/img/academics-navbar.png", label: "Caritas Internship Program", href: "/caritas-internship" },
-                        { img: "/img/fellowship-navbar-img.jpg", label: "Caritas Certificate Programme", href: "/caritas-fellowship-programme" },
-                      ].map((a) => (
+                      {academicsRow1.map((a) => (
                         <div key={a.href} className="col-lg-4">
-                          <Image src={a.img} alt="" width={120} height={90} />
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={a.img} alt="doctor and nurses" />
                           <p className="my-3">
-                            <Link className="menuheading my-3" href={a.href} style={{ fontSize: 14 }}>
+                            <Link
+                              className="menuheading my-3"
+                              href={a.href}
+                              style={{ fontSize: 14 }}
+                            >
                               {a.label}
                             </Link>
                           </p>
                         </div>
                       ))}
                     </div>
+                    <div className="row">
+                      {academicsRow2.map((a) => (
+                        <div key={a.href} className="col-lg-4">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={a.img}
+                            alt={a.href === "/caritas-internship" ? "Caritas Internship" : "doctor and nurses"}
+                          />
+                          <p className="my-3">
+                            <Link
+                              className="menuheading my-3"
+                              href={a.href}
+                              style={{ fontSize: 14 }}
+                            >
+                              {a.label}
+                            </Link>
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="row">
+                      <div className="col-lg-6">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src="/img/paramedical 1.png" alt="doctor and nurses" />
+                        <p className="my-3">
+                          <Link
+                            className="menuheading my-3"
+                            href="/caritas-neuroscience-drnb"
+                            style={{ fontSize: 14 }}
+                          >
+                            Caritas Neuroscience DrNB Program
+                          </Link>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="col-lg-2">
                   <div className="column-content px-4">
                     <h6 className="mb-4">Research</h6>
-                    <Image src="/img/nursing 2.png" alt="" width={120} height={90} />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/img/nursing 2.png" alt="doctor and nurses" />
                     <p className="my-3">
                       <Link className="menuheading my-3" href="/research-development">
-                        Research & Development Cell
+                        Research &
+                        <br />
+                        Development Cell
                       </Link>
                     </p>
                     <h6 className="mt-3">Resources</h6>
