@@ -1,3 +1,4 @@
+import { SectionReveal } from "@/components/motion/SectionReveal";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ type PlaceholderPageProps = {
 export function PlaceholderPage({ title, djangoTemplate }: PlaceholderPageProps) {
   return (
     <SiteLayout>
-      <section className="py-5">
+      <SectionReveal as="section" className="py-5">
         <div className="container text-center">
           <h1 style={{ fontWeight: 600 }}>{title}</h1>
           <p className="mt-3">
@@ -24,7 +25,7 @@ export function PlaceholderPage({ title, djangoTemplate }: PlaceholderPageProps)
             Back to Home
           </Link>
         </div>
-      </section>
+      </SectionReveal>
     </SiteLayout>
   );
 }

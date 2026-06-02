@@ -7,40 +7,20 @@ import {
   type Variants,
 } from "framer-motion";
 import type { ReactNode } from "react";
-import { EASE_SMOOTH, MOTION_DURATION, VIEWPORT_DEFAULT } from "@/lib/motion";
+import {
+  fadeInVariants,
+  fadeUpVariants,
+  scaleUpVariants,
+  sectionRevealReducedVariants,
+  VIEWPORT_DEFAULT,
+} from "@/lib/motion";
 
 export type ScrollRevealVariant = "fade-up" | "fade-in" | "scale-up";
 
 const VARIANTS: Record<ScrollRevealVariant, Variants> = {
-  "fade-up": {
-    hidden: { opacity: 0, y: 48 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: MOTION_DURATION.section, ease: EASE_SMOOTH },
-    },
-  },
-  "fade-in": {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: MOTION_DURATION.section, ease: EASE_SMOOTH },
-    },
-  },
-  "scale-up": {
-    hidden: { opacity: 0, y: 32, scale: 0.97 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: MOTION_DURATION.section, ease: EASE_SMOOTH },
-    },
-  },
-};
-
-const REDUCED_VARIANTS: Variants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.2 } },
+  "fade-up": fadeUpVariants,
+  "fade-in": fadeInVariants,
+  "scale-up": scaleUpVariants,
 };
 
 type ScrollRevealProps = {
@@ -61,7 +41,7 @@ export function ScrollReveal({
 }: ScrollRevealProps) {
   const prefersReducedMotion = useReducedMotion();
   const Component = motion[as];
-  const base = prefersReducedMotion ? REDUCED_VARIANTS : VARIANTS[variant];
+  const base = prefersReducedMotion ? sectionRevealReducedVariants : VARIANTS[variant];
 
   return (
     <Component

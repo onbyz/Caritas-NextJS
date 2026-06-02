@@ -13,7 +13,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     <>
       <TopBar />
       <Header />
-      {children}
+      <div className="site-main">{children}</div>
       <Footer />
       <LegacyScripts />
     </>

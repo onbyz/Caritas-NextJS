@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Pagination, paginate, totalPages } from "@/components/shared/Pagination";
+import { StaggerItem, StaggerReveal } from "@/components/shared/StaggerReveal";
 import type { CmsAlbum, CmsPost, CmsVideo, CsrActivity } from "@/services/cms";
 import { ContentStaticPage } from "./ContentStaticPage";
 import type { StaticPageFullContent } from "@/constants/pages/full-content";
@@ -118,9 +119,9 @@ export function ArticlesListPage({
               </select>
             </div>
           </div>
-          <div className="row justify-content-center">
+          <StaggerReveal className="row justify-content-center">
             {filteredItems.map((post) => (
-              <div key={post.id} className="col-lg-4 mb-4">
+              <StaggerItem key={post.id} className="col-lg-4 mb-4">
                 <div className="post">
                   <Link href={`/articles/${post.slug}`} style={{ color: "#000" }}>
                     {post.image ? (
@@ -145,14 +146,14 @@ export function ArticlesListPage({
                     )}
                   </Link>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
             {filteredItems.length === 0 && (
               <div className="col-lg-12">
                 <p className="text-center">No posts found for the selected department.</p>
               </div>
             )}
-          </div>
+          </StaggerReveal>
         </div>
       </section>
     </ContentStaticPage>
@@ -177,9 +178,9 @@ export function NewsListPage({
     <ContentStaticPage {...page} showEnquiry={false}>
       <section className="py-3">
         <div className="container">
-          <div className="row">
+          <StaggerReveal className="row">
             {pageItems.map((post) => (
-              <div key={post.id} className="col-lg-4 mb-4">
+              <StaggerItem key={post.id} className="col-lg-4 mb-4">
                 <div className="post">
                   <Link href={`/articles/${post.slug}`} style={{ color: "#000" }}>
                     {post.image ? (
@@ -192,10 +193,10 @@ export function NewsListPage({
                     <p style={{ color: "rgba(0, 0, 0, 0.5)" }}>{formatMonthYear(post.created)}</p>
                   )}
                 </div>
-              </div>
+              </StaggerItem>
             ))}
             {items.length === 0 && <p>No news found.</p>}
-          </div>
+          </StaggerReveal>
           <Pagination currentPage={currentPage} totalPages={pages} basePath="/news-and-events" />
         </div>
       </section>
@@ -214,9 +215,9 @@ export function GalleryPage({
     <ContentStaticPage {...page} showEnquiry={false}>
       <section className="py-3">
         <div className="container">
-          <div className="row">
+          <StaggerReveal className="row">
             {albumList.map((album) => (
-              <div key={album.id} className="col-md-4 mb-4">
+              <StaggerItem key={album.id} className="col-md-4 mb-4">
                 <Link href={`/gallery/${album.id}`}>
                   {album.coverImage && (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -228,9 +229,9 @@ export function GalleryPage({
                   )}
                   <h5 className="mt-3">{album.title}</h5>
                 </Link>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
         </div>
       </section>
     </ContentStaticPage>
@@ -257,14 +258,17 @@ export function VideoGridPage({
     <ContentStaticPage {...page} showEnquiry={false}>
       <section className="py-3">
         <div className="container">
-          <div className="row">
+          <StaggerReveal className="row">
             {pageVideos.map((v) => (
-              <div key={`${v.id}-${v.youtube_id}`} className="col-lg-6 mb-5 px-3">
+              <StaggerItem
+                key={`${v.id}-${v.youtube_id}`}
+                className="col-lg-6 mb-5 px-3"
+              >
                 <YoutubeEmbed youtubeId={v.youtube_id} title={v.title} />
                 <h5 className="my-4">{v.title}</h5>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
           <Pagination currentPage={currentPage} totalPages={pages} basePath={basePath} />
         </div>
       </section>
@@ -291,9 +295,9 @@ export function CsrActivitiesSection({
           <h3 style={{ fontWeight: 600 }}>Caritas Public Health Mission</h3>
           <p>&nbsp;</p>
         </div>
-        <div className="row">
+        <StaggerReveal className="row">
           {items.map((item) => (
-            <div key={item.id} className="col-lg-4 mb-4">
+            <StaggerItem key={item.id} className="col-lg-4 mb-4">
               <div className="post">
                 <Link
                   href={`/caritas-social-responsibility/${item.slug}`}
@@ -318,9 +322,9 @@ export function CsrActivitiesSection({
                   </p>
                 )}
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerReveal>
         <Pagination
           currentPage={currentPage}
           totalPages={pages}

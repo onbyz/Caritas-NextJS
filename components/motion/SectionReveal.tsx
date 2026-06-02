@@ -1,23 +1,35 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type HTMLMotionProps } from "framer-motion";
 import type { ReactNode } from "react";
-import { fadeUpVariants, sectionRevealReducedVariants, VIEWPORT_DEFAULT } from "@/lib/motion";
+import {
+  sectionRevealReducedVariants,
+  sectionRevealVariants,
+  VIEWPORT_DEFAULT,
+} from "@/lib/motion";
 
-type FadeInProps = {
+type SectionRevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
-  as?: "div" | "section";
-};
+  as?: "div" | "section" | "article" | "main";
+} & Pick<HTMLMotionProps<"div">, "id">;
 
-export function FadeIn({ children, className, delay = 0, as = "div" }: FadeInProps) {
+/** Standard section scroll-into-view reveal (opacity + y) */
+export function SectionReveal({
+  children,
+  className,
+  delay = 0,
+  as = "section",
+  id,
+}: SectionRevealProps) {
   const prefersReducedMotion = useReducedMotion();
   const Component = motion[as];
-  const base = prefersReducedMotion ? sectionRevealReducedVariants : fadeUpVariants;
+  const base = prefersReducedMotion ? sectionRevealReducedVariants : sectionRevealVariants;
 
   return (
     <Component
+      id={id}
       className={className}
       initial="hidden"
       whileInView="visible"

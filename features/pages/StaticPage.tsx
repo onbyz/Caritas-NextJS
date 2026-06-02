@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { SectionReveal } from "@/components/motion/SectionReveal";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { EnquiryForm } from "@/components/shared/EnquiryForm";
 import type { StaticPageConfig } from "@/constants/pages/registry";
@@ -20,7 +21,7 @@ export function StaticPage({
 }: StaticPageProps) {
   return (
     <SiteLayout>
-      <section className="py-5">
+      <SectionReveal as="section" className="py-5">
         <div className="container">
           <div className="row justify-content-center">
             <h1 style={{ fontWeight: 600 }}>{title}</h1>
@@ -65,13 +66,13 @@ export function StaticPage({
             )}
           </div>
         </div>
-      </section>
+      </SectionReveal>
       {intro && (
-        <section className="py-4">
+        <SectionReveal as="section" className="py-4" delay={0.06}>
           <div className="container">
             <p style={{ fontWeight: 500 }}>{intro}</p>
           </div>
-        </section>
+        </SectionReveal>
       )}
       {children}
     </SiteLayout>

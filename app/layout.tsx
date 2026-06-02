@@ -8,6 +8,7 @@ import { SmoothScrollProvider } from "@/components/layout/SmoothScrollProvider";
 import { defaultMetadata } from "@/lib/metadata";
 import "./globals.css";
 import "@/styles/legacy.css";
+import "@/styles/motion-global.css";
 
 export const metadata: Metadata = defaultMetadata;
 

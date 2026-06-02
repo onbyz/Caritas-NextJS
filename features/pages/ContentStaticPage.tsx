@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { StaticFormsBridge } from "@/components/forms/StaticFormsBridge";
+import { SectionReveal } from "@/components/motion/SectionReveal";
 import { LegacyContentEnhancer } from "@/components/shared/LegacyContentEnhancer";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { EnquiryForm } from "@/components/shared/EnquiryForm";
@@ -25,7 +26,7 @@ export function ContentStaticPage({
 
   return (
     <SiteLayout>
-      <section className="py-5">
+      <SectionReveal as="section" className="py-5">
         <div className="container">
           <div className="row justify-content-center text-center">
             <h1 style={{ fontWeight: 600 }}>{title}</h1>
@@ -103,7 +104,7 @@ export function ContentStaticPage({
             </div>
           )}
         </div>
-      </section>
+      </SectionReveal>
 
       {contentHtml && (
         <div

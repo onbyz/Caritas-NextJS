@@ -1,4 +1,13 @@
 /* Minimal globals — primary styles in /public/css/style3.css */
-html {
+/* Lenis handles smooth scroll when active; avoid double smoothing */
+html:not(.lenis) {
   scroll-behavior: smooth;
+}
+
+html.lenis {
+  height: auto;
+}
+
+html.lenis body {
+  height: auto;
 }

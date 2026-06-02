@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { SectionReveal } from "@/components/motion/SectionReveal";
 
 function formatMonthYear(value?: string): string {
   if (!value) return "";
@@ -35,7 +38,7 @@ export function PostDetailLayout({
   footer,
 }: PostDetailLayoutProps) {
   return (
-    <section className="py-5">
+    <SectionReveal as="section" className="py-5">
       <div className="container px-5 my-5">
         <p>
           <Link href={backHref}>← {backLabel}</Link>
@@ -88,6 +91,6 @@ export function PostDetailLayout({
           </div>
         </div>
       </div>
-    </section>
+    </SectionReveal>
   );
 }
