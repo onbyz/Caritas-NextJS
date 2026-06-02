@@ -59,9 +59,7 @@ export default async function HomePage() {
           <HomeScrollSection variant="scale-up">
             <CentresOfExcellence />
           </HomeScrollSection>
-          <HomeScrollSection>
-            <FutureFirstSection />
-          </HomeScrollSection>
+          <FutureFirstSection />
           <HomeScrollSection variant="fade-in">
             <DonationBanner />
           </HomeScrollSection>

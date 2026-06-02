@@ -138,13 +138,42 @@ body {
   }
 
   .future-first-section {
-    padding: 2.25rem 0 2.5rem;
+    padding: 2rem 0 2.25rem;
   }
 
-  .future-first-image {
-    aspect-ratio: 16 / 11;
-    max-height: 240px;
-    object-fit: cover;
+  .future-first-header {
+    margin-bottom: 1rem;
+  }
+
+  .future-first-body {
+    --future-first-gap: 0.75rem;
+  }
+
+  .future-first-hero-col {
+    margin-bottom: 0.25rem;
+  }
+
+  .future-first-hero {
+    max-width: 260px;
+  }
+
+  .future-first-hero__stage {
+    height: 220px;
+    max-height: 220px;
+  }
+
+  .future-first-hero__digit,
+  .future-first-hero__digit-shadow {
+    font-size: clamp(5rem, 20vw, 6.5rem);
+  }
+
+  .future-first-hero__caption {
+    margin-top: 0.35rem;
+    font-size: 0.7rem;
+  }
+
+  .future-first-cta {
+    margin-top: 0.85rem;
   }
 
   .future-first-item {
@@ -285,7 +314,7 @@ body {
     transform: translate3d(0, 14px, 0);
   }
 
-  .page-home .home-scroll-section {
+  .page-home .home-scroll-section:not(.home-scroll-section--skip) {
     overflow-x: clip;
   }
 
@@ -332,7 +361,12 @@ body {
     min-height: 180px !important;
   }
 
-  .future-first-image {
+  .future-first-hero {
+    max-width: 220px;
+  }
+
+  .future-first-hero__stage {
+    height: 200px;
     max-height: 200px;
   }
 }

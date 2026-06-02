@@ -19,6 +19,13 @@ export const VIEWPORT_DEFAULT = {
   margin: "-8% 0px -5% 0px" as const,
 };
 
+/** Looser viewport — works better with Lenis smooth scroll */
+export const VIEWPORT_IN_VIEW = {
+  once: true,
+  amount: 0.12 as const,
+  margin: "0px 0px -80px 0px" as const,
+};
+
 /** @deprecated Use VIEWPORT_DEFAULT */
 export const VIEWPORT_SECTION = VIEWPORT_DEFAULT;
 
