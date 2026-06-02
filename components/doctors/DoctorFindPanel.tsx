@@ -38,6 +38,7 @@ export function DoctorFindPanel({
   const [department, setDepartment] = useState(initialDepartment);
   const [isDebouncing, setIsDebouncing] = useState(false);
   const skipSearchDebounceRef = useRef(false);
+  const hasUserTypedRef = useRef(false);
   const departmentRef = useRef(department);
 
   const hasSearchText = Boolean(search.trim());
@@ -62,6 +63,12 @@ export function DoctorFindPanel({
     () => {
       if (skipSearchDebounceRef.current) {
         skipSearchDebounceRef.current = false;
+        setIsDebouncing(false);
+        return;
+      }
+      // Guard against mount / Strict Mode double-invoke: only the user typing
+      // in the search box should trigger live navigation.
+      if (!hasUserTypedRef.current) {
         setIsDebouncing(false);
         return;
       }
@@ -150,6 +157,7 @@ export function DoctorFindPanel({
                 placeholder="Search by name, specialty, department..."
                 value={search}
                 onChange={(e) => {
+                  hasUserTypedRef.current = true;
                   setSearch(e.target.value);
                   setIsDebouncing(true);
                 }}

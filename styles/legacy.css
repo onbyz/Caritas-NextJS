@@ -1042,31 +1042,360 @@ body {
   opacity: 0.85;
 }
 
-/* ─── Centres of Excellence ──────────────────────────────────────── */
+/* ─── Centres of Excellence (premium) ───────────────────────────── */
 
-.coe-image-slider {
+.coe-section {
   position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  min-height: 420px;
+  padding: 4.5rem 0 5rem;
+  background: #fbfcfe;
+  overflow: hidden;
 }
 
-.coe-image-slider__frame {
+.coe-bg {
   position: absolute;
   inset: 0;
-  display: flex;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 12% 8%, rgba(0, 114, 188, 0.07) 0%, transparent 60%),
+    radial-gradient(50% 50% at 95% 100%, rgba(199, 23, 130, 0.05) 0%, transparent 60%);
+}
+
+.coe-container {
+  position: relative;
+  z-index: 1;
+}
+
+.coe-header {
+  max-width: 44rem;
+  margin: 0 auto 2.75rem;
+  text-align: center;
+}
+
+.coe-eyebrow {
+  display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c71782;
+  background: rgba(199, 23, 130, 0.08);
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.coe-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  font-weight: 700;
+  color: #142a52;
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
+}
+
+.coe-title span {
+  background: linear-gradient(100deg, #0072bc 0%, #00a0e3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coe-subtitle {
+  font-size: 0.98rem;
+  color: #5a6478;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.coe-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* ── Doctor showcase ── */
+
+.coe-showcase {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  min-height: 540px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #1c4f86 0%, #0c2d54 55%, #08203d 100%);
+  box-shadow: 0 30px 70px rgba(8, 32, 61, 0.28);
+  isolation: isolate;
+}
+
+.coe-showcase__halo {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(0, 160, 227, 0.4) 0%, transparent 65%);
+  filter: blur(10px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.coe-showcase__grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask: radial-gradient(80% 80% at 50% 40%, #000 0%, transparent 80%);
+  -webkit-mask: radial-gradient(80% 80% at 50% 40%, #000 0%, transparent 80%);
+}
+
+.coe-showcase__stage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
 }
 
-.coe-image-slider .coe-doctor-img {
-  display: block !important;
-  width: auto !important;
-  max-width: 100%;
-  height: auto;
-  margin-top: -149px !important;
+.coe-showcase__figure {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.coe-showcase__img {
+  display: block;
+  width: 65%;
+  height: 100%;
   object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+}
+
+/* Glowing platform — grounds the doctor (no floating) */
+.coe-showcase__platform {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 62%;
+  height: 60px;
+  z-index: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 160, 227, 0.55) 0%,
+    rgba(0, 160, 227, 0.18) 45%,
+    transparent 72%
+  );
+  filter: blur(4px);
+}
+
+/* Floating glass chips */
+.coe-chip {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(8, 32, 61, 0.22);
+  will-change: transform;
+}
+
+.coe-chip--top {
+  top: 1.5rem;
+  right: 1.25rem;
+}
+
+.coe-chip--bottom {
+  bottom: 3.25rem;
+  left: 1.25rem;
+}
+
+.coe-chip__icon {
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.coe-chip__icon--blue {
+  background: linear-gradient(135deg, #0072bc, #00a0e3);
+}
+
+.coe-chip__icon--pink {
+  background: linear-gradient(135deg, #c71782, #e84aa8);
+}
+
+.coe-chip__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  color: #5a6478;
+  font-weight: 500;
+}
+
+.coe-chip__text strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #142a52;
+  line-height: 1.1;
+}
+
+.coe-showcase__dots {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.coe-showcase__dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: background 0.25s ease, width 0.25s ease;
+}
+
+.coe-showcase__dot.active {
+  width: 22px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* ── Department grid ── */
+
+.coe-dept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-content: center;
+}
+
+.coe-dept {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  height: 100%;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #eef2f7;
+  text-decoration: none !important;
+  color: #142a52 !important;
+  box-shadow: 0 2px 8px rgba(20, 42, 82, 0.04);
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.coe-dept::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #0072bc, #00a0e3);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s ease;
+}
+
+.coe-dept:hover {
+  border-color: transparent;
+  box-shadow: 0 14px 30px rgba(0, 114, 188, 0.16);
+  transform: translateY(-3px);
+  color: #0072bc !important;
+}
+
+.coe-dept:hover::before {
+  transform: scaleY(1);
+}
+
+.coe-dept__icon {
+  flex-shrink: 0;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 11px;
+  background: linear-gradient(135deg, rgba(0, 114, 188, 0.1), rgba(0, 160, 227, 0.12));
+  color: #0072bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.coe-dept:hover .coe-dept__icon {
+  background: linear-gradient(135deg, #0072bc, #00a0e3);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.coe-dept__label {
+  flex: 1;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.coe-dept__arrow {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: #0072bc;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.coe-dept:hover .coe-dept__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 991px) {
+  .coe-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .coe-showcase {
+    min-height: 460px;
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 /* Oversized bg container — allows vertical travel without gaps */
@@ -1554,5 +1883,15 @@ body {
 @media (min-width: 991px) {
   .hide_desktop {
     display: none !important;
+  }
+}
+
+/* Taller card on desktop renders the contained doctor larger (contain never clips) */
+@media (min-width: 992px) {
+  .coe-showcase {
+    min-height: 640px !important;
+  }
+  .coe-showcase__figure {
+    padding-top: 1.5rem;
   }
 }

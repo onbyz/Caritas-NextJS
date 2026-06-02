@@ -181,49 +181,61 @@ body {
     padding: 0.75rem 0.85rem;
   }
 
-  .coe-image-slider {
-    min-height: 0 !important;
-    height: auto;
-    max-width: 260px;
-    margin-bottom: 0.75rem;
-    overflow: hidden;
+  /* ── Centres of Excellence ── */
+  .coe-section {
+    padding: 2.5rem 0 3rem;
   }
 
-  .coe-image-slider__frame {
-    position: relative !important;
-    inset: auto !important;
-    min-height: 0;
+  .coe-header {
+    margin-bottom: 2rem;
   }
 
-  .coe-image-slider .coe-doctor-img {
-    margin-top: 0 !important;
-    max-height: 220px;
-    width: auto !important;
-    max-width: 100% !important;
+  .coe-showcase {
+    min-height: 400px;
+    border-radius: 24px;
   }
 
-  .page-home .about .container1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .coe-chip {
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
   }
 
-  .coelistmob {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    padding-top: 0.25rem !important;
+  .coe-chip__icon {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.85rem;
   }
 
-  .coelistmob > [class*="col-"] {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+  .coe-chip__text {
+    font-size: 0.66rem;
   }
 
-  .coelistmob p {
-    margin-bottom: 0.75rem;
+  .coe-chip__text strong {
+    font-size: 0.95rem;
+  }
+
+  .coe-dept-grid {
+    gap: 0.55rem;
+  }
+
+  .coe-dept {
+    padding: 0.7rem 0.8rem;
+    gap: 0.55rem;
+    border-radius: 12px;
+  }
+
+  .coe-dept__icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.85rem;
+  }
+
+  .coe-dept__label {
+    font-size: 0.76rem;
+  }
+
+  .coe-dept__arrow {
+    display: none;
   }
 
   .home-ratings-swiper .home-rating-badge {
@@ -344,12 +356,13 @@ body {
     height: 340px;
   }
 
-  .coe-image-slider {
-    max-width: 220px;
+  .coe-showcase {
+    min-height: 360px;
   }
 
-  .coe-image-slider .coe-doctor-img {
-    max-height: 190px;
+  .coe-dept-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
   .home-ratings-swiper .home-rating-badge {
