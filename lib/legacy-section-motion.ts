@@ -1,14 +1,20 @@
 /**
- * Lightweight scroll reveals for server-rendered legacy HTML blocks.
- * Uses transform + opacity only (GPU-friendly). Respects reduced motion.
+ * Lightweight scroll reveals for pages that are not explicitly wrapped with
+ * Framer Motion components. Uses transform + opacity only (GPU-friendly).
  */
 
 const REVEAL_SELECTOR = [
+  ".site-main > section",
+  ".site-main > article",
+  ".site-main > div:not(.page-home):not(.legacy-static-content):not(.page-transition-root)",
+  ".site-main > div:not(.page-home) > section",
+  ".site-main > main > section",
   ".legacy-static-content section",
   "#deptsections",
   ".data-filter-section",
   ".health-package-section",
   ".department-treatments-section",
+  ".international-enquiry-section",
 ].join(", ");
 
 export function initLegacySectionMotion() {
@@ -17,7 +23,12 @@ export function initLegacySectionMotion() {
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReduced) return () => undefined;
 
-  const elements = document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR);
+  const elements = [...document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR)].filter(
+    (el) =>
+      !el.closest(".page-home") &&
+      !el.classList.contains("home-scroll-section") &&
+      !el.classList.contains("motion-reveal-skip"),
+  );
   if (!elements.length) return () => undefined;
 
   elements.forEach((el, index) => {

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { StaggerItem, StaggerReveal } from "@/components/shared/StaggerReveal";
 
 export type DeptArticle = {
   title: string;
@@ -27,8 +28,9 @@ export function ArticlesSection({
             journey towards better health and well-being.
           </p>
           <p>&nbsp;</p>
+          <StaggerReveal className="col-lg-12">
           {articles.map((post) => (
-            <div key={post.slug} className="col-lg-12">
+            <StaggerItem key={post.slug} className="col-lg-12">
               <div className="post">
                 <div className="row align-items-center mx-4">
                   <div className="col-lg-11">
@@ -47,8 +49,9 @@ export function ArticlesSection({
                 </div>
                 <hr style={{ width: "95%", margin: "30px auto" }} />
               </div>
-            </div>
+            </StaggerItem>
           ))}
+          </StaggerReveal>
           <p>
             <Link className="mx-4 mt-5" href="/articles" style={{ color: "#c61682" }}>
               View All Articles <i className="bi bi-chevron-right ms-2" />

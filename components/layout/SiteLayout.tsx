@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { GlobalScrollMotion } from "@/components/motion/GlobalScrollMotion";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { LegacyScripts } from "./LegacyScripts";
@@ -14,6 +15,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       <TopBar />
       <Header />
       <div className="site-main">{children}</div>
+      <GlobalScrollMotion />
       <Footer />
       <LegacyScripts />
     </>

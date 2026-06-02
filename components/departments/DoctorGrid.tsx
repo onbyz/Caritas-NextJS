@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { StaggerItem, StaggerReveal } from "@/components/shared/StaggerReveal";
 import { BRAND } from "@/constants/brand";
 
 export type DeptDoctor = {
@@ -35,10 +36,11 @@ export function DoctorGrid({
 
         {groups.map((group) =>
           group.doctors.length > 0 ? (
-            <div key={group.heading} className="row">
+            <div key={group.heading}>
               <h5 className="mainheading">{group.heading}</h5>
+              <StaggerReveal className="row">
               {group.doctors.map((doctor) => (
-                <div
+                <StaggerItem
                   key={doctor.id}
                   className="col-lg-6 col-md-6 col-sm-12 mb-4 pt-4 doctorbox"
                 >
@@ -95,8 +97,9 @@ export function DoctorGrid({
                     </div>
                   </div>
                   <br />
-                </div>
+                </StaggerItem>
               ))}
+              </StaggerReveal>
             </div>
           ) : null,
         )}

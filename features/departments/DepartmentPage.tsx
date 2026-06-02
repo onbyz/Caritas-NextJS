@@ -208,18 +208,24 @@ export function DepartmentPage({
         <section
           id="deptsections"
           className="department-treatments-section"
-          style={{ backgroundColor: "#F4F6F6", maxWidth: "100%" }}
         >
           <span id="treatments-procedures" />
-          <div className="container mt-5">
-            <div className="row justify-content-center">
+          <div className="container">
+            <div className="row justify-content-center department-treatments-section__header">
+              <span className="department-treatments-section__eyebrow">
+                Care Pathways
+              </span>
               <h3 className="text-center department-treatments-section__title">
                 Treatment and Procedures
               </h3>
+              <p className="department-treatments-section__subtitle">
+                Explore the major treatments, procedures, and care options available
+                in this specialty.
+              </p>
             </div>
             {treatmentsCustomHtml ? (
               <div
-                className="department-treatments-content"
+                className="department-treatments-content department-treatments-content--custom"
                 dangerouslySetInnerHTML={{ __html: treatmentsCustomHtml }}
               />
             ) : treatments && treatments.length > 0 ? (

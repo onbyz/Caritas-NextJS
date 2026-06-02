@@ -1,4 +1,6 @@
+import type { CSSProperties } from "react";
 import { cleanLegacyText } from "@/lib/sanitize-text";
+import { StaggerItem, StaggerReveal } from "@/components/shared/StaggerReveal";
 
 /** Two-column treatment lists — matches Django department pages without accordions */
 export function TreatmentListSection({
@@ -33,32 +35,48 @@ export function TreatmentListSection({
         </p>
       )}
       <div
-        className="row justify-content-center"
-        style={{ width: singleColumn ? "90%" : width, margin: "0 auto" }}
+        className="row justify-content-center treatment-list-grid"
+        style={
+          {
+            "--treatment-list-width": singleColumn ? "90%" : width,
+          } as CSSProperties
+        }
       >
         {singleColumn ? (
-          <div className="col-12 col-lg-8">
-            <ul className="treatment-procedure-list mb-0">
+          <div className="col-12 col-lg-9">
+            <StaggerReveal className="treatment-list-card treatment-list-card--single">
+              <ul className="treatment-procedure-list mb-0">
               {items1.map((item) => (
-                <li key={item}>{item}</li>
+                <StaggerItem key={item} as="li">
+                  {item}
+                </StaggerItem>
               ))}
             </ul>
+            </StaggerReveal>
           </div>
         ) : (
           <>
             <div className="col-lg-5">
-              <ul className="treatment-procedure-list">
+              <StaggerReveal className="treatment-list-card">
+                <ul className="treatment-procedure-list">
                 {items1.map((item) => (
-                  <li key={item}>{item}</li>
+                  <StaggerItem key={item} as="li">
+                    {item}
+                  </StaggerItem>
                 ))}
               </ul>
+              </StaggerReveal>
             </div>
             <div className="col-lg-6">
-              <ul className="treatment-procedure-list">
+              <StaggerReveal className="treatment-list-card treatment-list-card--accent">
+                <ul className="treatment-procedure-list">
                 {items2.map((item) => (
-                  <li key={item}>{item}</li>
+                  <StaggerItem key={item} as="li">
+                    {item}
+                  </StaggerItem>
                 ))}
               </ul>
+              </StaggerReveal>
             </div>
           </>
         )}
