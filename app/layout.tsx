@@ -9,6 +9,7 @@ import { defaultMetadata } from "@/lib/metadata";
 import "./globals.css";
 import "@/styles/legacy.css";
 import "@/styles/motion-global.css";
+import "@/styles/mobile.css";
 
 export const metadata: Metadata = defaultMetadata;
 

@@ -33,12 +33,9 @@ function TextCard({
 function ImageCard({ src }: { src: string }) {
   return (
     <div
-      className="col-md-4 box box1"
+      className="col-md-4 box box1 home-feature-image"
       style={{
         backgroundImage: `url(${src})`,
-        backgroundSize: "100%",
-        backgroundRepeat: "no-repeat",
-        minHeight: 280,
       }}
       aria-hidden
     />
@@ -117,12 +114,9 @@ export function HomeFeatureCards() {
                 </p>
               </div>
               <div
-                className="col-12 col-md-6 box box1"
+                className="col-12 col-md-6 box box1 home-feature-image"
                 style={{
                   backgroundImage: "url(/img/home-health-banner.jpg)",
-                  minHeight: 300,
-                  backgroundSize: "100%",
-                  backgroundRepeat: "no-repeat",
                 }}
               />
             </div>
@@ -149,12 +143,9 @@ export function HomeFeatureCards() {
                 </p>
               </div>
               <div
-                className="col-12 col-md-6 box box1"
+                className="col-12 col-md-6 box box1 home-feature-image"
                 style={{
                   backgroundImage: "url(/img/home-pastoral-care.png)",
-                  minHeight: 300,
-                  backgroundSize: "100%",
-                  backgroundRepeat: "no-repeat",
                 }}
               />
             </div>
@@ -177,12 +168,9 @@ export function HomeFeatureCards() {
                 </p>
               </div>
               <div
-                className="col-12 col-md-6 box box1"
+                className="col-12 col-md-6 box box1 home-feature-image"
                 style={{
                   backgroundImage: "url(/img/home-organ-banner.jpg)",
-                  minHeight: 300,
-                  backgroundSize: "100%",
-                  backgroundRepeat: "no-repeat",
                 }}
               />
             </div>

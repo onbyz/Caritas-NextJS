@@ -1,0 +1,354 @@
+/* Mobile layout fixes — loaded after legacy.css */
+
+html,
+body {
+  overflow-x: clip;
+}
+
+.site-main,
+.page-home,
+.page-home #main {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.site-main img:not(.site-floating-icon img):not(.home-rating-badge):not(.coe-doctor-img),
+.site-main video,
+.legacy-static-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-feature-image {
+  min-height: 280px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.vr-banner-content {
+  position: absolute;
+  left: 40px;
+  top: 40%;
+  z-index: 1;
+}
+
+.home-ratings-swiper .home-rating-badge {
+  width: 100px !important;
+  max-width: 100px !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.home-ratings-swiper .home-rating-badge__label {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  padding: 0 1.25rem;
+}
+
+.legacy-static-content img[style*="width"],
+.legacy-static-content img[width] {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  .donation-banner-bg,
+  .vr-banner-bg {
+    inset: 0 !important;
+    height: 100% !important;
+  }
+
+  .donation-banner-section {
+    align-items: flex-end !important;
+    min-height: 360px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .donation-banner__content {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .donation-banner__btn {
+    width: 100%;
+    max-width: 18rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .donation-banner__link {
+    padding-left: 0.15rem;
+  }
+
+  .vr-banner-section {
+    min-height: 360px !important;
+    padding-bottom: 1.75rem !important;
+    margin: 1.25rem 0 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .vr-banner-content {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100%;
+    padding: 0 1.25rem 0.25rem;
+    box-sizing: border-box;
+  }
+
+  .vr-banner-content h2 {
+    font-size: 1.4rem !important;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-home .hero-dissolve-bg {
+    inset: 0 !important;
+    height: 100% !important;
+  }
+
+  .page-home .new-slide-content {
+    align-items: flex-end;
+    padding-bottom: 2.25rem;
+  }
+
+  .page-home .hero-slide-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-home .tab-img-description {
+    display: block !important;
+    font-size: 0.875rem;
+    line-height: 1.45 !important;
+    margin-top: 0.65rem;
+    max-width: 100%;
+  }
+
+  .future-first-section {
+    padding: 2.25rem 0 2.5rem;
+  }
+
+  .future-first-image {
+    aspect-ratio: 16 / 11;
+    max-height: 240px;
+    object-fit: cover;
+  }
+
+  .future-first-item {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .coe-image-slider {
+    min-height: 0 !important;
+    height: auto;
+    max-width: 260px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+
+  .coe-image-slider__frame {
+    position: relative !important;
+    inset: auto !important;
+    min-height: 0;
+  }
+
+  .coe-image-slider .coe-doctor-img {
+    margin-top: 0 !important;
+    max-height: 220px;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  .page-home .about .container1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .coelistmob {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 0.25rem !important;
+  }
+
+  .coelistmob > [class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .coelistmob p {
+    margin-bottom: 0.75rem;
+  }
+
+  .home-ratings-swiper .home-rating-badge {
+    width: 88px !important;
+    max-width: 88px !important;
+  }
+
+  .home-ratings-swiper .home-rating-badge__label {
+    font-size: 0.85rem;
+  }
+
+  .tablet-card .card-title {
+    margin-top: 0 !important;
+  }
+
+  .home-feature-image {
+    min-height: 200px !important;
+  }
+
+  .our-hospital.container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .box-row {
+    gap: 1rem;
+  }
+
+  .box-container.marged {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #insight_tab .mx-4 {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  #insight_tab .nav-tabs {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  #insight_tab .nav-tabs .nav-link {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.65rem;
+  }
+
+  #insight_tab hr[style*="width: 90%"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .tab-services .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .site-main .row.px-3 > [class*="col-"][style*="background-color"],
+  .site-main .row.px-3 > .col-lg-4.col-md-10 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    margin-top: 1rem;
+  }
+
+  .site-main .row.px-3 > [class*="col-"]:first-child {
+    margin-top: 0;
+  }
+
+  .site-main h1 {
+    font-size: 1.65rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .site-main h2 {
+    font-size: 1.1rem !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .site-main .container.px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .motion-reveal {
+    transform: translate3d(0, 14px, 0);
+  }
+
+  .page-home .home-scroll-section {
+    overflow-x: clip;
+  }
+
+  .post .row.mx-4,
+  .post .row.align-items-center.mx-4 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .doctorbox .dr_img img,
+  .doctors-card__image-wrap img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-banner-section {
+    min-height: 300px !important;
+  }
+
+  .vr-banner-section {
+    min-height: 300px !important;
+  }
+
+  .page-home .hero-dissolve-container {
+    height: 340px;
+  }
+
+  .coe-image-slider {
+    max-width: 220px;
+  }
+
+  .coe-image-slider .coe-doctor-img {
+    max-height: 190px;
+  }
+
+  .home-ratings-swiper .home-rating-badge {
+    width: 80px !important;
+    max-width: 80px !important;
+  }
+
+  .home-feature-image {
+    min-height: 180px !important;
+  }
+
+  .future-first-image {
+    max-height: 200px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .doctorbox:hover,
+  .doctors-card:hover,
+  .post:hover,
+  .box-container:hover {
+    transform: none !important;
+    box-shadow: inherit;
+  }
+
+  .post:hover a img,
+  .doctorbox:hover .dr_img img,
+  .doctors-card:hover .doctors-card__image-wrap img {
+    transform: none !important;
+  }
+}

@@ -22,7 +22,7 @@ export function VirtualTourBanner() {
   return (
     <section
       ref={ref}
-      className="position-relative d-flex align-items-end"
+      className="position-relative d-flex align-items-end vr-banner-section"
       style={{
         overflow: "hidden",
         color: "white",
@@ -61,10 +61,7 @@ export function VirtualTourBanner() {
       </div>
 
       {/* Cinematic text reveal — each line staggers in */}
-      <div
-        className="container text-start"
-        style={{ position: "absolute", left: 40, top: "40%", zIndex: 1 }}
-      >
+      <div className="container text-start vr-banner-content">
         <div className="row">
           <div className="col">
             <motion.h2

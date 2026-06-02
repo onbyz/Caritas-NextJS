@@ -11,12 +11,7 @@ export function DonationBanner() {
   const { ref, y, scale } = useParallax({ strength: 0.14 });
 
   return (
-    <section
-      ref={ref}
-      className="position-relative d-flex align-items-end donation-banner-section"
-      style={{ overflow: "hidden", color: "white", paddingBottom: 100, minHeight: "70vh" }}
-    >
-      {/* Cinematic parallax background */}
+    <section ref={ref} className="donation-banner-section">
       <motion.div
         className="donation-banner-bg hide_mobile"
         style={{ y, scale, willChange: "transform" }}
@@ -31,7 +26,6 @@ export function DonationBanner() {
         />
       </motion.div>
 
-      {/* Mobile background (no parallax) */}
       <div className="donation-banner-bg hide_desktop">
         <Image
           src="/media/mobileslider_images/mobile-banner-4_AiJ5pZv.webp"
@@ -43,42 +37,26 @@ export function DonationBanner() {
         />
       </div>
 
-      {/* Content — subtle drift upward as you scroll */}
+      <div className="donation-banner__scrim" aria-hidden />
+
       <motion.div
-        className="container-fluid text-start donation-button"
-        style={{ position: "relative", zIndex: 1 }}
-        initial={{ opacity: 0, y: 30 }}
+        className="donation-banner__content"
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-15%" }}
         transition={{ duration: 0.9, ease: EASE_SMOOTH }}
       >
-        <div className="row">
-          <div className="col-auto ps-4">
-            <a
-              className="action_button button"
-              style={{
-                display: "inline-block",
-                padding: "8px 20px",
-                backgroundColor: "#C71782",
-                color: "white",
-                textDecoration: "none",
-                borderRadius: 25,
-                marginRight: 20,
-              }}
-              href={BRAND.onlinePaymentsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Donate Now
-            </a>
-            <Link
-              style={{ color: "#fff !important", fontWeight: 600 }}
-              href="/caritas-social-responsibility"
-            >
-              Learn More <i className="bi bi-chevron-right ms-2" />
-            </Link>
-          </div>
-        </div>
+        <a
+          className="donation-banner__btn"
+          href={BRAND.onlinePaymentsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate Now
+        </a>
+        <Link className="donation-banner__link" href="/caritas-social-responsibility">
+          Learn More <i className="bi bi-chevron-right ms-2" aria-hidden />
+        </Link>
       </motion.div>
     </section>
   );

@@ -16,76 +16,39 @@ const ACHIEVEMENTS = [
 ];
 
 const imageReveal = {
-  hidden: { opacity: 0, scale: 0.94, x: 24 },
+  hidden: { opacity: 0, scale: 0.96 },
   visible: {
     opacity: 1,
     scale: 1,
-    x: 0,
     transition: { duration: 0.9, ease: EASE_SMOOTH },
   },
 };
 
 export function FutureFirstSection() {
+  const leftCol = ACHIEVEMENTS.slice(0, 3);
+  const rightCol = ACHIEVEMENTS.slice(3);
+
   return (
-    <section id="future" style={{ backgroundColor: "#F4F6F6", paddingBottom: 0 }}>
+    <section id="future" className="future-first-section">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
-            {/* Heading fades up */}
+        <motion.div
+          className="future-first-header text-center text-lg-start"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.7, ease: EASE_SMOOTH }}
+        >
+          <h3 className="future-first-title">Future Starts with the FIRST</h3>
+          <p className="future-first-lead">
+            Being FIRST is an honour. We have made our &apos;First&apos; impressions in care
+            that took us further in promoting good health and happiness for all.
+          </p>
+        </motion.div>
+
+        <div className="row align-items-start g-4 g-lg-5 mt-2 mt-lg-4">
+          <div className="col-lg-5 order-lg-2">
             <motion.div
-              className="row mt-5"
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.7, ease: EASE_SMOOTH }}
-            >
-              <h3 className="my-3 box box1">Future Starts with the FIRST</h3>
-              <span style={{ fontSize: 14 }} className="box box1">
-                Being FIRST is an honour. We have made our &apos;First&apos; impressions in care
-                that took us further in promoting good health and happiness for all.
-              </span>
-
-              {/* Staggered achievement list — desktop */}
-              <div className="col-lg-5 mt-5 hide_mobile">
-                <StaggerReveal>
-                  {ACHIEVEMENTS.slice(0, 3).map((item) => (
-                    <StaggerItem key={item} as="div">
-                      <div className="mx-2 my-3 box box1 custom-list-item">{item}</div>
-                    </StaggerItem>
-                  ))}
-                </StaggerReveal>
-              </div>
-              <div className="col-lg-2 hide_mobile" />
-              <div className="col-lg-5 mt-5 hide_mobile">
-                <StaggerReveal>
-                  {ACHIEVEMENTS.slice(3).map((item) => (
-                    <StaggerItem key={item} as="div">
-                      <div className="mx-2 my-3 box box1 custom-list-item">{item}</div>
-                    </StaggerItem>
-                  ))}
-                </StaggerReveal>
-              </div>
-
-              {/* Mobile single column */}
-              <div className="col-lg-5 hide_desktop">
-                <StaggerReveal>
-                  {ACHIEVEMENTS.map((item) => (
-                    <StaggerItem key={item} as="div">
-                      <div className="mx-2 my-3 box box1 custom-list-item">{item}</div>
-                    </StaggerItem>
-                  ))}
-                </StaggerReveal>
-              </div>
-
-              <Link style={{ color: "#C71782!important" }} href="/achievements">
-                View All<i className="bi bi-chevron-right ms-2" />
-              </Link>
-            </motion.div>
-          </div>
-
-          {/* Image — cinematic scale reveal */}
-          <div className="col-lg-4 my-4 hide_mobile">
-            <motion.div
+              className="future-first-image-wrap"
               variants={imageReveal}
               initial="hidden"
               whileInView="visible"
@@ -94,30 +57,39 @@ export function FutureFirstSection() {
               <Image
                 src="/img/resized_image_one.jpg"
                 alt="Future starts with first"
-                width={400}
-                height={500}
-                className="box box1"
-                style={{ height: 500, objectFit: "cover" }}
+                width={480}
+                height={560}
+                className="future-first-image"
+                priority={false}
               />
             </motion.div>
           </div>
 
-          <div className="col mt-4 hide_desktop">
-            <motion.div
-              variants={imageReveal}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-5%" }}
-            >
-              <Image
-                src="/img/resized_image_one.jpg"
-                alt="Future starts with first"
-                width={350}
-                height={400}
-                className="box box1"
-                style={{ width: 350 }}
-              />
-            </motion.div>
+          <div className="col-lg-7 order-lg-1">
+            <div className="row g-3 g-lg-4">
+              <div className="col-md-6">
+                <StaggerReveal>
+                  {leftCol.map((item) => (
+                    <StaggerItem key={item} as="div">
+                      <div className="future-first-item">{item}</div>
+                    </StaggerItem>
+                  ))}
+                </StaggerReveal>
+              </div>
+              <div className="col-md-6">
+                <StaggerReveal>
+                  {rightCol.map((item) => (
+                    <StaggerItem key={item} as="div">
+                      <div className="future-first-item">{item}</div>
+                    </StaggerItem>
+                  ))}
+                </StaggerReveal>
+              </div>
+            </div>
+
+            <Link className="future-first-cta" href="/achievements">
+              View All <i className="bi bi-chevron-right ms-1" aria-hidden />
+            </Link>
           </div>
         </div>
       </div>

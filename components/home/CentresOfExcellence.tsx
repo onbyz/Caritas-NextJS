@@ -55,33 +55,25 @@ export function CentresOfExcellence() {
         </FadeIn>
 
         <div className="row justify-content-center">
-          <div className="col-md-6 col-lg-4">
-            <div
-              className="image-slider"
-              style={{
-                position: "relative",
-                width: "100%",
-                maxWidth: 400,
-                margin: "0 auto",
-                minHeight: 420,
-              }}
-            >
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="image-slider coe-image-slider">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={DOCTOR_CAROUSEL_IMAGES[activeImage]}
+                  className="coe-image-slider__frame"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.7, ease: "easeInOut" }}
-                  style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}
                 >
                   <Image
                     src={`/img/${DOCTOR_CAROUSEL_IMAGES[activeImage]}`}
                     width={400}
                     height={600}
                     alt="Caritas doctor"
+                    className="coe-doctor-img"
                     decoding="async"
-                    style={{ width: "100%", height: "auto", objectFit: "contain", display: "block" }}
+                    style={{ width: "auto", maxWidth: "100%", height: "auto" }}
                   />
                 </motion.div>
               </AnimatePresence>
@@ -99,18 +91,18 @@ export function CentresOfExcellence() {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="row coelistmob pt-4">
-            {CENTRES_OF_EXCELLENCE.map((item) => (
-              <div key={item.href} className="col-lg-5 px-5 animation-element bounce-up">
-                <p>
-                  <Link href={item.href} className="box box1">
-                    {item.label} <i className="bi bi-chevron-right mx-3" />
-                  </Link>
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="row coelistmob pt-3">
+          {CENTRES_OF_EXCELLENCE.map((item) => (
+            <div key={item.href} className="col-12 animation-element bounce-up">
+              <p className="mb-3">
+                <Link href={item.href} className="box box1">
+                  {item.label} <i className="bi bi-chevron-right ms-2" />
+                </Link>
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -638,6 +638,183 @@ body {
 .donation-banner-section,
 .vr-banner-section {
   position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.donation-banner-section {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding-bottom: 100px;
+}
+
+.donation-banner__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.15) 45%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+.donation-banner__content {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.donation-banner__btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #c71782;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.donation-banner__link {
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.donation-banner__link:hover {
+  opacity: 0.92;
+  color: #fff !important;
+}
+
+/* Legacy class — keep for style3.css compatibility if referenced elsewhere */
+.donation-banner-section .donation-button {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  z-index: 1;
+}
+
+/* ─── Future First ───────────────────────────────────────────────── */
+
+.future-first-section {
+  background-color: #f4f6f6;
+  padding: 3rem 0 3.5rem;
+}
+
+.future-first-title {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  color: #1a2c52;
+}
+
+.future-first-lead {
+  margin: 0;
+  max-width: 42rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #4b5563;
+}
+
+.future-first-header {
+  margin-bottom: 0.5rem;
+}
+
+.future-first-image-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(22, 65, 147, 0.12);
+}
+
+.future-first-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.future-first-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 3px solid #c71782;
+  box-shadow: 0 4px 14px rgba(22, 65, 147, 0.06);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.future-first-item::before {
+  content: "✓";
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: rgba(199, 23, 130, 0.1);
+  color: #c71782;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+
+.future-first-cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  color: #c71782 !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.future-first-cta:hover {
+  opacity: 0.85;
+}
+
+/* ─── Centres of Excellence ──────────────────────────────────────── */
+
+.coe-image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 420px;
+}
+
+.coe-image-slider__frame {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coe-image-slider .coe-doctor-img {
+  display: block !important;
+  width: auto !important;
+  max-width: 100%;
+  height: auto;
+  margin-top: -149px !important;
+  object-fit: contain;
 }
 
 /* Oversized bg container — allows vertical travel without gaps */

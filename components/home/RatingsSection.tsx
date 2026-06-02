@@ -85,11 +85,12 @@ export function RatingsSection() {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    width={117}
-                    height={153}
-                    className="mx-auto d-block"
+                    width={item.width}
+                    height={item.height}
+                    className="mx-auto d-block home-rating-badge"
+                    style={{ width: item.width, height: "auto" }}
                   />
-                  <p className="mt-3 text-center">{item.text}</p>
+                  <p className="mt-3 text-center home-rating-badge__label">{item.text}</p>
                 </div>
               ))}
             </div>
